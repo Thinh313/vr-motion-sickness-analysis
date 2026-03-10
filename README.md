@@ -43,6 +43,19 @@ Raw survey data
     plots/                   ← visualizations
 ```
 
+```
+Preference ranking data (13 of 36 participants)
+  preference_input.csv
+          │
+          ▼
+  analysis_preference.R       ← descriptive stats, pairwise sign tests,
+          │                     Friedman/Kendall's W, 4 preference plots
+          ▼
+  preference_results.txt      ← full statistical output
+  preference_evaluation.md    ← interpreted results (Vietnamese)
+  plots/preference_*.png      ← preference visualizations
+```
+
 ## Requirements
 
 ### Python
@@ -85,6 +98,17 @@ Produces:
 - `anova_results.txt` — complete statistical output
 - `plots/` — boxplots, interaction plots, Q-Q plots
 
+### 3. Preference ranking analysis
+
+```bash
+Rscript analysis_preference.R
+```
+
+Produces:
+- `preference_results.txt` — descriptive stats, pairwise sign tests, Friedman/Kendall's W
+- `preference_evaluation.md` — interpreted preference results (Vietnamese)
+- `plots/preference_*.png` — first-choice, mean-rank, Borda score, pairwise heatmap
+
 ## File Reference
 
 | File | Description |
@@ -99,6 +123,10 @@ Produces:
 | `anova_results.txt` | Full R statistical output |
 | `anova_evaluation.md` | Results interpretation and APA write-up (Vietnamese) |
 | `qc_report.md` | Data quality validation report |
+| `preference_input.csv` | Preference ranking data (13 participants, wide format) |
+| `analysis_preference.R` | Preference ranking analysis script |
+| `preference_results.txt` | Preference analysis statistical output |
+| `preference_evaluation.md` | Preference results interpretation (Vietnamese) |
 
 ### Plots
 
@@ -112,6 +140,10 @@ Produces:
 | `ssq_o_residual_qqplot.png` | Residual Q-Q plot for Oculomotor normality |
 | `ssq_d_residual_qqplot.png` | Residual Q-Q plot for Disorientation normality |
 | `presence_residual_qqplot.png` | Residual Q-Q plot for Presence normality |
+| `preference_first_choice.png` | First-choice preference bar chart |
+| `preference_mean_rank.png` | Mean preference rank with SE bars |
+| `preference_borda_score.png` | Borda preference score bar chart |
+| `preference_pairwise_heatmap.png` | Pairwise preference win heatmap |
 
 ## Key Results (N = 36)
 
@@ -139,9 +171,19 @@ SSQ subscales follow Kennedy, Lane, Berbaum & Lilienthal (1993) Table 4:
 
 ## Statistical Approach
 
+### SSQ & Presence (N = 36)
+
 - **Analysis:** 2-way Repeated Measures ANOVA (afex::aov_ez)
 - **Sphericity:** Greenhouse-Geisser correction
 - **Multiple comparisons (across DVs):** Holm correction across 4 SSQ subscales
 - **Post-hoc (within DV):** Bonferroni pairwise comparisons via emmeans
 - **Effect size:** Generalized eta-squared (η²_G)
 - **Sensitivity:** Re-analysis excluding extreme outliers (3×IQR criterion)
+
+### Preference (n = 13/36, exploratory)
+
+- **Design:** Within-subject complete ranking of 4 methods
+- **Descriptive:** Mean/median rank, Borda score, first/last-choice counts
+- **Pairwise:** Exact binomial sign tests with Holm correction
+- **Overall agreement:** Friedman test, Kendall's W
+- **Framing:** Exploratory only — partial coverage, no confirmatory claims
