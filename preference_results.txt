@@ -1,0 +1,94 @@
+
+==============================================================
+  PREFERENCE RANKING ANALYSIS (EXPLORATORY)
+  13/36 participants — partial coverage
+==============================================================
+
+--- 2. DATA LOADING & VALIDATION ---
+
+Participants with rankings: 13 / 36 (36.1% coverage)
+Conditions: Baseline, Overlay Path, Minimap, Dynamic FOV
+Rank scale: 1 = most preferred, 4 = least preferred
+Validation: PASS (all rows have valid schema and rank sums)
+
+--- 3. DESCRIPTIVE STATISTICS ---
+
+Ranking Summary (ordered by mean rank, lower = more preferred):
+
+       Method Mean_Rank Median_Rank SD_Rank Borda_Score First_Choice First_Pct
+ Overlay Path    2.0385         2.0  0.8771        38.5            4      30.8
+      Minimap    2.4231         2.0  0.7596        33.5            1       7.7
+  Dynamic FOV    2.7308         3.5  1.4522        29.5            5      38.5
+     Baseline    2.8077         3.0  1.1996        28.5            3      23.1
+ Last_Choice Last_Pct
+         0.5      3.8
+         1.0      7.7
+         6.5     50.0
+         5.0     38.5
+
+Interpretation:
+  Best mean rank:  Overlay Path (2.038)
+  Worst mean rank: Baseline (2.808)
+  Most first choices:  Dynamic FOV (5.0)
+  Most last choices:   Dynamic FOV (6.5)
+
+--- 4. PAIRWISE PREFERENCE COMPARISONS ---
+
+Pairwise preference counts (A wins = A preferred over B):
+
+                        Pair A_Wins B_Wins Ties
+    Baseline vs Overlay Path      3      9    1
+         Baseline vs Minimap      5      7    1
+     Baseline vs Dynamic FOV      6      6    1
+     Overlay Path vs Minimap      8      5    0
+ Overlay Path vs Dynamic FOV      8      5    0
+      Minimap vs Dynamic FOV      8      5    0
+
+--- 5. PAIRWISE SIGN TESTS (EXACT BINOMIAL, HOLM CORRECTION) ---
+
+Note: ties are excluded from sign test (only discordant pairs tested)
+H0: P(A preferred) = 0.5 among discordant pairs
+Framing: EXPLORATORY — p-values are descriptive, not confirmatory
+
+Pairwise sign test results:
+
+                        Pair A_Wins B_Wins Ties n_discordant p.value p.Holm
+    Baseline vs Overlay Path      3      9    1           12  0.1460  0.876
+         Baseline vs Minimap      5      7    1           12  0.7744  1.000
+     Baseline vs Dynamic FOV      6      6    1           12  1.0000  1.000
+     Overlay Path vs Minimap      8      5    0           13  0.5811  1.000
+ Overlay Path vs Dynamic FOV      8      5    0           13  0.5811  1.000
+      Minimap vs Dynamic FOV      8      5    0           13  0.5811  1.000
+
+No pairwise comparisons reached nominal significance (p < .05).
+
+--- 6. FRIEDMAN TEST & KENDALL'S W (EXPLORATORY) ---
+
+Friedman chi-squared = 2.9291, df = 3, p-value = 0.4027
+Kendall's W = 0.0751
+Interpretation: W ranges from 0 (no agreement) to 1 (perfect agreement)
+  -> Weak agreement among raters
+
+--- 7. GENERATING PLOTS ---
+
+  Saved: plots/preference_first_choice.png
+  Saved: plots/preference_mean_rank.png
+  Saved: plots/preference_pairwise_heatmap.png
+  Saved: plots/preference_borda_score.png
+
+--- 8. SUMMARY ---
+
+EXPLORATORY PREFERENCE ANALYSIS COMPLETE
+Coverage: 13 / 36 participants (36.1%)
+Friedman test: chi2 = 2.9291, df = 3, p = 0.4027
+Kendall's W = 0.0751
+
+CAVEAT: These results are exploratory due to partial coverage (13/36).
+P-values should be interpreted as descriptive patterns, not confirmatory.
+
+Output files:
+  preference_results.txt (this file)
+  plots/preference_first_choice.png
+  plots/preference_mean_rank.png
+  plots/preference_pairwise_heatmap.png
+  plots/preference_borda_score.png
