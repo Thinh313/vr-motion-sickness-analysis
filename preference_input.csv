@@ -1,0 +1,14 @@
+participant_name,baseline_rank,overlay_path_rank,minimap_rank,dynamic_fov_rank
+Phu,4,3,2,1
+Tuan,4,3,2,1
+Hieu,2,1,3,4
+Tuan Anh,3,2,4,1
+Khanh,4,1,2,3
+Kiet,1,2,3,4
+Giang,2.5,1,2.5,4
+Thu,3.5,3.5,2,1
+Phat,1,2,3,4
+Bao,3,1,2,4
+Khoi,1,3,2,4
+Hoang,3.5,2,1,3.5
+Thanh,4,2,3,1
