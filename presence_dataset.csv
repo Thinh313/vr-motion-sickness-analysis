@@ -31,23 +31,19 @@ timestamp,full_name,vr_experience_before,video_experienced,method_experienced,pr
 2025-08-08T09:29:33,Lê Trường Thọ,yes,Cycling,Overlay Path,4,5,4,1,2
 2025-08-08T09:34:37,Nguyễn Hoàng Vũ,no,Cycling,Minimap,4,4,5,2,6
 2025-08-08T09:39:26,Hứa Trường Khả,no,Cycling,Baseline,5,6,4,1,7
-2025-08-08T09:40:39,Nguyễn Đình Triết,yes,Cycling,Dynamic FOV,4,4,1,4,6
 2025-08-08T09:47:39,Nguyễn Huỳnh Việt Thống,no,Cycling,Overlay Path,2,4,3,1,7
 2025-08-08T09:48:40,Lê Trường Thọ,yes,Cycling,Minimap,4,3,5,2,2
 2025-08-08T09:53:56,Nguyễn Hoàng Vũ,no,Cycling,Baseline,6,7,7,2,6
 2025-08-08T09:56:37,Hứa Trường Khả,no,Cycling,Dynamic FOV,1,2,4,4,7
-2025-08-08T09:59:28,Nguyễn Đình Triết,yes,Cycling,Overlay Path,4,4,7,5,6
 2025-08-08T10:15:09,Nguyễn Huỳnh Việt Thống,no,Cycling,Minimap,2,6,4,2,6
 2025-08-08T10:17:58,Lê Trường Thọ,yes,Cycling,Baseline,5,6,5,2,4
 2025-08-08T10:20:44,Nguyễn Hoàng Vũ,no,Cycling,Dynamic FOV,4,3,2,6,6
-2025-08-08T10:24:23,Nguyễn Đình Triết,yes,Cycling,Minimap,6,5,4,5,4
 2025-08-08T10:30:56,Hứa Trường Khả,no,Cycling,Overlay Path,5,5,6,4,7
 2025-08-08T10:33:17,Võ Thanh Phúc,no,Cycling,Minimap,5,3,5,4,5
 2025-08-08T10:35:04,Nguyễn Huỳnh Việt Thống,no,Cycling,Baseline,4,7,1,2,6
 2025-08-08T10:38:56,Nguyễn Hoàng Vũ,no,Cycling,Overlay Path,7,4,6,2,5
 2025-08-08T10:40:16,Lê Trường Thọ,yes,Cycling,Dynamic FOV,2,5,2,1,2
 2025-08-08T10:46:04,Hứa Trường Khả,no,Cycling,Minimap,4,3,3,4,1
-2025-08-08T10:50:31,Nguyễn Đình Triết,yes,Cycling,Baseline,4,7,5,5,3
 2025-08-08T11:03:57,Nguyễn Hữu Hào,no,Cycling,Baseline,6,5,6,7,4
 2025-08-08T11:09:27,Nguyễn Đình Ngọc Trí,yes,Cycling,Dynamic FOV,2,3,3,5,2
 2025-08-08T11:12:54,Võ Thanh Phúc,no,Cycling,Overlay Path,5,6,4,3,3
@@ -187,40 +183,32 @@ timestamp,full_name,vr_experience_before,video_experienced,method_experienced,pr
 2025-08-08T18:12:29,Nguyễn Lê Đăng Khoa,no,Walking,Dynamic FOV,2,3,3,5,4
 2025-08-08T18:16:24,Nguyễn Lê Đăng Khoa,no,Walking,Baseline,5,6,4,3,4
 2025-08-08T18:16:44,Trần Minh Khánh,yes,Driving,Overlay Path,5,3,4,3,2
-2025-08-08T19:17:40,Nguyễn Đình Triết,yes,Walking,Dynamic FOV,2,5,3,2,2
 2025-08-08T19:19:19,Nguyễn Sĩ Minh,yes,Walking,Minimap,5,5,7,3,2
 2025-08-08T19:22:08,Nguyễn Hoàng Vũ,no,Walking,Minimap,4,3,5,7,2
 2025-08-08T19:26:22,Hứa Trường Khả,no,Walking,Baseline,4,4,3,5,7
 2025-08-08T19:30:47,Trần Đặng Hoàng Hiệp,no,Walking,Overlay Path,3,2,5,1,3
 2025-08-08T19:39:47,Nguyễn Sĩ Minh,yes,Walking,Baseline,6,3,6,3,1
-2025-08-08T19:43:48,Nguyễn Đình Triết,yes,Walking,Baseline,2,3,5,4,2
 2025-08-08T19:45:01,Nguyễn Hoàng Vũ,no,Walking,Baseline,4,6,7,2,1
 2025-08-08T19:46:16,Hứa Trường Khả,no,Walking,Dynamic FOV,3,1,4,4,4
 2025-08-08T19:49:39,Trần Đặng Hoàng Hiệp,no,Walking,Minimap,3,1,6,3,5
-2025-08-08T19:53:20,Nguyễn Đình Triết,yes,Walking,Overlay Path,2,4,6,6,4
 2025-08-08T19:55:00,Nguyễn Sĩ Minh,yes,Walking,Dynamic FOV,3,2,4,3,2
-2025-08-08T20:04:28,Nguyễn Đình Triết,yes,Walking,Overlay Path,2,4,6,6,4
 2025-08-08T20:06:30,Nguyễn Sĩ Minh,yes,Walking,Overlay Path,2,7,6,5,5
 2025-08-08T20:08:42,Trần Đặng Hoàng Hiệp,no,Walking,Baseline,5,3,4,3,6
 2025-08-08T20:10:18,Nguyễn Hoàng Vũ,no,Walking,Dynamic FOV,2,3,5,3,1
 2025-08-08T20:12:10,Trần Đặng Hoàng Hiệp,no,Walking,Dynamic FOV,5,2,2,2,4
 2025-08-08T20:14:08,Hứa Trường Khả,no,Walking,Overlay Path,4,5,4,4,6
 2025-08-08T20:17:17,Trần Đặng Hoàng Hiệp,no,Driving,Overlay Path,3,6,3,4,6
-2025-08-08T20:20:38,Nguyễn Đình Triết,yes,Driving,Dynamic FOV,2,1,3,3,3
 2025-08-08T20:25:27,Hứa Trường Khả,no,Walking,Minimap,6,4,4,2,6
 2025-08-08T20:27:50,Nguyễn Hoàng Vũ,no,Walking,Overlay Path,4,6,6,5,4
 2025-08-08T20:29:39,Nguyễn Sĩ Minh,yes,Driving,Minimap,5,4,5,3,4
 2025-08-08T20:30:54,Trần Đặng Hoàng Hiệp,no,Driving,Minimap,5,4,3,6,6
 2025-08-08T20:32:19,Nguyễn Sĩ Minh,yes,Driving,Baseline,5,4,6,7,4
-2025-08-08T20:34:14,Nguyễn Đình Triết,yes,Driving,Baseline,3,7,4,6,4
 2025-08-08T20:38:23,Hứa Trường Khả,no,Driving,Baseline,7,6,5,4,7
 2025-08-08T20:39:37,Nguyễn Hoàng Vũ,no,Driving,Minimap,4,3,6,3,3
-2025-08-08T20:42:29,Nguyễn Đình Triết,yes,Driving,Minimap,7,2,2,1,4
 2025-08-08T20:45:57,Hứa Trường Khả,no,Driving,Dynamic FOV,2,2,5,1,4
 2025-08-08T20:47:19,Nguyễn Hoàng Vũ,no,Driving,Baseline,6,5,6,3,6
 2025-08-08T20:53:28,Nguyễn Sĩ Minh,yes,Driving,Dynamic FOV,4,3,5,3,5
 2025-08-08T20:56:43,Trần Đặng Hoàng Hiệp,no,Driving,Baseline,7,7,4,7,4
-2025-08-08T20:59:39,Nguyễn Đình Triết,yes,Driving,Overlay Path,3,4,6,2,3
 2025-08-08T21:00:13,Hứa Trường Khả,no,Driving,Overlay Path,2,3,4,7,5
 2025-08-08T21:03:43,Nguyễn Hoàng Vũ,no,Driving,Dynamic FOV,4,4,3,2,2
 2025-08-08T21:06:49,Trần Đặng Hoàng Hiệp,no,Driving,Dynamic FOV,1,2,2,2,4
@@ -407,3 +395,39 @@ timestamp,full_name,vr_experience_before,video_experienced,method_experienced,pr
 2026-05-02T15:46:13,Nguyễn Phương Gia Bảo,no,Walking,Baseline,7,7,6,6,5
 2026-05-02T15:53:53,Nguyễn Phương Gia Bảo,no,Cycling,Baseline,7,7,7,7,5
 2026-05-02T16:03:30,Nguyễn Phương Gia Bảo,no,Driving,Baseline,7,7,7,7,6
+2026-05-03T10:52:23,Võ Đình Khôi,yes,Driving,Overlay Path,1,1,2,1,4
+2026-05-03T11:22:19,Võ Đình Khôi,yes,Walking,Overlay Path,2,2,4,1,1
+2026-05-03T11:31:20,Võ Đình Khôi,yes,Cycling,Overlay Path,3,5,5,3,4
+2026-05-03T11:41:15,Võ Đình Khôi,yes,Cycling,Minimap,3,4,5,3,5
+2026-05-03T11:47:13,Võ Đình Khôi,yes,Driving,Minimap,2,1,1,2,5
+2026-05-03T12:01:04,Võ Đình Khôi,yes,Walking,Minimap,3,4,4,3,5
+2026-05-03T12:10:42,Võ Đình Khôi,yes,Walking,Baseline,3,2,2,4,5
+2026-05-03T12:23:03,Võ Đình Khôi,yes,Cycling,Baseline,4,3,5,4,4
+2026-05-03T12:33:50,Võ Đình Khôi,yes,Driving,Baseline,4,4,5,4,4
+2026-05-03T12:45:54,Võ Đình Khôi,yes,Driving,Dynamic FOV,3,2,1,4,4
+2026-05-03T12:59:02,Võ Đình Khôi,yes,Walking,Dynamic FOV,3,1,2,3,5
+2026-05-03T13:13:21,Võ Đình Khôi,yes,Cycling,Dynamic FOV,3,3,3,4,4
+2026-09-03T10:13:55,Lê Hình Nhựt Thanh,yes,Cycling,Minimap,5,4,7,5,2
+2026-09-03T10:25:36,Lê Minh Hoàng,yes,Cycling,Dynamic FOV,6,7,7,6,2
+2026-09-03T10:27:31,Lê Hình Nhựt Thanh,yes,Driving,Minimap,5,6,7,5,2
+2026-09-03T10:37:16,Lê Minh Hoàng,yes,Cycling,Overlay Path,6,7,7,6,2
+2026-09-03T10:41:03,Lê Hình Nhựt Thanh,yes,Walking,Minimap,6,6,6,6,2
+2026-09-03T10:47:11,Lê Minh Hoàng,yes,Cycling,Minimap,6,6,6,6,2
+2026-09-03T10:53:10,Lê Hình Nhựt Thanh,yes,Walking,Baseline,5,5,5,5,2
+2026-09-03T10:58:24,Lê Minh Hoàng,yes,Cycling,Baseline,6,6,5,6,2
+2026-09-03T11:10:34,Lê Minh Hoàng,yes,Walking,Dynamic FOV,6,6,6,6,2
+2026-09-03T11:19:29,Lê Minh Hoàng,yes,Walking,Baseline,6,6,6,6,2
+2026-09-03T11:29:04,Lê Minh Hoàng,yes,Walking,Overlay Path,6,6,6,6,2
+2026-09-03T11:34:47,Lê Hình Nhựt Thanh,yes,Cycling,Baseline,5,5,5,5,2
+2026-09-03T11:40:37,Lê Minh Hoàng,yes,Walking,Minimap,7,7,7,7,2
+2026-09-03T11:46:18,Lê Hình Nhựt Thanh,yes,Driving,Baseline,5,5,6,5,5
+2026-09-03T11:46:57,Lê Minh Hoàng,yes,Driving,Dynamic FOV,6,7,7,6,2
+2026-09-03T11:54:07,Lê Hình Nhựt Thanh,yes,Driving,Dynamic FOV,6,6,6,6,5
+2026-09-03T11:57:34,Lê Minh Hoàng,yes,Driving,Baseline,6,7,7,6,2
+2026-09-03T12:06:04,Lê Hình Nhựt Thanh,yes,Walking,Dynamic FOV,6,7,7,6,5
+2026-09-03T12:07:17,Lê Minh Hoàng,yes,Driving,Minimap,6,7,7,6,2
+2026-09-03T12:14:07,Lê Hình Nhựt Thanh,yes,Cycling,Dynamic FOV,6,6,6,6,5
+2026-09-03T12:17:05,Lê Minh Hoàng,yes,Driving,Overlay Path,6,6,6,6,2
+2026-09-03T12:58:59,Lê Hình Nhựt Thanh,yes,Cycling,Overlay Path,5,5,5,5,4
+2026-09-03T13:07:50,Lê Hình Nhựt Thanh,yes,Driving,Overlay Path,5,5,6,5,5
+2026-09-03T13:17:01,Lê Hình Nhựt Thanh,yes,Walking,Overlay Path,6,6,5,5,5

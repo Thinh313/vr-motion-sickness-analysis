@@ -6,189 +6,182 @@
 
 --- 1. DATA LOADING & PREPARATION ---
 
-Deduplicated: 1 SSQ rows, 1 Presence rows removed
 --- 2. DATA VALIDATION ---
 
-Total observations : 407 (expected 408)
-Unique subjects    : 34 (expected 34)
+Total observations : 432 (expected 432)
+Unique subjects    : 36 (expected 36)
 Unique cells       : 12 (expected 12)
-
-WARNING: Subjects with incomplete data (will be excluded from RM-ANOVA):
-# A tibble: 1 × 2
-  subject               n
-  <fct>             <int>
-1 Nguyễn Đình Triết    11
-Excluded 1 subject(s). Remaining: 33 subjects, 396 observations
+Completeness check : PASS (all subjects have 12 observations)
 Missing ssq_tsc        : 0
 Missing ssq_n          : 0
 Missing ssq_o          : 0
 Missing ssq_d          : 0
 Missing mean_presence  : 0
 
-Final dataset: 33 subjects x 12 conditions = 396 observations
+Final dataset: 36 subjects x 12 conditions = 432 observations
 Data validation: ALL CHECKS PASSED
 
 --- 3. DESCRIPTIVE STATISTICS ---
 
 SSQ Total (TSC) by Method x Video:
        method   video  n mean sd min max
-     Baseline Cycling 33   73 44   0 146
-     Baseline Walking 33   82 49  11 206
-     Baseline Driving 33   73 48   0 146
-  Dynamic FOV Cycling 33   50 39   0 153
-  Dynamic FOV Walking 33   56 47   0 232
-  Dynamic FOV Driving 33   42 30   0 131
-      Minimap Cycling 33   58 36   0 142
-      Minimap Walking 33   63 40   0 172
-      Minimap Driving 33   53 38   0 153
- Overlay Path Cycling 33   62 41   0 161
- Overlay Path Walking 33   58 31   0 138
- Overlay Path Driving 33   58 35   0 157
+     Baseline Cycling 36   68 45 0.0 146
+     Baseline Walking 36   78 49 7.5 206
+     Baseline Driving 36   68 49 0.0 146
+  Dynamic FOV Cycling 36   49 38 0.0 153
+  Dynamic FOV Walking 36   55 46 0.0 232
+  Dynamic FOV Driving 36   42 30 0.0 131
+      Minimap Cycling 36   55 36 0.0 142
+      Minimap Walking 36   60 40 0.0 172
+      Minimap Driving 36   51 38 0.0 153
+ Overlay Path Cycling 36   58 41 0.0 161
+ Overlay Path Walking 36   56 32 0.0 138
+ Overlay Path Driving 36   56 36 0.0 157
 
 SSQ Nausea (N) by Method x Video:
        method   video  n mean sd min max
-     Baseline Cycling 33   40 26   0  86
-     Baseline Walking 33   47 34   0 153
-     Baseline Driving 33   40 32   0 105
-  Dynamic FOV Cycling 33   29 24   0 105
-  Dynamic FOV Walking 33   33 36   0 191
-  Dynamic FOV Driving 33   23 18   0  67
-      Minimap Cycling 33   29 21   0  76
-      Minimap Walking 33   35 31   0 162
-      Minimap Driving 33   28 23   0  95
- Overlay Path Cycling 33   34 23   0  86
- Overlay Path Walking 33   32 23   0  95
- Overlay Path Driving 33   31 20   0  76
+     Baseline Cycling 36   37 27   0  86
+     Baseline Walking 36   44 34   0 153
+     Baseline Driving 36   37 32   0 105
+  Dynamic FOV Cycling 36   27 24   0 105
+  Dynamic FOV Walking 36   31 35   0 191
+  Dynamic FOV Driving 36   22 18   0  67
+      Minimap Cycling 36   28 22   0  76
+      Minimap Walking 36   33 31   0 162
+      Minimap Driving 36   27 22   0  95
+ Overlay Path Cycling 36   31 24   0  86
+ Overlay Path Walking 36   30 23   0  95
+ Overlay Path Driving 36   30 20   0  76
 
 SSQ Oculomotor (O) by Method x Video:
        method   video  n mean sd min max
-     Baseline Cycling 33   67 40   0 144
-     Baseline Walking 33   72 40   0 144
-     Baseline Driving 33   61 42   0 144
-  Dynamic FOV Cycling 33   44 36   0 152
-  Dynamic FOV Walking 33   51 40   0 159
-  Dynamic FOV Driving 33   36 26   0 114
-      Minimap Cycling 33   56 31   0 136
-      Minimap Walking 33   55 31   0 129
-      Minimap Driving 33   45 33   0 121
- Overlay Path Cycling 33   56 36   0 136
- Overlay Path Walking 33   51 27   0 121
- Overlay Path Driving 33   52 30   0 121
+     Baseline Cycling 36   63 41   0 144
+     Baseline Walking 36   69 40   0 144
+     Baseline Driving 36   57 42   0 144
+  Dynamic FOV Cycling 36   44 35   0 152
+  Dynamic FOV Walking 36   49 39   0 159
+  Dynamic FOV Driving 36   36 26   0 114
+      Minimap Cycling 36   53 32   0 136
+      Minimap Walking 36   53 32   0 129
+      Minimap Driving 36   44 33   0 121
+ Overlay Path Cycling 36   53 36   0 136
+ Overlay Path Walking 36   49 27   0 121
+ Overlay Path Driving 36   50 32   0 121
 
 SSQ Disorientation (D) by Method x Video:
        method   video  n mean sd min max
-     Baseline Cycling 33   89 64   0 209
-     Baseline Walking 33  104 71   0 278
-     Baseline Driving 33  101 66   0 209
-  Dynamic FOV Cycling 33   62 52   0 181
-  Dynamic FOV Walking 33   69 57   0 292
-  Dynamic FOV Driving 33   58 44   0 181
-      Minimap Cycling 33   72 53   0 181
-      Minimap Walking 33   83 61   0 209
-      Minimap Driving 33   72 58   0 209
- Overlay Path Cycling 33   78 62   0 237
- Overlay Path Walking 33   76 48   0 195
- Overlay Path Driving 33   75 53   0 251
+     Baseline Cycling 36   84 64   0 209
+     Baseline Walking 36  101 70   0 278
+     Baseline Driving 36   95 67   0 209
+  Dynamic FOV Cycling 36   61 51   0 181
+  Dynamic FOV Walking 36   68 56   0 292
+  Dynamic FOV Driving 36   58 46   0 181
+      Minimap Cycling 36   68 53   0 181
+      Minimap Walking 36   79 60   0 209
+      Minimap Driving 36   70 58   0 209
+ Overlay Path Cycling 36   74 61   0 237
+ Overlay Path Walking 36   74 48   0 195
+ Overlay Path Driving 36   73 54   0 251
 
 Presence (mean) by Method x Video:
        method   video  n mean   sd min max
-     Baseline Cycling 33  4.6 1.08 2.2 6.6
-     Baseline Walking 33  5.0 0.84 3.6 6.6
-     Baseline Driving 33  4.9 0.90 3.0 6.8
-  Dynamic FOV Cycling 33  4.0 1.29 1.6 6.6
-  Dynamic FOV Walking 33  3.7 1.19 2.0 6.6
-  Dynamic FOV Driving 33  3.8 1.45 1.8 6.6
-      Minimap Cycling 33  4.5 1.12 2.6 6.6
-      Minimap Walking 33  4.6 0.91 3.0 6.6
-      Minimap Driving 33  4.5 0.95 2.8 6.8
- Overlay Path Cycling 33  4.4 0.99 2.8 6.6
- Overlay Path Walking 33  4.6 0.96 2.8 6.6
- Overlay Path Driving 33  4.3 0.99 3.0 6.6
+     Baseline Cycling 36  4.5 1.04 2.2 6.6
+     Baseline Walking 36  4.9 0.86 3.2 6.6
+     Baseline Driving 36  4.9 0.88 3.0 6.8
+  Dynamic FOV Cycling 36  4.0 1.30 1.6 6.6
+  Dynamic FOV Walking 36  3.8 1.24 2.0 6.6
+  Dynamic FOV Driving 36  3.9 1.47 1.8 6.6
+      Minimap Cycling 36  4.5 1.08 2.6 6.6
+      Minimap Walking 36  4.6 0.92 3.0 6.6
+      Minimap Driving 36  4.5 1.01 2.2 6.8
+ Overlay Path Cycling 36  4.4 0.97 2.8 6.6
+ Overlay Path Walking 36  4.6 1.03 2.0 6.6
+ Overlay Path Driving 36  4.3 1.06 1.8 6.6
 
 SSQ Total (TSC) marginal means by Method:
 # A tibble: 4 × 3
   method        mean    sd
   <fct>        <dbl> <dbl>
-1 Baseline      75.9  47.1
-2 Dynamic FOV   49.4  39.3
-3 Minimap       58.2  37.8
-4 Overlay Path  59.2  35.8
+1 Baseline      71.6  47.6
+2 Dynamic FOV   48.3  38.7
+3 Minimap       55.5  38.0
+4 Overlay Path  56.7  36.3
 
 SSQ Nausea (N) marginal means by Method:
 # A tibble: 4 × 3
   method        mean    sd
   <fct>        <dbl> <dbl>
-1 Baseline      42.5  30.4
-2 Dynamic FOV   27.9  27.1
-3 Minimap       31.0  25.4
-4 Overlay Path  32.3  22.0
+1 Baseline      39.5  30.8
+2 Dynamic FOV   26.6  26.4
+3 Minimap       29.2  25.2
+4 Overlay Path  30.4  22.1
 
 SSQ Oculomotor (O) marginal means by Method:
 # A tibble: 4 × 3
   method        mean    sd
   <fct>        <dbl> <dbl>
-1 Baseline      66.7  40.4
-2 Dynamic FOV   43.6  34.5
-3 Minimap       52.1  31.9
-4 Overlay Path  52.8  31.0
+1 Baseline      63.0  40.9
+2 Dynamic FOV   42.8  34.1
+3 Minimap       49.8  32.2
+4 Overlay Path  50.6  31.7
 
 SSQ Disorientation (D) marginal means by Method:
 # A tibble: 4 × 3
   method        mean    sd
   <fct>        <dbl> <dbl>
-1 Baseline      97.9  66.8
-2 Dynamic FOV   63.1  51.1
-3 Minimap       75.5  56.9
-4 Overlay Path  76.2  54.1
+1 Baseline      93.1  66.7
+2 Dynamic FOV   62.4  50.9
+3 Minimap       72.4  57.1
+4 Overlay Path  73.9  54.0
 
 Presence marginal means by Method:
 # A tibble: 4 × 3
   method        mean    sd
   <fct>        <dbl> <dbl>
-1 Baseline      4.80 0.954
-2 Dynamic FOV   3.84 1.30 
-3 Minimap       4.52 0.986
-4 Overlay Path  4.42 0.980
+1 Baseline      4.79 0.938
+2 Dynamic FOV   3.92 1.33 
+3 Minimap       4.53 0.995
+4 Overlay Path  4.41 1.02 
 
 SSQ Total (TSC) marginal means by Video:
 # A tibble: 3 × 3
   video    mean    sd
   <fct>   <dbl> <dbl>
-1 Cycling  60.7  40.5
-2 Walking  64.8  43.2
-3 Driving  56.5  39.6
+1 Cycling  57.6  40.6
+2 Walking  62.3  42.9
+3 Driving  54.2  39.8
 
 SSQ Nausea (N) marginal means by Video:
 # A tibble: 3 × 3
   video    mean    sd
   <fct>   <dbl> <dbl>
-1 Cycling  33.0  23.9
-2 Walking  36.7  31.6
-3 Driving  30.6  24.2
+1 Cycling  30.9  24.1
+2 Walking  34.5  31.2
+3 Driving  28.9  24.0
 
 SSQ Oculomotor (O) marginal means by Video:
 # A tibble: 3 × 3
   video    mean    sd
   <fct>   <dbl> <dbl>
-1 Cycling  55.7  36.3
-2 Walking  57.1  35.5
-3 Driving  48.6  34.2
+1 Cycling  53.1  36.4
+2 Walking  54.9  35.5
+3 Driving  46.7  34.5
 
 SSQ Disorientation (D) marginal means by Video:
 # A tibble: 3 × 3
   video    mean    sd
   <fct>   <dbl> <dbl>
-1 Cycling  75.3  58.1
-2 Walking  82.8  60.5
-3 Driving  76.5  57.5
+1 Cycling  71.9  57.5
+2 Walking  80.5  59.7
+3 Driving  73.9  57.8
 
 Presence marginal means by Video:
 # A tibble: 3 × 3
   video    mean    sd
   <fct>   <dbl> <dbl>
-1 Cycling  4.34  1.13
-2 Walking  4.47  1.07
-3 Driving  4.38  1.15
+1 Cycling  4.37  1.11
+2 Walking  4.48  1.09
+3 Driving  4.39  1.17
 
 --- 4. ASSUMPTION CHECKS ---
 
@@ -200,28 +193,29 @@ SSQ Total (TSC) outliers found: 7 (extreme: 1)
   <fct>                <fct>        <fct>     <dbl> <lgl>      <lgl>     
 1 Trần Minh Khánh      Dynamic FOV  Cycling    153. TRUE       FALSE     
 2 Nguyễn Xuân Quân     Dynamic FOV  Walking    153. TRUE       FALSE     
-3 Nguyễn Hoàng Anh Thư Dynamic FOV  Walking    232. TRUE       TRUE      
-4 Hồ Minh Văn          Dynamic FOV  Driving    131. TRUE       FALSE     
-5 Hồ Phú Vinh          Minimap      Cycling    142. TRUE       FALSE     
+3 Trần Minh Khánh      Dynamic FOV  Walking    135. TRUE       FALSE     
+4 Nguyễn Hoàng Anh Thư Dynamic FOV  Walking    232. TRUE       TRUE      
+5 Hồ Minh Văn          Dynamic FOV  Driving    131. TRUE       FALSE     
 6 Nguyễn Hoàng Anh Thư Overlay Path Walking    138. TRUE       FALSE     
 7 Vương Thanh Duy      Overlay Path Driving    157. TRUE       FALSE     
 
-SSQ Nausea (N) outliers found: 12 (extreme: 4)
-# A tibble: 12 × 6
+SSQ Nausea (N) outliers found: 13 (extreme: 5)
+# A tibble: 13 × 6
    subject              method       video   ssq_n is.outlier is.extreme
    <fct>                <fct>        <fct>   <dbl> <lgl>      <lgl>     
  1 Nguyễn Kim Khanh     Baseline     Walking 124.  TRUE       FALSE     
  2 Nguyễn Hoàng Anh Thư Baseline     Walking 153.  TRUE       FALSE     
  3 Trần Minh Khánh      Dynamic FOV  Cycling  85.9 TRUE       FALSE     
- 4 Nguyễn Kim Khanh     Dynamic FOV  Cycling 105.  TRUE       FALSE     
- 5 Nguyễn Xuân Quân     Dynamic FOV  Walking  85.9 TRUE       FALSE     
- 6 Nguyễn Hoàng Anh Thư Dynamic FOV  Walking 191.  TRUE       TRUE      
- 7 Nguyễn Đức Thịnh     Minimap      Cycling  76.3 TRUE       FALSE     
+ 4 Nguyễn Đức Thịnh     Dynamic FOV  Cycling  76.3 TRUE       FALSE     
+ 5 Nguyễn Kim Khanh     Dynamic FOV  Cycling 105.  TRUE       TRUE      
+ 6 Nguyễn Xuân Quân     Dynamic FOV  Walking  85.9 TRUE       FALSE     
+ 7 Nguyễn Hoàng Anh Thư Dynamic FOV  Walking 191.  TRUE       TRUE      
  8 Nguyễn Kim Khanh     Minimap      Walking 162.  TRUE       TRUE      
- 9 Nguyễn Hoàng Vũ      Overlay Path Walking  76.3 TRUE       FALSE     
-10 Nguyễn Kim Khanh     Overlay Path Walking  95.4 TRUE       TRUE      
-11 Nguyễn Hoàng Anh Thư Overlay Path Walking  95.4 TRUE       TRUE      
-12 Vương Thanh Duy      Overlay Path Driving  76.3 TRUE       FALSE     
+ 9 Nguyễn Kim Khanh     Minimap      Driving  95.4 TRUE       FALSE     
+10 Nguyễn Hoàng Vũ      Overlay Path Walking  76.3 TRUE       FALSE     
+11 Nguyễn Kim Khanh     Overlay Path Walking  95.4 TRUE       TRUE      
+12 Nguyễn Hoàng Anh Thư Overlay Path Walking  95.4 TRUE       TRUE      
+13 Vương Thanh Duy      Overlay Path Driving  76.3 TRUE       FALSE     
 
 SSQ Oculomotor (O) outliers found: 4 (extreme: 0)
 # A tibble: 4 × 6
@@ -232,121 +226,47 @@ SSQ Oculomotor (O) outliers found: 4 (extreme: 0)
 3 Nguyễn Hoàng Anh Thư Dynamic FOV Walking  159. TRUE       FALSE     
 4 Hồ Minh Văn          Dynamic FOV Driving  114. TRUE       FALSE     
 
-SSQ Disorientation (D) outliers found: 7 (extreme: 2)
-# A tibble: 7 × 6
+SSQ Disorientation (D) outliers found: 6 (extreme: 2)
+# A tibble: 6 × 6
   subject              method       video   ssq_d is.outlier is.extreme
   <fct>                <fct>        <fct>   <dbl> <lgl>      <lgl>     
 1 Nguyễn Xuân Quân     Dynamic FOV  Walking  167. TRUE       FALSE     
 2 Trần Minh Khánh      Dynamic FOV  Walking  153. TRUE       FALSE     
 3 Nguyễn Hoàng Anh Thư Dynamic FOV  Walking  292. TRUE       TRUE      
-4 Hồ Minh Văn          Dynamic FOV  Driving  181. TRUE       FALSE     
-5 Hứa Trường Khả       Overlay Path Driving  153. TRUE       FALSE     
-6 Nguyễn Hoàng Vũ      Overlay Path Driving  181. TRUE       FALSE     
-7 Vương Thanh Duy      Overlay Path Driving  251. TRUE       TRUE      
+4 Vương Thanh Duy      Overlay Path Cycling  237. TRUE       FALSE     
+5 Nguyễn Hoàng Vũ      Overlay Path Driving  181. TRUE       FALSE     
+6 Vương Thanh Duy      Overlay Path Driving  251. TRUE       TRUE      
 
 Presence outliers: none detected
 
-4b. Normality check (Shapiro-Wilk per cell, alpha = .05):
+4b. Normality check (Shapiro-Wilk on model residuals — primary diagnostic):
 
-SSQ Total (TSC) Shapiro-Wilk results:
-       method   video variable statistic            p normal
-     Baseline Cycling  ssq_tsc 0.9533878 0.1669667378    YES
-     Baseline Walking  ssq_tsc 0.9552678 0.1892689602    YES
-     Baseline Driving  ssq_tsc 0.9135582 0.0121991069     NO
-  Dynamic FOV Cycling  ssq_tsc 0.9186659 0.0168300740     NO
-  Dynamic FOV Walking  ssq_tsc 0.8315895 0.0001373981     NO
-  Dynamic FOV Driving  ssq_tsc 0.9456964 0.0995912101    YES
-      Minimap Cycling  ssq_tsc 0.9751137 0.6327044464    YES
-      Minimap Walking  ssq_tsc 0.9533247 0.1662640899    YES
-      Minimap Driving  ssq_tsc 0.9453445 0.0972609626    YES
- Overlay Path Cycling  ssq_tsc 0.9555834 0.1932814419    YES
- Overlay Path Walking  ssq_tsc 0.9734451 0.5808412172    YES
- Overlay Path Driving  ssq_tsc 0.9613269 0.2816786631    YES
-NOTE: 3/12 cells violate normality (p < .05). ANOVA robust with N=33.
+SSQ Total (TSC) residuals: W = 0.9781, p = 0.0020 (non-normal)
+SSQ Nausea (N) residuals: W = 0.9438, p = 0.0000 (non-normal)
+SSQ Oculomotor (O) residuals: W = 0.9857, p = 0.0288 (non-normal)
+SSQ Disorientation (D) residuals: W = 0.9657, p = 0.0000 (non-normal)
+Presence residuals: W = 0.9876, p = 0.0570 (normal)
 
-SSQ Nausea (N) Shapiro-Wilk results:
-       method   video variable statistic            p normal
-     Baseline Cycling    ssq_n 0.9458107 1.003605e-01    YES
-     Baseline Walking    ssq_n 0.9043521 6.921855e-03     NO
-     Baseline Driving    ssq_n 0.9160855 1.429547e-02     NO
-  Dynamic FOV Cycling    ssq_n 0.8473058 2.971470e-04     NO
-  Dynamic FOV Walking    ssq_n 0.7171000 1.197892e-06     NO
-  Dynamic FOV Driving    ssq_n 0.9235405 2.299023e-02     NO
-      Minimap Cycling    ssq_n 0.9139011 1.246346e-02     NO
-      Minimap Walking    ssq_n 0.7944962 2.539092e-05     NO
-      Minimap Driving    ssq_n 0.8946909 3.890409e-03     NO
- Overlay Path Cycling    ssq_n 0.9367819 5.479579e-02    YES
- Overlay Path Walking    ssq_n 0.8492886 3.283823e-04     NO
- Overlay Path Driving    ssq_n 0.9308655 3.704091e-02     NO
-NOTE: 10/12 cells violate normality (p < .05). ANOVA robust with N=33.
+Residual normality summary:
+                     DV         W            p normal
+        SSQ Total (TSC) 0.9781465 1.958670e-03     NO
+         SSQ Nausea (N) 0.9437524 2.005668e-07     NO
+     SSQ Oculomotor (O) 0.9857434 2.883877e-02     NO
+ SSQ Disorientation (D) 0.9657128 4.334752e-05     NO
+               Presence 0.9875761 5.701577e-02    YES
 
-SSQ Oculomotor (O) Shapiro-Wilk results:
-       method   video variable statistic           p normal
-     Baseline Cycling    ssq_o 0.9505391 0.137944600    YES
-     Baseline Walking    ssq_o 0.9290830 0.032953450     NO
-     Baseline Driving    ssq_o 0.9464348 0.104665248    YES
-  Dynamic FOV Cycling    ssq_o 0.9115164 0.010742317     NO
-  Dynamic FOV Walking    ssq_o 0.8920071 0.003326024     NO
-  Dynamic FOV Driving    ssq_o 0.9322116 0.040474077     NO
-      Minimap Cycling    ssq_o 0.9786585 0.744935962    YES
-      Minimap Walking    ssq_o 0.9801217 0.789983733    YES
-      Minimap Driving    ssq_o 0.9304682 0.036086429     NO
- Overlay Path Cycling    ssq_o 0.9491853 0.125945804    YES
- Overlay Path Walking    ssq_o 0.9784665 0.738916966    YES
- Overlay Path Driving    ssq_o 0.9749428 0.627329542    YES
-NOTE: 5/12 cells violate normality (p < .05). ANOVA robust with N=33.
+NOTE: RM-ANOVA normality assumption applies to model residuals (the error term
+  the F-test uses), not raw per-cell scores. With N >= 30 and equal group sizes,
+  RM-ANOVA is robust to non-normality (Field 2018; Tabachnick & Fidell 2019).
 
-SSQ Disorientation (D) Shapiro-Wilk results:
-       method   video variable statistic            p normal
-     Baseline Cycling    ssq_d 0.9390249 0.0636425407    YES
-     Baseline Walking    ssq_d 0.9513719 0.1458768846    YES
-     Baseline Driving    ssq_d 0.9368276 0.0549627461    YES
-  Dynamic FOV Cycling    ssq_d 0.9079788 0.0086353504     NO
-  Dynamic FOV Walking    ssq_d 0.8325468 0.0001438594     NO
-  Dynamic FOV Driving    ssq_d 0.9416366 0.0758087929    YES
-      Minimap Cycling    ssq_d 0.9356480 0.0508145944    YES
-      Minimap Walking    ssq_d 0.9286361 0.0320042566     NO
-      Minimap Driving    ssq_d 0.9243822 0.0242736026     NO
- Overlay Path Cycling    ssq_d 0.9316209 0.0389286278     NO
- Overlay Path Walking    ssq_d 0.9676319 0.4177329945    YES
- Overlay Path Driving    ssq_d 0.8945735 0.0038637214     NO
-NOTE: 6/12 cells violate normality (p < .05). ANOVA robust with N=33.
+4c. Residual Q-Q Plots (saved to plots/):
 
-Presence Shapiro-Wilk results:
-       method   video      variable statistic           p normal
-     Baseline Cycling mean_presence 0.9765788 0.679114889    YES
-     Baseline Walking mean_presence 0.9572642 0.216041620    YES
-     Baseline Driving mean_presence 0.9602587 0.262866600    YES
-  Dynamic FOV Cycling mean_presence 0.9605031 0.267068694    YES
-  Dynamic FOV Walking mean_presence 0.9028363 0.006315695     NO
-  Dynamic FOV Driving mean_presence 0.9363011 0.053069793    YES
-      Minimap Cycling mean_presence 0.9653496 0.363389552    YES
-      Minimap Walking mean_presence 0.9658337 0.374427039    YES
-      Minimap Driving mean_presence 0.9640624 0.335316540    YES
- Overlay Path Cycling mean_presence 0.9471166 0.109580130    YES
- Overlay Path Walking mean_presence 0.9822529 0.851348561    YES
- Overlay Path Driving mean_presence 0.9305181 0.036204913     NO
-NOTE: 2/12 Presence cells violate normality. ANOVA robust with N=33.
-
-4c. Q-Q Plots (saved to plots/):
-
-Creating: plots/ssq_tsc_qqplots.png
-Creating: plots/ssq_n_qqplots.png
-Creating: plots/ssq_o_qqplots.png
-Creating: plots/ssq_d_qqplots.png
-Creating: plots/presence_qqplots.png
-Q-Q plots saved.
-
-4d. Residual normality check:
-
-SSQ Total (TSC) residuals: W = 0.9812, p = 0.0093 (non-normal)
-SSQ Nausea (N) residuals: W = 0.9500, p = 0.0000 (non-normal)
-SSQ Oculomotor (O) residuals: W = 0.9872, p = 0.0712 (normal)
-SSQ Disorientation (D) residuals: W = 0.9667, p = 0.0001 (non-normal)
-Presence residuals: W = 0.9870, p = 0.0673 (normal)
-
-NOTE: RM-ANOVA is robust to non-normality with N >= 30 and equal group sizes
-  (Field 2018; Tabachnick & Fidell 2019).
+Creating: plots/ssq_tsc_residual_qqplot.png
+Creating: plots/ssq_n_residual_qqplot.png
+Creating: plots/ssq_o_residual_qqplot.png
+Creating: plots/ssq_d_residual_qqplot.png
+Creating: plots/presence_residual_qqplot.png
+Residual Q-Q plots saved.
 
 ==============================================================
   5. RM-ANOVA: SSQ (Kennedy 1993 Subscales)
@@ -359,10 +279,10 @@ ANOVA Table (SSQ Total (TSC)) - Greenhouse-Geisser corrected:
 Anova Table (Type 3 tests)
 
 Response: ssq_tsc
-        Effect           df     MSE         F  ges p.value
-1       method  2.64, 84.44 1334.61 10.29 *** .055   <.001
-2        video  1.70, 54.43 1979.60      1.35 .007    .265
-3 method:video 3.94, 126.08  813.98      0.77 .004    .543
+        Effect           df     MSE        F  ges p.value
+1       method  2.61, 91.19 1314.88 9.02 *** .043   <.001
+2        video  1.72, 60.12 1814.06     1.51 .007    .230
+3 method:video 4.01, 140.47  746.15     0.79 .003    .535
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '+' 0.1 ' ' 1
 
@@ -372,10 +292,10 @@ Detailed ANOVA Table (SSQ Total (TSC)):
 Anova Table (Type 3 tests)
 
 Response: ssq_tsc
-             num Df  den Df     MSE       F      ges    Pr(>F)    
-method       2.6386  84.436 1334.61 10.2857 0.054621 1.874e-05 ***
-video        1.7010  54.431 1979.60  1.3508 0.007203    0.2655    
-method:video 3.9399 126.078  813.98  0.7735 0.003941    0.5427    
+             num Df  den Df     MSE      F      ges    Pr(>F)    
+method       2.6053  91.187 1314.88 9.0213 0.042779 6.489e-05 ***
+video        1.7178  60.122 1814.06 1.5088 0.006753    0.2303    
+method:video 4.0136 140.474  746.15 0.7875 0.003399    0.5355    
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
@@ -386,9 +306,9 @@ Anova Table (Type 3 tests)
 
 Response: ssq_n
         Effect           df     MSE        F  ges p.value
-1       method  2.90, 92.83  500.51 8.14 *** .042   <.001
-2        video  1.40, 44.76 1199.79     1.50 .009    .233
-3 method:video 3.29, 105.21  522.37     0.65 .004    .596
+1       method 2.88, 100.77  479.68 7.37 *** .034   <.001
+2        video  1.41, 49.22 1097.08     1.52 .008    .229
+3 method:video 3.29, 115.23  480.82     0.69 .004    .570
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '+' 0.1 ' ' 1
 
@@ -399,9 +319,9 @@ Anova Table (Type 3 tests)
 
 Response: ssq_n
              num Df  den Df     MSE      F      ges    Pr(>F)    
-method       2.9009  92.827  500.51 8.1388 0.042033 8.747e-05 ***
-video        1.3988  44.763 1199.79 1.5039 0.009285    0.2327    
-method:video 3.2877 105.205  522.37 0.6533 0.004149    0.5963    
+method       2.8792 100.771  479.68 7.3678 0.033557 0.0002023 ***
+video        1.4064  49.224 1097.08 1.5225 0.007952 0.2286130    
+method:video 3.2922 115.229  480.82 0.6945 0.003737 0.5701388    
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
@@ -411,10 +331,10 @@ ANOVA Table (SSQ Oculomotor (O)) - Greenhouse-Geisser corrected:
 Anova Table (Type 3 tests)
 
 Response: ssq_o
-        Effect           df     MSE         F  ges p.value
-1       method  2.53, 81.11 1067.63 10.05 *** .056   <.001
-2        video  1.83, 58.67 1202.14    2.49 + .012    .096
-3 method:video 4.53, 144.94  580.71      0.93 .005    .457
+        Effect           df     MSE        F  ges p.value
+1       method  2.47, 86.34 1075.24 8.63 *** .043   <.001
+2        video  1.85, 64.84 1105.96   2.62 + .010    .084
+3 method:video 4.61, 161.25  536.02     1.04 .005    .392
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '+' 0.1 ' ' 1
 
@@ -424,10 +344,10 @@ Detailed ANOVA Table (SSQ Oculomotor (O)):
 Anova Table (Type 3 tests)
 
 Response: ssq_o
-             num Df  den Df     MSE       F      ges   Pr(>F)    
-method       2.5347  81.111 1067.63 10.0495 0.055566 3.22e-05 ***
-video        1.8335  58.672 1202.14  2.4920 0.011743  0.09593 .  
-method:video 4.5294 144.940  580.71  0.9303 0.005266  0.45669    
+             num Df  den Df     MSE      F      ges    Pr(>F)    
+method       2.4669  86.342 1075.24 8.6273 0.042634 0.0001372 ***
+video        1.8525  64.838 1105.96 2.6211 0.010342 0.0844310 .  
+method:video 4.6072 161.251  536.02 1.0431 0.004988 0.3916681    
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
@@ -438,9 +358,9 @@ Anova Table (Type 3 tests)
 
 Response: ssq_d
         Effect           df     MSE        F  ges p.value
-1       method  2.81, 89.96 2819.62 7.80 *** .046   <.001
-2        video  1.80, 57.69 3962.18     0.60 .003    .535
-3 method:video 4.35, 139.06 1444.35     0.79 .004    .542
+1       method  2.81, 98.40 2709.11 6.98 *** .036   <.001
+2        video  1.82, 63.55 3661.94     0.88 .004    .410
+3 method:video 4.45, 155.79 1338.27     0.65 .003    .642
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '+' 0.1 ' ' 1
 
@@ -451,9 +371,9 @@ Anova Table (Type 3 tests)
 
 Response: ssq_d
              num Df  den Df    MSE      F      ges    Pr(>F)    
-method       2.8113  89.961 2819.6 7.8040 0.045804 0.0001549 ***
-video        1.8029  57.692 3962.2 0.6002 0.003316 0.5354372    
-method:video 4.3456 139.059 1444.3 0.7907 0.003836 0.5423755    
+method       2.8115  98.401 2709.1 6.9825 0.036495 0.0003585 ***
+video        1.8158  63.552 3661.9 0.8825 0.004162 0.4097777    
+method:video 4.4510 155.786 1338.3 0.6522 0.002759 0.6424065    
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
@@ -466,22 +386,22 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
 Effect Map (with Holm correction across 4 SSQ DVs per effect):
 
-       Effect                                                      TSC
-       Method F(2.6,84.4)=10.29, p=0.0000*, p_holm=0.0001*, ges=0.0546
-        Video    F(1.7,54.4)=1.35, p=0.2655, p_holm=0.6981, ges=0.0072
- Method:Video   F(3.9,126.1)=0.77, p=0.5427, p_holm=1.0000, ges=0.0039
-                                                  Nausea
- F(2.9,92.8)=8.14, p=0.0001*, p_holm=0.0002*, ges=0.0420
-   F(1.4,44.8)=1.50, p=0.2327, p_holm=0.6981, ges=0.0093
-  F(3.3,105.2)=0.65, p=0.5963, p_holm=1.0000, ges=0.0041
-                                               Oculomotor
- F(2.5,81.1)=10.05, p=0.0000*, p_holm=0.0001*, ges=0.0556
-    F(1.8,58.7)=2.49, p=0.0959, p_holm=0.3837, ges=0.0117
-   F(4.5,144.9)=0.93, p=0.4567, p_holm=1.0000, ges=0.0053
+       Effect                                                     TSC
+       Method F(2.6,91.2)=9.02, p=0.0001*, p_holm=0.0003*, ges=0.0428
+        Video   F(1.7,60.1)=1.51, p=0.2303, p_holm=0.6858, ges=0.0068
+ Method:Video  F(4.0,140.5)=0.79, p=0.5355, p_holm=1.0000, ges=0.0034
+                                                   Nausea
+ F(2.9,100.8)=7.37, p=0.0002*, p_holm=0.0004*, ges=0.0336
+    F(1.4,49.2)=1.52, p=0.2286, p_holm=0.6858, ges=0.0080
+   F(3.3,115.2)=0.69, p=0.5701, p_holm=1.0000, ges=0.0037
+                                              Oculomotor
+ F(2.5,86.3)=8.63, p=0.0001*, p_holm=0.0004*, ges=0.0426
+   F(1.9,64.8)=2.62, p=0.0844, p_holm=0.3377, ges=0.0103
+  F(4.6,161.3)=1.04, p=0.3917, p_holm=1.0000, ges=0.0050
                                           Disorientation
- F(2.8,90.0)=7.80, p=0.0002*, p_holm=0.0002*, ges=0.0458
-   F(1.8,57.7)=0.60, p=0.5354, p_holm=0.6981, ges=0.0033
-  F(4.3,139.1)=0.79, p=0.5424, p_holm=1.0000, ges=0.0038
+ F(2.8,98.4)=6.98, p=0.0004*, p_holm=0.0004*, ges=0.0365
+   F(1.8,63.6)=0.88, p=0.4098, p_holm=0.6858, ges=0.0042
+  F(4.5,155.8)=0.65, p=0.6424, p_holm=1.0000, ges=0.0028
 
 * = p < .05
 Holm correction controls family-wise error rate across 4 SSQ DVs per effect.
@@ -495,9 +415,9 @@ Anova Table (Type 3 tests)
 
 Response: mean_presence
         Effect           df  MSE         F  ges p.value
-1       method  1.93, 61.83 1.58 15.85 *** .099   <.001
-2        video  1.84, 58.96 0.60      1.01 .003    .366
-3 method:video 4.33, 138.42 0.63      1.72 .011    .143
+1       method  1.87, 65.40 1.66 13.64 *** .079   <.001
+2        video  1.85, 64.82 0.60      0.79 .002    .450
+3 method:video 4.43, 155.05 0.59      1.88 .010    .109
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '+' 0.1 ' ' 1
 
@@ -508,9 +428,9 @@ Anova Table (Type 3 tests)
 
 Response: mean_presence
              num Df  den Df     MSE       F      ges    Pr(>F)    
-method       1.9323  61.834 1.57507 15.8536 0.099022 3.569e-06 ***
-video        1.8424  58.957 0.60022  1.0064 0.002529    0.3662    
-method:video 4.3255 138.416 0.62966  1.7222 0.010571    0.1434    
+method       1.8686  65.402 1.65983 13.6360 0.078761 1.752e-05 ***
+video        1.8520  64.819 0.59927  0.7896 0.001768    0.4496    
+method:video 4.4299 155.048 0.58732  1.8825 0.009804    0.1091    
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
@@ -522,98 +442,98 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
 Running post-hoc for 4 significant effect x DV combinations:
 
---- Post-hoc: Method on SSQ Total (TSC) (p_holm = 0.0001) ---
+--- Post-hoc: Method on SSQ Total (TSC) (p_holm = 0.0003) ---
 
 Main effect of Method pairwise comparisons (Bonferroni):
  contrast                   estimate   SE df t.ratio p.value
- Baseline - Dynamic.FOV       26.444 5.46 32   4.840  0.0002
- Baseline - Minimap           17.680 5.00 32   3.536  0.0076
- Baseline - Overlay.Path      16.698 5.00 32   3.338  0.0129
- Dynamic.FOV - Minimap        -8.764 4.43 32  -1.980  0.3385
- Dynamic.FOV - Overlay.Path   -9.747 5.42 32  -1.799  0.4884
- Minimap - Overlay.Path       -0.982 3.67 32  -0.268  1.0000
+ Baseline - Dynamic.FOV        23.27 5.34 35   4.356  0.0007
+ Baseline - Minimap            16.07 4.69 35   3.423  0.0096
+ Baseline - Overlay.Path       14.86 4.73 35   3.143  0.0204
+ Dynamic.FOV - Minimap         -7.20 4.17 35  -1.727  0.5579
+ Dynamic.FOV - Overlay.Path    -8.41 5.03 35  -1.674  0.6177
+ Minimap - Overlay.Path        -1.21 3.36 35  -0.360  1.0000
 
 Results are averaged over the levels of: video 
 P value adjustment: bonferroni method for 6 tests 
 
 Estimated Marginal Means (Method):
  method       emmean   SE df lower.CL upper.CL
- Baseline       75.9 7.17 32     61.3     90.5
- Dynamic.FOV    49.4 5.03 32     39.2     59.7
- Minimap        58.2 5.31 32     47.4     69.0
- Overlay.Path   59.2 5.16 32     48.7     69.7
+ Baseline       71.6 7.03 35     57.3     85.9
+ Dynamic.FOV    48.3 4.85 35     38.5     58.2
+ Minimap        55.5 5.24 35     44.9     66.2
+ Overlay.Path   56.7 5.09 35     46.4     67.1
 
 Results are averaged over the levels of: video 
 Confidence level used: 0.95 
 
---- Post-hoc: Method on SSQ Nausea (N) (p_holm = 0.0002) ---
+--- Post-hoc: Method on SSQ Nausea (N) (p_holm = 0.0004) ---
 
 Main effect of Method pairwise comparisons (Bonferroni):
  contrast                   estimate   SE df t.ratio p.value
- Baseline - Dynamic.FOV        14.55 3.28 32   4.439  0.0006
- Baseline - Minimap            11.47 3.13 32   3.669  0.0053
- Baseline - Overlay.Path       10.21 3.21 32   3.180  0.0196
- Dynamic.FOV - Minimap         -3.08 3.04 32  -1.015  1.0000
- Dynamic.FOV - Overlay.Path    -4.34 3.33 32  -1.304  1.0000
- Minimap - Overlay.Path        -1.25 2.75 32  -0.456  1.0000
+ Baseline - Dynamic.FOV        12.90 3.15 35   4.098  0.0014
+ Baseline - Minimap            10.25 2.94 35   3.480  0.0082
+ Baseline - Overlay.Path        9.10 3.01 35   3.023  0.0279
+ Dynamic.FOV - Minimap         -2.65 2.79 35  -0.948  1.0000
+ Dynamic.FOV - Overlay.Path    -3.80 3.06 35  -1.240  1.0000
+ Minimap - Overlay.Path        -1.15 2.52 35  -0.457  1.0000
 
 Results are averaged over the levels of: video 
 P value adjustment: bonferroni method for 6 tests 
 
 Estimated Marginal Means (Method):
  method       emmean   SE df lower.CL upper.CL
- Baseline       42.5 4.36 32     33.6     51.4
- Dynamic.FOV    27.9 3.08 32     21.7     34.2
- Minimap        31.0 3.61 32     23.7     38.4
- Overlay.Path   32.3 3.02 32     26.1     38.4
+ Baseline       39.5 4.34 35     30.7     48.3
+ Dynamic.FOV    26.6 2.95 35     20.6     32.6
+ Minimap        29.2 3.48 35     22.2     36.3
+ Overlay.Path   30.4 2.99 35     24.3     36.4
 
 Results are averaged over the levels of: video 
 Confidence level used: 0.95 
 
---- Post-hoc: Method on SSQ Oculomotor (O) (p_holm = 0.0001) ---
+--- Post-hoc: Method on SSQ Oculomotor (O) (p_holm = 0.0004) ---
 
 Main effect of Method pairwise comparisons (Bonferroni):
  contrast                   estimate   SE df t.ratio p.value
- Baseline - Dynamic.FOV       23.123 5.15 32   4.487  0.0005
- Baseline - Minimap           14.547 4.51 32   3.229  0.0172
- Baseline - Overlay.Path      13.935 4.30 32   3.242  0.0166
- Dynamic.FOV - Minimap        -8.575 3.88 32  -2.209  0.2070
- Dynamic.FOV - Overlay.Path   -9.188 4.46 32  -2.059  0.2862
- Minimap - Overlay.Path       -0.613 3.00 32  -0.204  1.0000
+ Baseline - Dynamic.FOV       20.213 5.03 35   4.020  0.0018
+ Baseline - Minimap           13.195 4.22 35   3.123  0.0215
+ Baseline - Overlay.Path      12.423 4.06 35   3.057  0.0256
+ Dynamic.FOV - Minimap        -7.019 3.69 35  -1.902  0.3922
+ Dynamic.FOV - Overlay.Path   -7.791 4.17 35  -1.868  0.4209
+ Minimap - Overlay.Path       -0.772 2.76 35  -0.280  1.0000
 
 Results are averaged over the levels of: video 
 P value adjustment: bonferroni method for 6 tests 
 
 Estimated Marginal Means (Method):
  method       emmean   SE df lower.CL upper.CL
- Baseline       66.7 6.16 32     54.1     79.2
- Dynamic.FOV    43.6 4.57 32     34.2     52.9
- Minimap        52.1 4.45 32     43.1     61.2
- Overlay.Path   52.8 4.30 32     44.0     61.5
+ Baseline       63.0 6.04 35     50.8     75.3
+ Dynamic.FOV    42.8 4.41 35     33.9     51.8
+ Minimap        49.8 4.43 35     40.8     58.8
+ Overlay.Path   50.6 4.30 35     41.9     59.3
 
 Results are averaged over the levels of: video 
 Confidence level used: 0.95 
 
---- Post-hoc: Method on SSQ Disorientation (D) (p_holm = 0.0002) ---
+--- Post-hoc: Method on SSQ Disorientation (D) (p_holm = 0.0004) ---
 
 Main effect of Method pairwise comparisons (Bonferroni):
  contrast                   estimate   SE df t.ratio p.value
- Baseline - Dynamic.FOV       34.730 7.54 32   4.606  0.0004
- Baseline - Minimap           22.356 7.29 32   3.068  0.0262
- Baseline - Overlay.Path      21.653 7.74 32   2.797  0.0519
- Dynamic.FOV - Minimap       -12.373 6.73 32  -1.838  0.4524
- Dynamic.FOV - Overlay.Path  -13.076 8.09 32  -1.617  0.6939
- Minimap - Overlay.Path       -0.703 6.30 32  -0.112  1.0000
+ Baseline - Dynamic.FOV        30.68 7.33 35   4.188  0.0011
+ Baseline - Minimap            20.62 6.80 35   3.033  0.0272
+ Baseline - Overlay.Path       19.20 7.27 35   2.642  0.0734
+ Dynamic.FOV - Minimap        -10.05 6.33 35  -1.588  0.7283
+ Dynamic.FOV - Overlay.Path   -11.47 7.47 35  -1.535  0.8022
+ Minimap - Overlay.Path        -1.42 5.78 35  -0.245  1.0000
 
 Results are averaged over the levels of: video 
 P value adjustment: bonferroni method for 6 tests 
 
 Estimated Marginal Means (Method):
  method       emmean   SE df lower.CL upper.CL
- Baseline       97.9 9.94 32     77.6    118.1
- Dynamic.FOV    63.1 6.71 32     49.5     76.8
- Minimap        75.5 7.86 32     59.5     91.5
- Overlay.Path   76.2 8.10 32     59.7     92.7
+ Baseline       93.1 9.58 35     73.6    112.5
+ Dynamic.FOV    62.4 6.54 35     49.1     75.7
+ Minimap        72.4 7.68 35     56.8     88.0
+ Overlay.Path   73.9 7.82 35     58.0     89.7
 
 Results are averaged over the levels of: video 
 Confidence level used: 0.95 
@@ -621,27 +541,27 @@ Confidence level used: 0.95
 --- Presence Post-hoc ---
 
 Main effect Method      : p = 0.0000 *
-Main effect Video       : p = 0.3662 
-Interaction Method:Video : p = 0.1434 
+Main effect Video       : p = 0.4496 
+Interaction Method:Video : p = 0.1091 
 
 Main effect of Method pairwise comparisons (Bonferroni):
  contrast                   estimate     SE df t.ratio p.value
- Baseline - Dynamic.FOV        0.960 0.2000 32   4.792  0.0002
- Baseline - Minimap            0.281 0.1220 32   2.297  0.1699
- Baseline - Overlay.Path       0.386 0.1120 32   3.450  0.0096
- Dynamic.FOV - Minimap        -0.679 0.1600 32  -4.254  0.0010
- Dynamic.FOV - Overlay.Path   -0.574 0.1470 32  -3.894  0.0028
- Minimap - Overlay.Path        0.105 0.0908 32   1.157  1.0000
+ Baseline - Dynamic.FOV        0.861 0.1960 35   4.397  0.0006
+ Baseline - Minimap            0.254 0.1140 35   2.219  0.1984
+ Baseline - Overlay.Path       0.372 0.1080 35   3.435  0.0093
+ Dynamic.FOV - Minimap        -0.607 0.1540 35  -3.940  0.0022
+ Dynamic.FOV - Overlay.Path   -0.489 0.1440 35  -3.403  0.0101
+ Minimap - Overlay.Path        0.119 0.0855 35   1.386  1.0000
 
 Results are averaged over the levels of: video 
 P value adjustment: bonferroni method for 6 tests 
 
 Estimated Marginal Means (Method):
  method       emmean    SE df lower.CL upper.CL
- Baseline       4.80 0.117 32     4.57     5.04
- Dynamic.FOV    3.84 0.207 32     3.42     4.27
- Minimap        4.52 0.146 32     4.23     4.82
- Overlay.Path   4.42 0.149 32     4.12     4.72
+ Baseline       4.79 0.112 35     4.56     5.01
+ Dynamic.FOV    3.92 0.205 35     3.51     4.34
+ Minimap        4.53 0.141 35     4.24     4.82
+ Overlay.Path   4.41 0.149 35     4.11     4.72
 
 Results are averaged over the levels of: video 
 Confidence level used: 0.95 
@@ -658,10 +578,11 @@ Extreme outliers in SSQ Total (TSC):
 
 Extreme outliers in SSQ Nausea (N):
                subject       method   video  ssq_n
-1 Nguyễn Hoàng Anh Thư  Dynamic FOV Walking 190.80
-2     Nguyễn Kim Khanh      Minimap Walking 162.18
-3     Nguyễn Kim Khanh Overlay Path Walking  95.40
-4 Nguyễn Hoàng Anh Thư Overlay Path Walking  95.40
+1     Nguyễn Kim Khanh  Dynamic FOV Cycling 104.94
+2 Nguyễn Hoàng Anh Thư  Dynamic FOV Walking 190.80
+3     Nguyễn Kim Khanh      Minimap Walking 162.18
+4     Nguyễn Kim Khanh Overlay Path Walking  95.40
+5 Nguyễn Hoàng Anh Thư Overlay Path Walking  95.40
 
 Extreme outliers in SSQ Disorientation (D):
                subject       method   video  ssq_d
@@ -669,7 +590,7 @@ Extreme outliers in SSQ Disorientation (D):
 2      Vương Thanh Duy Overlay Path Driving 250.56
 
 Excluding subject(s): Nguyễn Hoàng Anh Thư, Nguyễn Kim Khanh, Vương Thanh Duy
-Remaining: 30 subjects, 360 observations
+Remaining: 33 subjects, 396 observations
 
 --- SSQ ANOVAs (outlier excluded) ---
 
@@ -678,9 +599,9 @@ Anova Table (Type 3 tests)
 
 Response: ssq_tsc
         Effect           df     MSE        F  ges p.value
-1       method  2.41, 69.80 1233.92 9.77 *** .057   <.001
-2        video  1.87, 54.13 1058.01     0.58 .002    .553
-3 method:video 4.40, 127.69  596.62     0.88 .005    .488
+1       method  2.36, 75.39 1230.05 8.38 *** .043   <.001
+2        video  1.86, 59.57  987.93     0.56 .002    .562
+3 method:video 4.52, 144.67  543.19     0.80 .004    .538
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '+' 0.1 ' ' 1
 
@@ -690,10 +611,10 @@ ANOVA Table (SSQ Nausea (N), outlier excluded):
 Anova Table (Type 3 tests)
 
 Response: ssq_n
-        Effect           df    MSE        F  ges p.value
-1       method  2.65, 76.73 461.70 7.49 *** .050   <.001
-2        video  1.79, 51.90 320.51     0.38 .001    .661
-3 method:video 4.50, 130.47 262.11     0.60 .004    .684
+        Effect           df    MSE        F   ges p.value
+1       method  2.63, 84.14 440.85 6.66 ***  .038   <.001
+2        video  1.78, 57.07 294.91     0.27 <.001    .739
+3 method:video 4.50, 143.94 240.91     0.60  .003    .681
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '+' 0.1 ' ' 1
 
@@ -704,9 +625,9 @@ Anova Table (Type 3 tests)
 
 Response: ssq_o
         Effect           df     MSE        F  ges p.value
-1       method  2.38, 68.91 1046.46 8.75 *** .052   <.001
-2        video  1.99, 57.63  841.90     2.24 .009    .116
-3 method:video 4.42, 128.27  561.05     0.89 .006    .480
+1       method  2.31, 73.84 1054.51 7.37 *** .039   <.001
+2        video  1.99, 63.63  782.74     2.26 .008    .113
+3 method:video 4.53, 144.91  512.46     0.99 .005    .419
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '+' 0.1 ' ' 1
 
@@ -717,9 +638,9 @@ Anova Table (Type 3 tests)
 
 Response: ssq_d
         Effect           df     MSE        F   ges p.value
-1       method  2.65, 76.95 2451.35 7.78 ***  .048   <.001
-2        video  1.77, 51.39 2766.77     0.03 <.001    .963
-3 method:video 4.55, 131.81 1119.39     1.14  .006    .340
+1       method  2.61, 83.42 2405.64 6.82 ***  .037   <.001
+2        video  1.78, 56.86 2592.21     0.14 <.001    .845
+3 method:video 4.76, 152.33 1023.76     0.82  .004    .536
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '+' 0.1 ' ' 1
 
@@ -732,9 +653,9 @@ Anova Table (Type 3 tests)
 
 Response: mean_presence
         Effect           df  MSE         F  ges p.value
-1       method  2.07, 60.08 1.43 16.62 *** .123   <.001
-2        video  1.70, 49.31 0.64      1.31 .004    .276
-3 method:video 4.29, 124.50 0.63      1.55 .012    .187
+1       method  1.98, 63.30 1.54 13.97 *** .095   <.001
+2        video  1.75, 55.99 0.63      0.95 .003    .384
+3 method:video 4.44, 142.12 0.58      1.63 .010    .163
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '+' 0.1 ' ' 1
 
@@ -743,18 +664,18 @@ Sphericity correction method: GG
 --- Sensitivity Comparison ---
 
       DV       Effect   p_full_raw   p_excl_raw  p_full_holm  p_excl_holm
- ssq_tsc       method 1.873700e-05 6.882607e-05 7.494802e-05 0.0002753043
- ssq_tsc        video 2.654533e-01 5.532604e-01 6.980726e-01 1.0000000000
- ssq_tsc method:video 5.426568e-01 4.879900e-01 1.000000e+00 1.0000000000
-   ssq_n       method 8.746594e-05 3.367518e-04 1.749319e-04 0.0005570062
-   ssq_n        video 2.326909e-01 6.614416e-01 6.980726e-01 1.0000000000
-   ssq_n method:video 5.963117e-01 6.840106e-01 1.000000e+00 1.0000000000
-   ssq_o       method 3.220446e-05 1.856687e-04 9.661339e-05 0.0005570062
-   ssq_o        video 9.593491e-02 1.160006e-01 3.837396e-01 0.4640023411
-   ssq_o method:video 4.566943e-01 4.799948e-01 1.000000e+00 1.0000000000
-   ssq_d       method 1.548635e-04 2.463767e-04 1.749319e-04 0.0005570062
-   ssq_d        video 5.354372e-01 9.628011e-01 6.980726e-01 1.0000000000
-   ssq_d method:video 5.423755e-01 3.399262e-01 1.000000e+00 1.0000000000
+ ssq_tsc       method 6.489444e-05 0.0002469494 0.0002595778 0.0009877977
+ ssq_tsc        video 2.303263e-01 0.5619062420 0.6858389297 1.0000000000
+ ssq_tsc method:video 5.354752e-01 0.5379234906 1.0000000000 1.0000000000
+   ssq_n       method 2.022563e-04 0.0007615473 0.0004117080 0.0020021724
+   ssq_n        video 2.286130e-01 0.7390910515 0.6858389297 1.0000000000
+   ssq_n method:video 5.701388e-01 0.6811324338 1.0000000000 1.0000000000
+   ssq_o       method 1.372360e-04 0.0006985347 0.0004117080 0.0020021724
+   ssq_o        video 8.443099e-02 0.1130413817 0.3377239545 0.4521655268
+   ssq_o method:video 3.916681e-01 0.4185808776 1.0000000000 1.0000000000
+   ssq_d       method 3.585016e-04 0.0006673908 0.0004117080 0.0020021724
+   ssq_d        video 4.097777e-01 0.8454843630 0.6858389297 1.0000000000
+   ssq_d method:video 6.424065e-01 0.5355105587 1.0000000000 1.0000000000
  same_sig
      TRUE
      TRUE
@@ -793,19 +714,19 @@ Adding another scale for colour, which will replace the existing scale.
 Creating: plots/ssq_combined_boxplot.png
 Creating: plots/ssq_grouped_bar.png
 Significance vs Baseline (Holm-corrected):
-   subscale       method        p_adj stars
-1   ssq_tsc  Dynamic FOV 0.0003791958   ***
-2   ssq_tsc      Minimap 0.0088441923    **
-3   ssq_tsc Overlay Path 0.0129176938     *
-4     ssq_n  Dynamic FOV 0.0009052750   ***
-5     ssq_n      Minimap 0.0070226331    **
-6     ssq_n Overlay Path 0.0138705940     *
-7     ssq_o  Dynamic FOV 0.0008757329   ***
-8     ssq_o      Minimap 0.0138705940     *
-9     ssq_o Overlay Path 0.0138705940     *
-10    ssq_d  Dynamic FOV 0.0006838502   ***
-11    ssq_d      Minimap 0.0138705940     *
-12    ssq_d Overlay Path 0.0138705940     *
+   subscale       method       p_adj stars
+1   ssq_tsc  Dynamic FOV 0.001321423    **
+2   ssq_tsc      Minimap 0.011161363     *
+3   ssq_tsc Overlay Path 0.020376110     *
+4     ssq_n  Dynamic FOV 0.002347401    **
+5     ssq_n      Minimap 0.010896428     *
+6     ssq_n Overlay Path 0.020376110     *
+7     ssq_o  Dynamic FOV 0.002651817    **
+8     ssq_o      Minimap 0.020376110     *
+9     ssq_o Overlay Path 0.020376110     *
+10    ssq_d  Dynamic FOV 0.001989581    **
+11    ssq_d      Minimap 0.020376110     *
+12    ssq_d Overlay Path 0.020376110     *
 Creating: plots/presence_interaction.png
 Creating: plots/presence_boxplot.png
 
@@ -815,7 +736,7 @@ All plots saved to plots/ directory.
   10. SESSION INFO (Reproducibility)
 ==============================================================
 
-Date: 2026-03-02 13:19:09.56274
+Date: 2026-03-10 13:09:27.513318
 R version: R version 4.5.1 (2025-06-13 ucrt)
 Platform: x86_64-w64-mingw32
 

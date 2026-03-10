@@ -3,7 +3,7 @@
 # 2-way Repeated Measures ANOVA: Method (4) x Video (3) on SSQ & Presence
 # Bead: bd-20g (Kennedy 1993 weighted SSQ scoring)
 # =============================================================================
-# Design: 34 participants, fully within-subject
+# Design: 36 participants, fully within-subject
 # IV1: method_experienced (Baseline, Dynamic FOV, Minimap, Overlay Path)
 # IV2: video_experienced  (Cycling, Walking, Driving)
 # DV (SSQ): ssq_tsc, ssq_n, ssq_o, ssq_d (Kennedy 1993 Table 4 weighted)
@@ -134,8 +134,8 @@ n_obs      <- nrow(merged_data)
 n_subjects <- n_distinct(merged_data$subject)
 n_cells    <- n_distinct(interaction(merged_data$method, merged_data$video))
 
-cat(sprintf("Total observations : %d (expected 408)\n", n_obs))
-cat(sprintf("Unique subjects    : %d (expected 34)\n", n_subjects))
+cat(sprintf("Total observations : %d (expected 432)\n", n_obs))
+cat(sprintf("Unique subjects    : %d (expected 36)\n", n_subjects))
 cat(sprintf("Unique cells       : %d (expected 12)\n", n_cells))
 
 # Check completeness: each subject should have exactly 12 observations
@@ -273,83 +273,29 @@ if (nrow(outliers_pres) > 0) {
   cat("Presence outliers: none detected\n")
 }
 
-# 4b. Normality check (Shapiro-Wilk per cell)
-cat("\n4b. Normality check (Shapiro-Wilk per cell, alpha = .05):\n\n")
+# 4b. Normality check — PRIMARY: Shapiro-Wilk on model residuals
+#      (RM-ANOVA normality assumption applies to error term, not raw per-cell scores)
+cat("\n4b. Normality check (Shapiro-Wilk on model residuals — primary diagnostic):\n\n")
 
-for (dv in ssq_dvs) {
-  shapiro_res <- merged_data %>%
-    group_by(method, video) %>%
-    shapiro_test(!!sym(dv)) %>%
-    mutate(normal = ifelse(p > 0.05, "YES", "NO"))
+residual_normality <- data.frame(
+  DV = character(), W = numeric(), p = numeric(), normal = character(),
+  stringsAsFactors = FALSE
+)
 
-  n_nonnormal <- sum(shapiro_res$p <= 0.05)
-  cat(sprintf("%s Shapiro-Wilk results:\n", ssq_labels[dv]))
-  print(as.data.frame(shapiro_res), row.names = FALSE)
-
-  if (n_nonnormal > 0) {
-    cat(sprintf("NOTE: %d/12 cells violate normality (p < .05). ANOVA robust with N=%d.\n\n",
-                n_nonnormal, n_subjects_final))
-  } else {
-    cat("All cells normal.\n\n")
-  }
-}
-
-shapiro_pres <- merged_data %>%
-  group_by(method, video) %>%
-  shapiro_test(mean_presence) %>%
-  mutate(normal = ifelse(p > 0.05, "YES", "NO"))
-
-cat("Presence Shapiro-Wilk results:\n")
-print(as.data.frame(shapiro_pres), row.names = FALSE)
-
-n_nonnormal_pres <- sum(shapiro_pres$p <= 0.05)
-if (n_nonnormal_pres > 0) {
-  cat(sprintf("NOTE: %d/12 Presence cells violate normality. ANOVA robust with N=%d.\n",
-              n_nonnormal_pres, n_subjects_final))
-}
-
-# 4c. Q-Q Plots per cell
-cat("\n4c. Q-Q Plots (saved to plots/):\n\n")
-
-if (!dir.exists("plots")) dir.create("plots")
-
-for (dv in ssq_dvs) {
-  fname <- sprintf("plots/%s_qqplots.png", dv)
-  cat(sprintf("Creating: %s\n", fname))
-  p_qq <- ggqqplot(
-    merged_data, x = dv,
-    facet.by = c("method", "video"),
-    title = sprintf("Q-Q Plots: %s by Method x Video", ssq_labels[dv])
-  ) +
-    theme(
-      plot.title = element_text(face = "bold", size = 13),
-      strip.text = element_text(size = 8)
-    )
-  ggsave(fname, p_qq, width = 12, height = 8, dpi = 300)
-}
-
-cat("Creating: plots/presence_qqplots.png\n")
-p_qq_pres <- ggqqplot(
-  merged_data, x = "mean_presence",
-  facet.by = c("method", "video"),
-  title = "Q-Q Plots: Presence Score by Method x Video"
-) +
-  theme(
-    plot.title = element_text(face = "bold", size = 13),
-    strip.text = element_text(size = 8)
-  )
-ggsave("plots/presence_qqplots.png", p_qq_pres, width = 12, height = 8, dpi = 300)
-
-cat("Q-Q plots saved.\n")
-
-# 4d. Residual normality check
-cat("\n4d. Residual normality check:\n\n")
+# Store residuals for QQ-plots
+residual_list <- list()
 
 for (dv in ssq_dvs) {
   formula <- as.formula(sprintf("%s ~ method * video + Error(subject / (method * video))", dv))
   aov_resid <- aov(formula, data = merged_data)
   resid_vals <- residuals(aov_resid[["subject:method:video"]])
+  residual_list[[dv]] <- resid_vals
   sw_test <- shapiro.test(resid_vals)
+  residual_normality <- rbind(residual_normality, data.frame(
+    DV = ssq_labels[dv], W = sw_test$statistic, p = sw_test$p.value,
+    normal = ifelse(sw_test$p.value > 0.05, "YES", "NO"),
+    stringsAsFactors = FALSE
+  ))
   cat(sprintf("%s residuals: W = %.4f, p = %.4f %s\n",
               ssq_labels[dv], sw_test$statistic, sw_test$p.value,
               ifelse(sw_test$p.value < 0.05, "(non-normal)", "(normal)")))
@@ -358,13 +304,62 @@ for (dv in ssq_dvs) {
 aov_pres_resid <- aov(mean_presence ~ method * video + Error(subject / (method * video)),
                       data = merged_data)
 resid_pres <- residuals(aov_pres_resid[["subject:method:video"]])
+residual_list[["mean_presence"]] <- resid_pres
 sw_resid_pres <- shapiro.test(resid_pres)
+residual_normality <- rbind(residual_normality, data.frame(
+  DV = "Presence", W = sw_resid_pres$statistic, p = sw_resid_pres$p.value,
+  normal = ifelse(sw_resid_pres$p.value > 0.05, "YES", "NO"),
+  stringsAsFactors = FALSE
+))
 cat(sprintf("Presence residuals: W = %.4f, p = %.4f %s\n",
             sw_resid_pres$statistic, sw_resid_pres$p.value,
             ifelse(sw_resid_pres$p.value < 0.05, "(non-normal)", "(normal)")))
 
-cat("\nNOTE: RM-ANOVA is robust to non-normality with N >= 30 and equal group sizes\n")
-cat("  (Field 2018; Tabachnick & Fidell 2019).\n")
+cat("\nResidual normality summary:\n")
+print(residual_normality, row.names = FALSE)
+
+cat("\nNOTE: RM-ANOVA normality assumption applies to model residuals (the error term\n")
+cat("  the F-test uses), not raw per-cell scores. With N >= 30 and equal group sizes,\n")
+cat("  RM-ANOVA is robust to non-normality (Field 2018; Tabachnick & Fidell 2019).\n")
+
+# 4c. Residual Q-Q Plots (primary normality diagnostic)
+cat("\n4c. Residual Q-Q Plots (saved to plots/):\n\n")
+
+if (!dir.exists("plots")) dir.create("plots")
+
+for (dv in ssq_dvs) {
+  fname <- sprintf("plots/%s_residual_qqplot.png", dv)
+  cat(sprintf("Creating: %s\n", fname))
+  resid_df <- data.frame(residuals = residual_list[[dv]])
+  sw <- shapiro.test(residual_list[[dv]])
+  p_qq <- ggqqplot(
+    resid_df, x = "residuals",
+    title = sprintf("Residual Q-Q Plot: %s", ssq_labels[dv]),
+    subtitle = sprintf("Shapiro-Wilk: W = %.4f, p = %.4f", sw$statistic, sw$p.value)
+  ) +
+    theme(
+      plot.title = element_text(face = "bold", size = 14),
+      plot.subtitle = element_text(size = 11, color = "grey40")
+    )
+  ggsave(fname, p_qq, width = 7, height = 5, dpi = 300)
+}
+
+fname_pres <- "plots/presence_residual_qqplot.png"
+cat(sprintf("Creating: %s\n", fname_pres))
+resid_pres_df <- data.frame(residuals = residual_list[["mean_presence"]])
+sw_p <- shapiro.test(residual_list[["mean_presence"]])
+p_qq_pres <- ggqqplot(
+  resid_pres_df, x = "residuals",
+  title = "Residual Q-Q Plot: Presence",
+  subtitle = sprintf("Shapiro-Wilk: W = %.4f, p = %.4f", sw_p$statistic, sw_p$p.value)
+) +
+  theme(
+    plot.title = element_text(face = "bold", size = 14),
+    plot.subtitle = element_text(size = 11, color = "grey40")
+  )
+ggsave(fname_pres, p_qq_pres, width = 7, height = 5, dpi = 300)
+
+cat("Residual Q-Q plots saved.\n")
 
 # --- 5. RM-ANOVA: SSQ (4 Kennedy DVs) ----------------------------------------
 
