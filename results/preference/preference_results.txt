@@ -72,6 +72,7 @@ Interpretation: W ranges from 0 (no agreement) to 1 (perfect agreement)
 --- 7. GENERATING PLOTS ---
 
   Saved: plots/preference_first_choice.png
+  Saved: plots/preference_last_choice.png
   Saved: plots/preference_mean_rank.png
   Saved: plots/preference_pairwise_heatmap.png
   Saved: plots/preference_borda_score.png

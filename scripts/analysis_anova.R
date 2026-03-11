@@ -30,7 +30,7 @@ library(rstatix)
 library(ggpubr)
 
 # Save output to file AND console simultaneously
-output_file <- "anova_results.txt"
+output_file <- "results/anova/anova_results.txt"
 con <- file(output_file, open = "wt")
 sink(con, split = TRUE)         # split=TRUE -> print to both file and console
 sink(con, type = "message")     # also capture warnings/messages
@@ -68,11 +68,11 @@ ssq_labels <- c(
 cat("--- 1. DATA LOADING & PREPARATION ---\n\n")
 
 # Check files exist
-if (!file.exists("ssq_dataset.csv")) stop("File not found: ssq_dataset.csv")
-if (!file.exists("presence_dataset.csv")) stop("File not found: presence_dataset.csv")
+if (!file.exists("data/processed/ssq_dataset.csv")) stop("File not found: data/processed/ssq_dataset.csv")
+if (!file.exists("data/processed/presence_dataset.csv")) stop("File not found: data/processed/presence_dataset.csv")
 
-ssq_raw <- read_csv("ssq_dataset.csv", show_col_types = FALSE)
-presence_raw <- read_csv("presence_dataset.csv", show_col_types = FALSE)
+ssq_raw <- read_csv("data/processed/ssq_dataset.csv", show_col_types = FALSE)
+presence_raw <- read_csv("data/processed/presence_dataset.csv", show_col_types = FALSE)
 
 # Presence items to compute mean
 presence_items <- c(
@@ -95,8 +95,8 @@ ssq_raw <- ssq_raw %>%
 presence_raw <- presence_raw %>%
   distinct(full_name, video_experienced, method_experienced, .keep_all = TRUE)
 
-n_dedup_ssq <- nrow(read_csv("ssq_dataset.csv", show_col_types = FALSE)) - nrow(ssq_raw)
-n_dedup_pres <- nrow(read_csv("presence_dataset.csv", show_col_types = FALSE)) - nrow(presence_raw)
+n_dedup_ssq <- nrow(read_csv("data/processed/ssq_dataset.csv", show_col_types = FALSE)) - nrow(ssq_raw)
+n_dedup_pres <- nrow(read_csv("data/processed/presence_dataset.csv", show_col_types = FALSE)) - nrow(presence_raw)
 if (n_dedup_ssq > 0 || n_dedup_pres > 0) {
   cat(sprintf("Deduplicated: %d SSQ rows, %d Presence rows removed\n", n_dedup_ssq, n_dedup_pres))
 }
@@ -325,10 +325,10 @@ cat("  RM-ANOVA is robust to non-normality (Field 2018; Tabachnick & Fidell 2019
 # 4c. Residual Q-Q Plots (primary normality diagnostic)
 cat("\n4c. Residual Q-Q Plots (saved to plots/):\n\n")
 
-if (!dir.exists("plots")) dir.create("plots")
+if (!dir.exists("results/anova/plots")) dir.create("results/anova/plots", recursive = TRUE)
 
 for (dv in ssq_dvs) {
-  fname <- sprintf("plots/%s_residual_qqplot.png", dv)
+  fname <- sprintf("results/anova/plots/%s_residual_qqplot.png", dv)
   cat(sprintf("Creating: %s\n", fname))
   resid_df <- data.frame(residuals = residual_list[[dv]])
   sw <- shapiro.test(residual_list[[dv]])
@@ -344,7 +344,7 @@ for (dv in ssq_dvs) {
   ggsave(fname, p_qq, width = 7, height = 5, dpi = 300)
 }
 
-fname_pres <- "plots/presence_residual_qqplot.png"
+fname_pres <- "results/anova/plots/presence_residual_qqplot.png"
 cat(sprintf("Creating: %s\n", fname_pres))
 resid_pres_df <- data.frame(residuals = residual_list[["mean_presence"]])
 sw_p <- shapiro.test(residual_list[["mean_presence"]])
@@ -732,7 +732,7 @@ cat("\n==============================================================\n")
 cat("  9. GENERATING PLOTS\n")
 cat("==============================================================\n\n")
 
-if (!dir.exists("plots")) dir.create("plots")
+if (!dir.exists("results/anova/plots")) dir.create("results/anova/plots", recursive = TRUE)
 
 # Color palette (colorblind-friendly)
 method_colors <- c(
@@ -830,7 +830,7 @@ p_combined_int <- plot_grid(
   ncol = 1, rel_heights = c(0.06, 1, 0.06)
 )
 
-ggsave("plots/ssq_combined_interaction.png", p_combined_int,
+ggsave("results/anova/plots/ssq_combined_interaction.png", p_combined_int,
        width = 14, height = 10, dpi = 300)
 
 # Combined 2x2: SSQ Boxplots (cowplot)
@@ -862,7 +862,7 @@ p_combined_box <- plot_grid(
   ncol = 1, rel_heights = c(0.06, 1, 0.06)
 )
 
-ggsave("plots/ssq_combined_boxplot.png", p_combined_box,
+ggsave("results/anova/plots/ssq_combined_boxplot.png", p_combined_box,
        width = 14, height = 10, dpi = 300)
 
 # ── SSQ Grouped Bar Chart (all subscales, significance vs Baseline) ──────────
@@ -1011,7 +1011,7 @@ if (nrow(segments_df) > 0) {
     )
 }
 
-ggsave("plots/ssq_grouped_bar.png", p_bar, width = 12, height = 8, dpi = 300)
+ggsave("results/anova/plots/ssq_grouped_bar.png", p_bar, width = 12, height = 8, dpi = 300)
 
 # Presence plots (unchanged)
 cat("Creating: plots/presence_interaction.png\n")
@@ -1043,7 +1043,7 @@ p_pres_int <- ggplot(desc_pres_plot, aes(x = video, y = mean, color = method, gr
     legend.position = "right"
   )
 
-ggsave("plots/presence_interaction.png", p_pres_int, width = 8, height = 5, dpi = 300)
+ggsave("results/anova/plots/presence_interaction.png", p_pres_int, width = 8, height = 5, dpi = 300)
 
 cat("Creating: plots/presence_boxplot.png\n")
 
@@ -1063,7 +1063,7 @@ p_pres_box <- ggboxplot(
 ) +
   theme(plot.title = element_text(face = "bold", size = 14))
 
-ggsave("plots/presence_boxplot.png", p_pres_box, width = 9, height = 5, dpi = 300)
+ggsave("results/anova/plots/presence_boxplot.png", p_pres_box, width = 9, height = 5, dpi = 300)
 
 cat("\nAll plots saved to plots/ directory.\n")
 

@@ -11,6 +11,98 @@
 
 ---
 
+## 0. Thống Kê Mô Tả (Descriptive Statistics)
+
+**N** = 36 participants × 12 conditions = 432 observations. Mỗi participant hoàn thành đủ 4 methods × 3 videos. Không có missing data.
+
+### 0.1 Marginal Means theo Method (gộp across Video)
+
+| Method       | TSC (M ± SD) | Nausea (M ± SD) | Oculomotor (M ± SD) | Disorientation (M ± SD) | Presence (M ± SD) |
+| ------------ | ------------ | --------------- | ------------------- | ----------------------- | ----------------- |
+| Baseline     | 71.6 ± 47.6 | 39.5 ± 30.8    | 63.0 ± 40.9        | 93.1 ± 66.7            | 4.79 ± 0.94      |
+| Dynamic FOV  | 48.3 ± 38.7 | 26.6 ± 26.4    | 42.8 ± 34.1        | 62.4 ± 50.9            | 3.92 ± 1.33      |
+| Minimap      | 55.5 ± 38.0 | 29.2 ± 25.2    | 49.8 ± 32.2        | 72.4 ± 57.1            | 4.53 ± 1.00      |
+| Overlay Path | 56.7 ± 36.3 | 30.4 ± 22.1    | 50.6 ± 31.7        | 73.9 ± 54.0            | 4.41 ± 1.02      |
+
+**Nhận xét:** Baseline có SSQ cao nhất trên tất cả subscales và Presence cao nhất. Dynamic FOV có SSQ thấp nhất (ít say nhất) nhưng Presence cũng thấp nhất. Minimap và Overlay Path nằm giữa, gần nhau.
+
+
+### 0.2 Marginal Means theo Video (gộp across Method)
+
+| Video   | TSC (M ± SD) | Nausea (M ± SD) | Oculomotor (M ± SD) | Disorientation (M ± SD) | Presence (M ± SD) |
+| ------- | ------------ | --------------- | ------------------- | ----------------------- | ----------------- |
+| Cycling | 57.6 ± 40.6 | 30.9 ± 24.1    | 53.1 ± 36.4        | 71.9 ± 57.5            | 4.37 ± 1.11      |
+| Walking | 62.3 ± 42.9 | 34.5 ± 31.2    | 54.9 ± 35.5        | 80.5 ± 59.7            | 4.48 ± 1.09      |
+| Driving | 54.2 ± 39.8 | 28.9 ± 24.0    | 46.7 ± 34.5        | 73.9 ± 57.8            | 4.39 ± 1.17      |
+
+**Nhận xét:** Ba video có mean SSQ gần nhau; Walking hơi cao hơn trên tất cả subscales nhưng chênh lệch nhỏ. Presence gần như không đổi across video types. → Gợi ý rằng Video type có thể không phải yếu tố ảnh hưởng mạnh.
+
+### 0.3 Cell Means (Method × Video) — SSQ Total (TSC)
+
+| Method       | Cycling (M ± SD) | Walking (M ± SD) | Driving (M ± SD) |
+| ------------ | ----------------- | ----------------- | ----------------- |
+| Baseline     | 68 ± 45           | 78 ± 49           | 68 ± 49           |
+| Dynamic FOV  | 49 ± 38           | 55 ± 46           | 42 ± 30           |
+| Minimap      | 55 ± 36           | 60 ± 40           | 51 ± 38           |
+| Overlay Path | 58 ± 41           | 56 ± 32           | 56 ± 36           |
+
+### 0.4 Cell Means (Method × Video) — SSQ Nausea (N)
+
+| Method       | Cycling (M ± SD) | Walking (M ± SD) | Driving (M ± SD) |
+| ------------ | ----------------- | ----------------- | ----------------- |
+| Baseline     | 37 ± 27           | 44 ± 34           | 37 ± 32           |
+| Dynamic FOV  | 27 ± 24           | 31 ± 35           | 22 ± 18           |
+| Minimap      | 28 ± 22           | 33 ± 31           | 27 ± 22           |
+| Overlay Path | 31 ± 24           | 30 ± 23           | 30 ± 20           |
+
+### 0.5 Cell Means (Method × Video) — SSQ Oculomotor (O)
+
+| Method       | Cycling (M ± SD) | Walking (M ± SD) | Driving (M ± SD) |
+| ------------ | ----------------- | ----------------- | ----------------- |
+| Baseline     | 63 ± 41           | 69 ± 40           | 57 ± 42           |
+| Dynamic FOV  | 44 ± 35           | 49 ± 39           | 36 ± 26           |
+| Minimap      | 53 ± 32           | 53 ± 32           | 44 ± 33           |
+| Overlay Path | 53 ± 36           | 49 ± 27           | 50 ± 32           |
+
+### 0.6 Cell Means (Method × Video) — SSQ Disorientation (D)
+
+| Method       | Cycling (M ± SD) | Walking (M ± SD) | Driving (M ± SD) |
+| ------------ | ----------------- | ----------------- | ----------------- |
+| Baseline     | 84 ± 64           | 101 ± 70          | 95 ± 67           |
+| Dynamic FOV  | 61 ± 51           | 68 ± 56           | 58 ± 46           |
+| Minimap      | 68 ± 53           | 79 ± 60           | 70 ± 58           |
+| Overlay Path | 74 ± 61           | 74 ± 48           | 73 ± 54           |
+
+### 0.7 Cell Means (Method × Video) — Presence
+
+| Method       | Cycling (M ± SD) | Walking (M ± SD) | Driving (M ± SD) |
+| ------------ | ----------------- | ----------------- | ----------------- |
+| Baseline     | 4.5 ± 1.04        | 4.9 ± 0.86        | 4.9 ± 0.88        |
+| Dynamic FOV  | 4.0 ± 1.30        | 3.8 ± 1.24        | 3.9 ± 1.47        |
+| Minimap      | 4.5 ± 1.08        | 4.6 ± 0.92        | 4.5 ± 1.01        |
+| Overlay Path | 4.4 ± 0.97        | 4.6 ± 1.03        | 4.3 ± 1.06        |
+
+### 0.8 Đặc Điểm Phân Phối
+
+| Đặc điểm            | Quan sát                                                                                                                    |
+| -------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| **Floor effect**     | Tất cả SSQ subscales có min = 0 trong nhiều cells — nhiều participants không say ở một số conditions. Gây right-skew.        |
+| **Right-skew**       | SD ≈ M hoặc SD > M trên nhiều SSQ cells → phân phối lệch phải rõ. Một nhóm nhỏ say rất nhiều, đa số say ít hoặc không say. |
+| **SD cao**           | SSQ SD thường bằng 50–80% mean → individual variation lớn, typical cho motion sickness data.                                |
+| **Presence ổn định** | Presence SD nhỏ hơn (0.86–1.47 trên thang 1–7), ít biến động hơn SSQ. Dynamic FOV có SD cao nhất (1.33) → phân cực.        |
+| **Range SSQ**        | TSC: 0–232, Nausea: 0–191, Oculomotor: 0–159, Disorientation: 0–292. Khoảng rất rộng.                                      |
+| **Range Presence**   | 1.6–6.8 (trên thang 1–7). Không có ceiling/floor effect nghiêm trọng.                                                      |
+
+### 0.9 Nhận Xét Tổng Quan
+
+1. **Pattern rõ theo Method:** Baseline luôn cao nhất trên tất cả SSQ subscales; Dynamic FOV luôn thấp nhất. Minimap và Overlay Path ở giữa, rất gần nhau. → Gợi ý main effect of Method có thể significant.
+2. **Pattern không rõ theo Video:** Ba loại video cho means gần nhau trên mọi DV. Walking hơi cao nhưng chênh lệch nhỏ so với within-group SD. → Gợi ý Video effect có thể không significant.
+3. **Không có interaction rõ ràng:** Pattern giảm SSQ từ Baseline → mitigation methods tương tự nhau across cả 3 video types. Không thấy cell nào "đột biến" so với pattern chung. → Gợi ý interaction có thể không significant.
+4. **Biến thiên cá nhân lớn:** SD cao trên tất cả SSQ cells. Sẽ cần kiểm tra outliers và robustness.
+5. **Trade-off SSQ–Presence có thể tồn tại:** Dynamic FOV giảm SSQ nhiều nhất nhưng Presence cũng thấp nhất và phân tán nhất.
+
+---
+
 ## 1. Kiểm Định Giả Định (Assumption Checks)
 
 ### 1.1 Outliers
@@ -25,20 +117,39 @@
 
 ### 1.2 Normality — Shapiro-Wilk trên Model Residuals (Primary Diagnostic)
 
-Giả định normality của RM-ANOVA áp dụng cho **model residuals** (error term mà F-test sử dụng), không phải raw scores trong từng cell. Residuals được lấy từ `aov(DV ~ method * video + Error(subject / (method * video)))`.
+Giả định normality của RM-ANOVA áp dụng cho **model residuals** (error term mà F-test sử dụng). Residuals được lấy từ `aov(DV ~ method * video + Error(subject / (method * video)))`, n = 216 residuals mỗi DV.
 
-| DV               | W      | p      | Kết luận    |
-| ---------------- | ------ | ------ | ----------- |
-| SSQ TSC          | 0.9781 | .0020  | Non-normal  |
-| SSQ Nausea       | 0.9438 | <.0001 | Non-normal  |
-| SSQ Oculomotor   | 0.9857 | .0288  | Non-normal  |
-| SSQ Disorientation | 0.9657 | <.0001 | Non-normal  |
-| Presence         | 0.9876 | .0570  | Normal ✓    |
+| DV                 | W      | p      | Skewness | Kurtosis | Kết luận   |
+| ------------------ | ------ | ------ | -------- | -------- | ---------- |
+| SSQ TSC            | 0.9781 | .0020  | −0.00    | 1.69     | Non-normal |
+| SSQ Nausea         | 0.9438 | <.0001 | −0.01    | 4.56     | Non-normal |
+| SSQ Oculomotor     | 0.9857 | .0288  | −0.05    | 1.04     | Non-normal |
+| SSQ Disorientation | 0.9657 | <.0001 | −0.14    | 2.03     | Non-normal |
+| Presence           | 0.9876 | .0570  | +0.09    | 1.21     | Normal ✓   |
 
-Residual QQ-plots: `plots/ssq_tsc_residual_qqplot.png`, `ssq_n_residual_qqplot.png`, `ssq_o_residual_qqplot.png`, `ssq_d_residual_qqplot.png`, `presence_residual_qqplot.png`.
+**Ghi chú:** Skewness ≈ 0 cho tất cả DVs → phân phối residuals **gần đối xứng**, không bị lệch trái hay phải. Kurtosis > 0 (leptokurtic) trên tất cả → đuôi nặng hơn normal, đặc biệt SSQ Nausea (4.56) có nhiều extreme residuals. Non-normality chủ yếu do **excess kurtosis** (đuôi nặng) chứ không phải skew.
 
-**Đánh giá:** SSQ residuals đều non-normal (kể cả Oculomotor), chủ yếu do right-skew — nhiều participants ít say, vài người say rất nhiều. Với N=36 và equal group sizes, RM-ANOVA robust với vi phạm này (Field, 2018; Tabachnick & Fidell, 2019). Sensitivity analysis xác nhận kết quả không thay đổi khi loại extreme outliers.
+#### Residual Histograms (với Normal Curve Overlay)
 
+<img src="plots/all_residual_histograms.png" alt="All Residual Histograms" width="650">
+
+*Hình: Residual histograms cho tất cả 5 DVs với normal curve overlay (đỏ). Subtitle hiển thị Shapiro-Wilk W, p-value, và skewness.*
+
+#### Nhận xét từ Histograms
+
+1. **Hình dạng chung:** Tất cả 5 histograms đều có hình chuông (bell-shaped) gần đối xứng quanh 0, khớp với skewness ≈ 0. Normal curve overlay (đỏ) fit khá tốt phần trung tâm.
+2. **SSQ Nausea — leptokurtic rõ nhất** (kurtosis = 4.56): Đỉnh nhọn hơn normal, có vài residuals cực trị ở cả hai đuôi. Đây là DV có W thấp nhất (0.944) và Shapiro-Wilk bác bỏ mạnh nhất.
+3. **SSQ Disorientation — moderate leptokurtic** (kurtosis = 2.03): Hình dạng gần normal nhưng đuôi dày hơn, đặc biệt đuôi dương (positive residuals lớn).
+4. **SSQ TSC & Oculomotor — mild leptokurtic** (kurtosis 1.04–1.69): Gần normal nhất trong nhóm SSQ. Oculomotor chỉ vừa bị bác bỏ (p = .029).
+5. **Presence — gần normal nhất** (kurtosis = 1.21, skew = +0.09): Histogram fit normal curve tốt nhất, Shapiro-Wilk không bác bỏ (p = .057).
+
+**Residual QQ-plots:**
+
+<img src="plots/all_residual_qqplots.png" alt="All Residual QQ-Plots" width="650">
+
+*QQ-plots cho thấy pattern tương tự histograms: SSQ Nausea lệch mạnh nhất ở đuôi, Presence gần đường tham chiếu normal nhất.*
+
+**Đánh giá:** SSQ residuals đều non-normal theo Shapiro-Wilk, nhưng histograms cho thấy vi phạm chủ yếu ở dạng **leptokurtic** (đuôi nặng, đỉnh nhọn) chứ không phải skewed. Residuals vẫn đối xứng quanh 0 — đây là dạng vi phạm mà F-test robust nhất (Glass, Peckham & Sanders, 1972). Với N = 36, equal cell sizes, và symmetric residuals, RM-ANOVA vẫn kiểm soát Type I error tốt (Field, 2018; Tabachnick & Fidell, 2019). Sensitivity analysis xác nhận kết quả không thay đổi khi loại extreme outliers.
 ### 1.3 Sphericity
 
 Greenhouse-Geisser correction áp dụng cho tất cả F-tests (afex default). Degrees of freedom đã adjusted.
@@ -62,6 +173,7 @@ Greenhouse-Geisser correction áp dụng cho tất cả F-tests (afex default). 
 - **Video KHÔNG significant** trên bất kỳ subscale nào (tất cả p>.08).
 - **Interaction KHÔNG significant** trên bất kỳ subscale nào (tất cả p>.39).
 
+
 ### 2.2 Presence (Cảm giác hiện diện — cao = tốt)
 
 | Effect           | df (GG)        | F     | p      | η²_G | Significant? |
@@ -69,6 +181,7 @@ Greenhouse-Geisser correction áp dụng cho tất cả F-tests (afex default). 
 | **Method**       | 1.87, 65.40    | 13.64 | <.001  | .079 | **CÓ ✓✓✓**  |
 | Video            | 1.85, 64.82    | 0.79  | .450   | .002 | Không        |
 | Method × Video   | 4.43, 155.05   | 1.88  | .109   | .010 | Không        |
+
 
 ### 2.3 Đánh giá ANOVA
 
@@ -159,6 +272,14 @@ Greenhouse-Geisser correction áp dụng cho tất cả F-tests (afex default). 
 
 → **Tất cả mitigation methods đều hiệu quả** trong giảm VR sickness, với Dynamic FOV mạnh nhất về mặt số liệu (nhưng không sig hơn).
 
+<img src="plots/ssq_combined_boxplot.png" alt="SSQ Boxplot by Method" width="650">
+
+*Hình: SSQ boxplots theo Method cho 4 subscales. Baseline (nâu) luôn cao nhất, 3 mitigation methods gần nhau.*
+
+<img src="plots/ssq_grouped_bar.png" alt="SSQ Grouped Bar Chart by Method" width="650">
+
+*Hình: SSQ grouped bar chart theo Method với significance brackets (Holm-corrected). Error bars = ±1 SE.*
+
 ### 3.4 Presence Post-hoc
 
 | So sánh                     | Δ (EMM) | SE    | t     | p (Bonferroni) | Significant? |
@@ -184,6 +305,10 @@ Greenhouse-Geisser correction áp dụng cho tất cả F-tests (afex default). 
 - **Minimap giữ presence gần Baseline nhất** — không khác sig (p = .198).
 - **Overlay Path giảm nhẹ** presence so với Baseline (p = .009), nhưng không khác sig so với Minimap (p = 1.00).
 - → Kết luận: Dynamic FOV phá vỡ presence nhiều nhất. Minimap bảo toàn presence tốt nhất.
+
+<img src="plots/presence_boxplot.png" alt="Presence Boxplot by Method" width="550">
+
+*Hình: Presence boxplot theo Method. Dynamic FOV có median và IQR thấp nhất rõ rệt.*
 
 ---
 

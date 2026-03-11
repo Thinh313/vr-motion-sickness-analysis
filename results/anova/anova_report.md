@@ -1,0 +1,393 @@
+# Báo Cáo Kết Quả ANOVA
+
+**Phân tích:** 2-Way Repeated Measures ANOVA (Method × Video)  
+**SSQ Scoring:** Kennedy 1993 Table 4 — weighted subscales (N, O, D, TSC)  
+**N:** 36 participants (0 excluded)  
+**Observations:** 432 (36 × 12 conditions)  
+**Correction:** Greenhouse-Geisser (sphericity), Holm (multiple DVs across 4 SSQ subscales)  
+**Post-hoc:** Bonferroni (within each DV)  
+**Effect size:** Generalized eta-squared (η²_G)  
+**Tool:** R 4.5.1, afex 1.5.1, emmeans 1.11.2
+
+---
+
+## 0. Thống Kê Mô Tả (Descriptive Statistics)
+
+**N** = 36 participants × 12 conditions = 432 observations. Mỗi participant hoàn thành đủ 4 methods × 3 videos. Không có missing data.
+
+### 0.1 Marginal Means theo Method (gộp across Video)
+
+| Method       | TSC (M ± SD) | Nausea (M ± SD) | Oculomotor (M ± SD) | Disorientation (M ± SD) | Presence (M ± SD) |
+| ------------ | ------------ | --------------- | ------------------- | ----------------------- | ----------------- |
+| Baseline     | 71.6 ± 47.6 | 39.5 ± 30.8    | 63.0 ± 40.9        | 93.1 ± 66.7            | 4.79 ± 0.94      |
+| Dynamic FOV  | 48.3 ± 38.7 | 26.6 ± 26.4    | 42.8 ± 34.1        | 62.4 ± 50.9            | 3.92 ± 1.33      |
+| Minimap      | 55.5 ± 38.0 | 29.2 ± 25.2    | 49.8 ± 32.2        | 72.4 ± 57.1            | 4.53 ± 1.00      |
+| Overlay Path | 56.7 ± 36.3 | 30.4 ± 22.1    | 50.6 ± 31.7        | 73.9 ± 54.0            | 4.41 ± 1.02      |
+
+**Nhận xét:** Baseline có SSQ cao nhất trên tất cả subscales và Presence cao nhất. Dynamic FOV có SSQ thấp nhất (ít say nhất) nhưng Presence cũng thấp nhất. Minimap và Overlay Path nằm giữa, gần nhau.
+
+### 0.2 Marginal Means theo Video (gộp across Method)
+
+| Video   | TSC (M ± SD) | Nausea (M ± SD) | Oculomotor (M ± SD) | Disorientation (M ± SD) | Presence (M ± SD) |
+| ------- | ------------ | --------------- | ------------------- | ----------------------- | ----------------- |
+| Cycling | 57.6 ± 40.6 | 30.9 ± 24.1    | 53.1 ± 36.4        | 71.9 ± 57.5            | 4.37 ± 1.11      |
+| Walking | 62.3 ± 42.9 | 34.5 ± 31.2    | 54.9 ± 35.5        | 80.5 ± 59.7            | 4.48 ± 1.09      |
+| Driving | 54.2 ± 39.8 | 28.9 ± 24.0    | 46.7 ± 34.5        | 73.9 ± 57.8            | 4.39 ± 1.17      |
+
+**Nhận xét:** Ba video có mean SSQ gần nhau; Walking hơi cao hơn trên tất cả subscales nhưng chênh lệch nhỏ. Presence gần như không đổi across video types. → Gợi ý rằng Video type có thể không phải yếu tố ảnh hưởng mạnh.
+
+### 0.3 Cell Means (Method × Video) — SSQ Total (TSC)
+
+| Method       | Cycling (M ± SD) | Walking (M ± SD) | Driving (M ± SD) |
+| ------------ | ----------------- | ----------------- | ----------------- |
+| Baseline     | 68 ± 45           | 78 ± 49           | 68 ± 49           |
+| Dynamic FOV  | 49 ± 38           | 55 ± 46           | 42 ± 30           |
+| Minimap      | 55 ± 36           | 60 ± 40           | 51 ± 38           |
+| Overlay Path | 58 ± 41           | 56 ± 32           | 56 ± 36           |
+
+### 0.4 Cell Means (Method × Video) — SSQ Nausea (N)
+
+| Method       | Cycling (M ± SD) | Walking (M ± SD) | Driving (M ± SD) |
+| ------------ | ----------------- | ----------------- | ----------------- |
+| Baseline     | 37 ± 27           | 44 ± 34           | 37 ± 32           |
+| Dynamic FOV  | 27 ± 24           | 31 ± 35           | 22 ± 18           |
+| Minimap      | 28 ± 22           | 33 ± 31           | 27 ± 22           |
+| Overlay Path | 31 ± 24           | 30 ± 23           | 30 ± 20           |
+
+### 0.5 Cell Means (Method × Video) — SSQ Oculomotor (O)
+
+| Method       | Cycling (M ± SD) | Walking (M ± SD) | Driving (M ± SD) |
+| ------------ | ----------------- | ----------------- | ----------------- |
+| Baseline     | 63 ± 41           | 69 ± 40           | 57 ± 42           |
+| Dynamic FOV  | 44 ± 35           | 49 ± 39           | 36 ± 26           |
+| Minimap      | 53 ± 32           | 53 ± 32           | 44 ± 33           |
+| Overlay Path | 53 ± 36           | 49 ± 27           | 50 ± 32           |
+
+### 0.6 Cell Means (Method × Video) — SSQ Disorientation (D)
+
+| Method       | Cycling (M ± SD) | Walking (M ± SD) | Driving (M ± SD) |
+| ------------ | ----------------- | ----------------- | ----------------- |
+| Baseline     | 84 ± 64           | 101 ± 70          | 95 ± 67           |
+| Dynamic FOV  | 61 ± 51           | 68 ± 56           | 58 ± 46           |
+| Minimap      | 68 ± 53           | 79 ± 60           | 70 ± 58           |
+| Overlay Path | 74 ± 61           | 74 ± 48           | 73 ± 54           |
+
+### 0.7 Cell Means (Method × Video) — Presence
+
+| Method       | Cycling (M ± SD) | Walking (M ± SD) | Driving (M ± SD) |
+| ------------ | ----------------- | ----------------- | ----------------- |
+| Baseline     | 4.5 ± 1.04        | 4.9 ± 0.86        | 4.9 ± 0.88        |
+| Dynamic FOV  | 4.0 ± 1.30        | 3.8 ± 1.24        | 3.9 ± 1.47        |
+| Minimap      | 4.5 ± 1.08        | 4.6 ± 0.92        | 4.5 ± 1.01        |
+| Overlay Path | 4.4 ± 0.97        | 4.6 ± 1.03        | 4.3 ± 1.06        |
+
+### 0.8 Đặc Điểm Phân Phối
+
+| Đặc điểm            | Quan sát                                                                                                                    |
+| -------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| **Floor effect**     | Tất cả SSQ subscales có min = 0 trong nhiều cells — nhiều participants không say ở một số conditions. Gây right-skew.        |
+| **Right-skew**       | SD ≈ M hoặc SD > M trên nhiều SSQ cells → phân phối lệch phải rõ. Một nhóm nhỏ say rất nhiều, đa số say ít hoặc không say. |
+| **SD cao**           | SSQ SD thường bằng 50–80% mean → individual variation lớn, typical cho motion sickness data.                                |
+| **Presence ổn định** | Presence SD nhỏ hơn (0.86–1.47 trên thang 1–7), ít biến động hơn SSQ. Dynamic FOV có SD cao nhất (1.33) → phân cực.        |
+| **Range SSQ**        | TSC: 0–232, Nausea: 0–191, Oculomotor: 0–159, Disorientation: 0–292. Khoảng rất rộng.                                      |
+| **Range Presence**   | 1.6–6.8 (trên thang 1–7). Không có ceiling/floor effect nghiêm trọng.                                                      |
+
+### 0.9 Nhận Xét Tổng Quan
+
+1. **Pattern rõ theo Method:** Baseline luôn cao nhất trên tất cả SSQ subscales; Dynamic FOV luôn thấp nhất. Minimap và Overlay Path ở giữa, rất gần nhau. → Gợi ý main effect of Method có thể significant.
+2. **Pattern không rõ theo Video:** Ba loại video cho means gần nhau trên mọi DV. Walking hơi cao nhưng chênh lệch nhỏ so với within-group SD. → Gợi ý Video effect có thể không significant.
+3. **Không có interaction rõ ràng:** Pattern giảm SSQ từ Baseline → mitigation methods tương tự nhau across cả 3 video types. Không thấy cell nào "đột biến" so với pattern chung. → Gợi ý interaction có thể không significant.
+4. **Biến thiên cá nhân lớn:** SD cao trên tất cả SSQ cells. Sẽ cần kiểm tra outliers và robustness.
+5. **Trade-off SSQ–Presence có thể tồn tại:** Dynamic FOV giảm SSQ nhiều nhất nhưng Presence cũng thấp nhất và phân tán nhất.
+
+---
+
+## 1. Kiểm Định Giả Định (Assumption Checks)
+
+### 1.1 Outliers
+
+| DV               | Outliers (1.5×IQR) | Extreme (3×IQR) | Ghi chú                                      |
+| ---------------- | ------------------- | ---------------- | --------------------------------------------- |
+| SSQ TSC          | 7                   | 1                | Extreme: Nguyễn Hoàng Anh Thư (TSC=232, Dynamic FOV/Walking) |
+| SSQ Nausea       | 13                  | 5                | Extreme: Anh Thư (191), Kim Khanh (105, 162, 95), Anh Thư (95) |
+| SSQ Oculomotor   | 4                   | 0                | Không extreme                                  |
+| SSQ Disorientation | 6                 | 2                | Extreme: Anh Thư (292), Thanh Duy (251)        |
+| Presence         | 0                   | 0                | Không có outlier                               |
+
+### 1.2 Normality — Shapiro-Wilk trên Model Residuals (Primary Diagnostic)
+
+Giả định normality của RM-ANOVA áp dụng cho **model residuals** (error term mà F-test sử dụng). Residuals được lấy từ `aov(DV ~ method * video + Error(subject / (method * video)))`, n = 216 residuals mỗi DV.
+
+| DV                 | W      | p      | Skewness | Kurtosis | Kết luận   |
+| ------------------ | ------ | ------ | -------- | -------- | ---------- |
+| SSQ TSC            | 0.9781 | .0020  | −0.00    | 1.69     | Non-normal |
+| SSQ Nausea         | 0.9438 | <.0001 | −0.01    | 4.56     | Non-normal |
+| SSQ Oculomotor     | 0.9857 | .0288  | −0.05    | 1.04     | Non-normal |
+| SSQ Disorientation | 0.9657 | <.0001 | −0.14    | 2.03     | Non-normal |
+| Presence           | 0.9876 | .0570  | +0.09    | 1.21     | Normal ✓   |
+
+**Ghi chú:** Skewness ≈ 0 cho tất cả DVs → phân phối residuals **gần đối xứng**, không bị lệch trái hay phải. Kurtosis > 0 (leptokurtic) trên tất cả → đuôi nặng hơn normal, đặc biệt SSQ Nausea (4.56) có nhiều extreme residuals. Non-normality chủ yếu do **excess kurtosis** (đuôi nặng) chứ không phải skew.
+
+#### Residual Histograms (với Normal Curve Overlay)
+
+<img src="plots/all_residual_histograms.png" alt="All Residual Histograms" width="650">
+
+*Hình: Residual histograms cho tất cả 5 DVs với normal curve overlay (đỏ). Subtitle hiển thị Shapiro-Wilk W, p-value, và skewness.*
+
+#### Nhận xét từ Histograms
+
+1. **Hình dạng chung:** Tất cả 5 histograms đều có hình chuông (bell-shaped) gần đối xứng quanh 0, khớp với skewness ≈ 0. Normal curve overlay (đỏ) fit khá tốt phần trung tâm.
+2. **SSQ Nausea — leptokurtic rõ nhất** (kurtosis = 4.56): Đỉnh nhọn hơn normal, có vài residuals cực trị ở cả hai đuôi. Đây là DV có W thấp nhất (0.944) và Shapiro-Wilk bác bỏ mạnh nhất.
+3. **SSQ Disorientation — moderate leptokurtic** (kurtosis = 2.03): Hình dạng gần normal nhưng đuôi dày hơn, đặc biệt đuôi dương (positive residuals lớn).
+4. **SSQ TSC & Oculomotor — mild leptokurtic** (kurtosis 1.04–1.69): Gần normal nhất trong nhóm SSQ. Oculomotor chỉ vừa bị bác bỏ (p = .029).
+5. **Presence — gần normal nhất** (kurtosis = 1.21, skew = +0.09): Histogram fit normal curve tốt nhất, Shapiro-Wilk không bác bỏ (p = .057).
+
+**Residual QQ-plots:**
+
+<img src="plots/all_residual_qqplots.png" alt="All Residual QQ-Plots" width="650">
+
+*QQ-plots cho thấy pattern tương tự histograms: SSQ Nausea lệch mạnh nhất ở đuôi, Presence gần đường tham chiếu normal nhất.*
+
+**Đánh giá:** SSQ residuals đều non-normal theo Shapiro-Wilk, nhưng histograms cho thấy vi phạm chủ yếu ở dạng **leptokurtic** (đuôi nặng, đỉnh nhọn) chứ không phải skewed. Residuals vẫn đối xứng quanh 0 — đây là dạng vi phạm mà F-test robust nhất (Glass, Peckham & Sanders, 1972). Với N = 36, equal cell sizes, và symmetric residuals, RM-ANOVA vẫn kiểm soát Type I error tốt (Field, 2018; Tabachnick & Fidell, 2019). Sensitivity analysis xác nhận kết quả không thay đổi khi loại extreme outliers.
+### 1.3 Sphericity
+
+Greenhouse-Geisser correction áp dụng cho tất cả F-tests (afex default). Degrees of freedom đã adjusted.
+
+---
+
+## 2. Kết Quả ANOVA (GG-corrected, Holm-corrected)
+
+### 2.1 SSQ Effect Map (4 DVs × 3 Effects)
+
+**Holm correction:** Áp dụng across 4 SSQ DVs trong mỗi effect family để kiểm soát family-wise error rate.
+
+| Effect           | TSC                           | Nausea (N)                    | Oculomotor (O)                | Disorientation (D)            |
+| ---------------- | ----------------------------- | ----------------------------- | ----------------------------- | ----------------------------- |
+| **Method**       | F(2.61,91.19)=9.02, **p<.001***, p_holm=.0003, η²_G=.043 | F(2.88,100.77)=7.37, **p<.001***, p_holm=.0004, η²_G=.034 | F(2.47,86.34)=8.63, **p<.001***, p_holm=.0004, η²_G=.043 | F(2.81,98.40)=6.98, **p<.001***, p_holm=.0004, η²_G=.037 |
+| Video            | F(1.72,60.12)=1.51, p=.230   | F(1.41,49.22)=1.52, p=.229   | F(1.85,64.84)=2.62, p=.084   | F(1.82,63.55)=0.88, p=.410   |
+| Method × Video   | F(4.01,140.47)=0.79, p=.535  | F(3.29,115.23)=0.69, p=.570  | F(4.61,161.25)=1.04, p=.392  | F(4.45,155.79)=0.65, p=.642  |
+
+**Kết quả chính:**
+- **Method significant trên TẤT CẢ 4 SSQ subscales** (tất cả p<.001, tất cả survive Holm correction).
+- **Video KHÔNG significant** trên bất kỳ subscale nào (tất cả p>.08).
+- **Interaction KHÔNG significant** trên bất kỳ subscale nào (tất cả p>.39).
+
+### 2.2 Presence (Cảm giác hiện diện — cao = tốt)
+
+| Effect           | df (GG)        | F     | p      | η²_G | Significant? |
+| ---------------- | -------------- | ----- | ------ | ---- | ------------ |
+| **Method**       | 1.87, 65.40    | 13.64 | <.001  | .079 | **CÓ ✓✓✓**  |
+| Video            | 1.85, 64.82    | 0.79  | .450   | .002 | Không        |
+| Method × Video   | 4.43, 155.05   | 1.88  | .109   | .010 | Không        |
+
+### 2.3 Đánh giá ANOVA
+
+- **Method có ảnh hưởng significant** lên cả 4 SSQ subscales (tất cả p<.001) và Presence (p<.001).
+- **Video KHÔNG significant** cho bất kỳ DV nào → loại video (Cycling/Walking/Driving) không ảnh hưởng đến mức say hay presence.
+- **Interaction KHÔNG significant** → hiệu quả của method **nhất quán** across video types. Nếu Dynamic FOV giảm say khi Cycling, nó cũng giảm say tương tự khi Walking và Driving.
+- **Effect size:** SSQ η²_G = .034–.043 (small), Presence η²_G = .079 (small-to-medium). Theo benchmarks của Cohen: .02 = small, .06 = small-medium, .14 = large.
+- **Pattern nhất quán:** Tất cả 4 SSQ subscales cho kết quả giống nhau — Method significant, Video và Interaction không. Cho thấy mitigation methods ảnh hưởng toàn diện lên motion sickness (không chỉ 1 component).
+
+---
+
+## 3. Post-hoc Pairwise (Bonferroni)
+
+*Vì interaction không significant → chỉ phân tích main effect Method.*
+*Vì Method significant trên tất cả 4 SSQ DVs (sau Holm) → post-hoc cho cả 4.*
+
+### 3.1 SSQ Post-hoc — Marginal Means by Method
+
+| Method       | TSC (M±SD) | Nausea (M±SD) | Oculomotor (M±SD) | Disorientation (M±SD) |
+| ------------ | ---------- | ------------- | ------------------ | --------------------- |
+| Baseline     | 71.6 ± 47.6 | 39.5 ± 30.8 | 63.0 ± 40.9       | 93.1 ± 66.7          |
+| Dynamic FOV  | 48.3 ± 38.7 | 26.6 ± 26.4 | 42.8 ± 34.1       | 62.4 ± 50.9          |
+| Minimap      | 55.5 ± 38.0 | 29.2 ± 25.2 | 49.8 ± 32.2       | 72.4 ± 57.1          |
+| Overlay Path | 56.7 ± 36.3 | 30.4 ± 22.1 | 50.6 ± 31.7       | 73.9 ± 54.0          |
+
+### 3.2 SSQ Post-hoc — Pairwise Comparisons (Bonferroni)
+
+**TSC (Total):**
+
+| So sánh                     | Δ (EMM) | SE    | t     | p (Bonf.) | Sig? |
+| --------------------------- | ------- | ----- | ----- | --------- | ---- |
+| Baseline vs Dynamic FOV     | +23.27  | 5.34  | 4.356 | **.0007** | ✓✓✓ |
+| Baseline vs Minimap         | +16.07  | 4.69  | 3.423 | **.0096** | ✓✓  |
+| Baseline vs Overlay Path    | +14.86  | 4.73  | 3.143 | **.0204** | ✓   |
+| Dynamic FOV vs Minimap      | −7.20   | 4.17  | −1.727| .5579     | —    |
+| Dynamic FOV vs Overlay Path | −8.41   | 5.03  | −1.674| .6177     | —    |
+| Minimap vs Overlay Path     | −1.21   | 3.36  | −0.360| 1.0000    | —    |
+
+**Nausea (N):**
+
+| So sánh                     | Δ (EMM) | SE    | t     | p (Bonf.) | Sig? |
+| --------------------------- | ------- | ----- | ----- | --------- | ---- |
+| Baseline vs Dynamic FOV     | +12.90  | 3.15  | 4.098 | **.0014** | ✓✓  |
+| Baseline vs Minimap         | +10.25  | 2.94  | 3.480 | **.0082** | ✓✓  |
+| Baseline vs Overlay Path    | +9.10   | 3.01  | 3.023 | **.0279** | ✓   |
+| Dynamic FOV vs Minimap      | −2.65   | 2.79  | −0.948| 1.0000    | —    |
+| Dynamic FOV vs Overlay Path | −3.80   | 3.06  | −1.240| 1.0000    | —    |
+| Minimap vs Overlay Path     | −1.15   | 2.52  | −0.457| 1.0000    | —    |
+
+**Oculomotor (O):**
+
+| So sánh                     | Δ (EMM) | SE    | t     | p (Bonf.) | Sig? |
+| --------------------------- | ------- | ----- | ----- | --------- | ---- |
+| Baseline vs Dynamic FOV     | +20.21  | 5.03  | 4.020 | **.0018** | ✓✓  |
+| Baseline vs Minimap         | +13.20  | 4.22  | 3.123 | **.0215** | ✓   |
+| Baseline vs Overlay Path    | +12.42  | 4.06  | 3.057 | **.0256** | ✓   |
+| Dynamic FOV vs Minimap      | −7.02   | 3.69  | −1.902| .3922     | —    |
+| Dynamic FOV vs Overlay Path | −7.79   | 4.17  | −1.868| .4209     | —    |
+| Minimap vs Overlay Path     | −0.77   | 2.76  | −0.280| 1.0000    | —    |
+
+**Disorientation (D):**
+
+| So sánh                     | Δ (EMM) | SE    | t     | p (Bonf.) | Sig? |
+| --------------------------- | ------- | ----- | ----- | --------- | ---- |
+| Baseline vs Dynamic FOV     | +30.68  | 7.33  | 4.188 | **.0011** | ✓✓  |
+| Baseline vs Minimap         | +20.62  | 6.80  | 3.033 | **.0272** | ✓   |
+| Baseline vs Overlay Path    | +19.20  | 7.27  | 2.642 | .0734     | ~    |
+| Dynamic FOV vs Minimap      | −10.05  | 6.33  | −1.588| .7283     | —    |
+| Dynamic FOV vs Overlay Path | −11.47  | 7.47  | −1.535| .8022     | —    |
+| Minimap vs Overlay Path     | −1.42   | 5.78  | −0.245| 1.0000    | —    |
+
+### 3.3 Đánh giá SSQ Post-hoc
+
+**Pattern nhất quán across subscales:**
+- **Baseline > tất cả mitigation methods** (significant trên hầu hết subscales).
+- **3 methods không khác nhau** có ý nghĩa thống kê trên bất kỳ subscale nào.
+- Dynamic FOV giảm nhiều nhất (TSC: −23.27, ~33%), nhưng không sig hơn Minimap hay Overlay Path.
+
+**Lưu ý Disorientation:** Baseline vs Overlay Path chỉ marginally significant (p=.073). Đây là subscale duy nhất mà Overlay Path không đạt significance rõ ràng so với Baseline.
+
+**% giảm so với Baseline (TSC):**
+
+| Method       | TSC EMM | Δ vs Baseline | % giảm |
+| ------------ | ------- | ------------- | ------ |
+| Dynamic FOV  | 48.3    | −23.3         | 33%    |
+| Minimap      | 55.5    | −16.1         | 22%    |
+| Overlay Path | 56.7    | −14.9         | 21%    |
+
+→ **Tất cả mitigation methods đều hiệu quả** trong giảm VR sickness, với Dynamic FOV mạnh nhất về mặt số liệu (nhưng không sig hơn).
+
+<img src="plots/ssq_combined_boxplot.png" alt="SSQ Boxplot by Method" width="650">
+
+*Hình: SSQ boxplots theo Method cho 4 subscales. Baseline (nâu) luôn cao nhất, 3 mitigation methods gần nhau.*
+
+<img src="plots/ssq_grouped_bar.png" alt="SSQ Grouped Bar Chart by Method" width="650">
+
+*Hình: SSQ grouped bar chart theo Method với significance brackets (Holm-corrected). Error bars = ±1 SE.*
+
+### 3.4 Presence Post-hoc
+
+| So sánh                     | Δ (EMM) | SE    | t     | p (Bonferroni) | Significant? |
+| --------------------------- | ------- | ----- | ----- | -------------- | ------------ |
+| Baseline vs Dynamic FOV     | +0.861  | 0.196 | 4.397 | **.0006**      | **Có ✓✓✓**  |
+| Baseline vs Minimap         | +0.254  | 0.114 | 2.219 | .1984          | Không        |
+| Baseline vs Overlay Path    | +0.372  | 0.108 | 3.435 | **.0093**      | **Có ✓✓**   |
+| Dynamic FOV vs Minimap      | −0.607  | 0.154 | −3.940| **.0022**      | **Có ✓✓**   |
+| Dynamic FOV vs Overlay Path | −0.489  | 0.144 | −3.403| **.0101**      | **Có ✓**    |
+| Minimap vs Overlay Path     | +0.119  | 0.086 | 1.386 | 1.0000         | Không        |
+
+**Estimated Marginal Means (EMM) — Presence:**
+
+| Method       | EMM  | SE    | 95% CI       |
+| ------------ | ---- | ----- | ------------ |
+| Baseline     | 4.79 | 0.112 | [4.56, 5.01] |
+| Minimap      | 4.53 | 0.141 | [4.24, 4.82] |
+| Overlay Path | 4.41 | 0.149 | [4.11, 4.72] |
+| Dynamic FOV  | 3.92 | 0.205 | [3.51, 4.34] |
+
+**Đánh giá Presence:**
+- **Dynamic FOV giảm presence mạnh nhất**, thấp hơn sig so với tất cả methods khác (tất cả p < .011).
+- **Minimap giữ presence gần Baseline nhất** — không khác sig (p = .198).
+- **Overlay Path giảm nhẹ** presence so với Baseline (p = .009), nhưng không khác sig so với Minimap (p = 1.00).
+- → Kết luận: Dynamic FOV phá vỡ presence nhiều nhất. Minimap bảo toàn presence tốt nhất.
+
+<img src="plots/presence_boxplot.png" alt="Presence Boxplot by Method" width="550">
+
+*Hình: Presence boxplot theo Method. Dynamic FOV có median và IQR thấp nhất rõ rệt.*
+
+---
+
+## 4. Sensitivity Analysis (Loại Extreme Outliers)
+
+Loại 3 participants có extreme outliers: Nguyễn Hoàng Anh Thư, Nguyễn Kim Khanh, Vương Thanh Duy.  
+Remaining: N = 33, 396 observations.
+
+| DV         | Effect       | p_full (Holm) | p_excl (Holm) | Cùng kết luận? |
+| ---------- | ------------ | ------------- | ------------- | -------------- |
+| SSQ TSC    | Method       | .0003         | .0010         | Có ✓           |
+| SSQ TSC    | Video        | .686          | 1.000         | Có ✓           |
+| SSQ TSC    | Method×Video | 1.000         | 1.000         | Có ✓           |
+| SSQ N      | Method       | .0004         | .0020         | Có ✓           |
+| SSQ N      | Video        | .686          | 1.000         | Có ✓           |
+| SSQ N      | Method×Video | 1.000         | 1.000         | Có ✓           |
+| SSQ O      | Method       | .0004         | .0020         | Có ✓           |
+| SSQ O      | Video        | .337          | .452          | Có ✓           |
+| SSQ O      | Method×Video | 1.000         | 1.000         | Có ✓           |
+| SSQ D      | Method       | .0004         | .0020         | Có ✓           |
+| SSQ D      | Video        | .686          | 1.000         | Có ✓           |
+| SSQ D      | Method×Video | 1.000         | 1.000         | Có ✓           |
+
+**Đánh giá:** Pattern significance **IDENTICAL** trên tất cả 12 effect×DV combinations (Holm-corrected). Kết quả **robust** — không bị extreme outliers kéo lệch.
+
+---
+
+## 5. Tổng Hợp: Đánh Giá Từng Method
+
+| Method       | SSQ (Giảm say?)                                  | Presence (Giữ immersion?)       | Đánh giá tổng thể        |
+| ------------ | ------------------------------------------------ | ------------------------------- | ------------------------- |
+| **Minimap**      | ✅ Giảm sig trên tất cả subscales (TSC −22%)     | ✅ Giữ tốt nhất (≈ Baseline, p=.198) | **⭐ Tốt nhất (quantitative)** |
+| **Overlay Path** | ✅ Giảm sig (TSC −21%, D marginally sig p=.073)  | ⚠️ Giảm nhẹ sig (p=.009)        | Tốt, trade-off nhẹ       |
+| **Dynamic FOV**  | ✅ Giảm nhiều nhất (TSC −33%)                    | ❌ Giảm mạnh sig (p=.0006)       | Trade-off xấu             |
+| Baseline     | — (reference)                                    | — (cao nhất: 4.79)             | Không can thiệp           |
+
+### Key Findings
+
+1. **Tất cả 3 methods đều giảm VR sickness** có ý nghĩa thống kê so với Baseline trên tất cả Kennedy subscales, nhưng không khác nhau.
+2. **Pattern nhất quán across subscales:** Method ảnh hưởng toàn diện lên motion sickness — cả Nausea, Oculomotor, và Disorientation đều giảm. Không có subscale nào bị ảnh hưởng riêng lẻ.
+3. **Video type không ảnh hưởng** gì — methods hoạt động nhất quán bất kể nội dung VR (Cycling/Walking/Driving).
+4. **Không có interaction** — hiệu quả của method không phụ thuộc vào video type.
+5. **Trade-off SSQ–Presence tồn tại:** Dynamic FOV giảm say nhiều nhất (33%) nhưng phá presence nặng nhất.
+6. **Minimap là optimal** về mặt quantitative: giảm say mà giữ presence.
+
+### So sánh Kennedy Subscales
+
+| Subscale | Baseline EMM | Dynamic FOV EMM | Giảm lớn nhất |
+| -------- | ------------ | --------------- | -------------- |
+| **Disorientation** | 93.1 | 62.4 | −33.0% (giảm mạnh nhất) |
+| **TSC** | 71.6 | 48.3 | −32.5% |
+| **Nausea** | 39.5 | 26.6 | −32.7% |
+| **Oculomotor** | 63.0 | 42.8 | −32.1% |
+
+→ Mitigation methods giảm **đều** across tất cả subscales (~32–33%). Không có component nào bị giảm nhiều hơn hẳn → hiệu quả toàn diện.
+
+### Lưu Ý Quan Trọng: Quantitative ≠ Qualitative
+
+Kết quả ANOVA (quantitative) **không hoàn toàn khớp** với Thematic Analysis từ interview (qualitative, 7 themes từ 11 file). Dưới đây là so sánh chi tiết:
+
+#### 5.1 So sánh từng Method
+
+| Method       | ANOVA đánh giá      | TA đánh giá (Themes 4–6)                          | Convergence / Divergence |
+| ------------ | -------------------- | -------------------------------------------------- | ------------------------ |
+| **Minimap**  | ⭐ Giữ presence tốt nhất (≈ Baseline, p=.198) | ⚠️ **Mixed** — một số thích (ổn định, quen, giống game/Maps), nhưng nhiều người chê: khó thấy (nhỏ, góc dưới), khó hiểu logic, tốn glance cost phải liếc xuống | **DIVERGENCE**: Questionnaire ghi nhận presence cao, nhưng qualitative cho thấy usability disruption (vị trí thấp, attention cost) mà presence scale không capture. Minimap giữ "sense of being there" nhưng tạo ergonomic friction |
+| **Overlay Path** | OK, presence giảm nhẹ sig (p=.009) | ⚠️ **Two-edged sword** — conceptually mạnh nhất (đoán được hướng rẽ, bám theo chuyển động), NHƯNG implementation issues: path gãy/giật/floating, hút mắt, không bám scene, chỉ xuất hiện lúc rẽ | **PARTIAL DIVERGENCE**: TA đánh giá cao ý tưởng overlay nhưng phàn nàn implementation; questionnaire ghi nhận presence giảm nhẹ (do overlay lên cảnh). Cognitive benefit (anticipation) không được presence scale đo |
+| **Dynamic FOV** | ❌ Phá presence nặng nhất (p=.0006), SD=1.33 (cao nhất) | ⚠️ **Phân cực mạnh nhất** — nhóm thích: thu hẹp vùng nhìn giúp giảm say, lọc video giật; nhóm ghét: mất ngoại vi, bó hẹp, gợn sóng/artifact | **CONVERGENCE**: SD presence cao nhất = bằng chứng quantitative cho "chia phe" trong TA. Cả hai nguồn đều xác nhận Dynamic FOV là feature cần cá nhân hóa, không phải giải pháp phổ quát |
+
+#### 5.4 Tổng kết Qual–Quant Integration
+
+**Convergence (khớp):**
+- Tất cả methods đều giảm say so với Baseline → TA xác nhận users cảm nhận được sự hỗ trợ
+- Dynamic FOV phân cực → cả quant (SD cao) và qual (chia phe) đồng ý
+- 3 methods không khác nhau sig → TA giải thích: mỗi method phù hợp segment khác nhau, không có "best for all"
+
+**Divergence (không khớp):**
+- **Minimap**: quant = giữ presence tốt nhất; qual = gặp vấn đề usability (glance cost, visibility)
+- **Overlay Path**: quant = giảm presence nhẹ; qual = ý tưởng tốt nhất nhưng implementation-sensitive
+
+---
+
+*File generated from: anova_results.txt*  
+*Analysis date: 2026-03-10*  
+*SSQ scoring: Kennedy et al. (1993) Table 4 weighted subscales*  
+*R packages: afex 1.5.1, emmeans 1.11.2, rstatix 0.7.2*

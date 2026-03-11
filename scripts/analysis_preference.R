@@ -25,7 +25,7 @@ library(tidyverse)
 
 # --- 1. OUTPUT SETUP ---------------------------------------------------------
 
-output_file <- "preference_results.txt"
+output_file <- "results/preference/preference_results.txt"
 con <- file(output_file, open = "wt", encoding = "UTF-8")
 sink(con, split = TRUE)
 sink(con, type = "message")
@@ -39,7 +39,7 @@ cat("==============================================================\n\n")
 
 cat("--- 2. DATA LOADING & VALIDATION ---\n\n")
 
-df <- read.csv("preference_input.csv", stringsAsFactors = FALSE,
+df <- read.csv("data/preference/preference_input.csv", stringsAsFactors = FALSE,
                fileEncoding = "UTF-8")
 
 # Expected columns
@@ -309,13 +309,34 @@ p1 <- ggplot(p1_data, aes(x = Method, y = First_Choice, fill = Method)) +
        subtitle = sprintf("n = %d participants (exploratory, %d/%d coverage)",
                           n_participants, n_participants, n_total),
        x = "Navigation Aid Method", y = "First-Choice Count (tie-split)") +
-  theme_minimal(base_size = 13) +
+  theme_bw(base_size = 13) +
   theme(plot.title = element_text(face = "bold"),
         axis.text.x = element_text(angle = 0, hjust = 0.5))
 
-ggsave("plots/preference_first_choice.png", p1,
+ggsave("results/preference/plots/preference_first_choice.png", p1,
        width = 7, height = 5, dpi = 150)
 cat("  Saved: plots/preference_first_choice.png\n")
+
+# --- Plot 1b: Last-choice bar chart ---
+p1b_data <- summary_df %>%
+  mutate(Method = factor(Method, levels = method_order))
+
+p1b <- ggplot(p1b_data, aes(x = Method, y = Last_Choice, fill = Method)) +
+  geom_col(width = 0.7, show.legend = FALSE) +
+  geom_text(aes(label = sprintf("%.1f", Last_Choice)),
+            vjust = -0.5, size = 4) +
+  scale_fill_manual(values = method_colors) +
+  labs(title = "Last-Choice Preference Counts",
+       subtitle = sprintf("n = %d participants (exploratory, %d/%d coverage)",
+                          n_participants, n_participants, n_total),
+       x = "Navigation Aid Method", y = "Last-Choice Count (tie-split)") +
+  theme_bw(base_size = 13) +
+  theme(plot.title = element_text(face = "bold"),
+        axis.text.x = element_text(angle = 0, hjust = 0.5))
+
+ggsave("results/preference/plots/preference_last_choice.png", p1b,
+       width = 7, height = 5, dpi = 150)
+cat("  Saved: plots/preference_last_choice.png\n")
 
 # --- Plot 2: Mean rank bar chart (lower = better) ---
 p2_data <- summary_df %>%
@@ -334,10 +355,10 @@ p2 <- ggplot(p2_data, aes(x = Method, y = Mean_Rank, fill = Method)) +
        subtitle = sprintf("n = %d (lower = more preferred; error bars = SE)",
                           n_participants),
        x = "Navigation Aid Method", y = "Mean Rank") +
-  theme_minimal(base_size = 13) +
+  theme_bw(base_size = 13) +
   theme(plot.title = element_text(face = "bold"))
 
-ggsave("plots/preference_mean_rank.png", p2,
+ggsave("results/preference/plots/preference_mean_rank.png", p2,
        width = 7, height = 5, dpi = 150)
 cat("  Saved: plots/preference_mean_rank.png\n")
 
@@ -381,13 +402,13 @@ p3 <- ggplot(win_long, aes(x = Col_Method, y = Row_Method, fill = Wins)) +
        subtitle = sprintf("Cell (row, col) = times row method preferred over col method (n = %d)",
                           n_participants),
        x = "Column Method (opponent)", y = "Row Method (winner)") +
-  theme_minimal(base_size = 13) +
+  theme_bw(base_size = 13) +
   theme(plot.title = element_text(face = "bold"),
         axis.text.x = element_text(angle = 30, hjust = 1),
         panel.grid = element_blank()) +
   coord_fixed()
 
-ggsave("plots/preference_pairwise_heatmap.png", p3,
+ggsave("results/preference/plots/preference_pairwise_heatmap.png", p3,
        width = 7, height = 6, dpi = 150)
 cat("  Saved: plots/preference_pairwise_heatmap.png\n")
 
@@ -404,10 +425,10 @@ p4 <- ggplot(p4_data, aes(x = Method, y = Borda_Score, fill = Method)) +
        subtitle = sprintf("n = %d (higher = more preferred; Borda = sum of [5 - rank])",
                           n_participants),
        x = "Navigation Aid Method", y = "Borda Score") +
-  theme_minimal(base_size = 13) +
+  theme_bw(base_size = 13) +
   theme(plot.title = element_text(face = "bold"))
 
-ggsave("plots/preference_borda_score.png", p4,
+ggsave("results/preference/plots/preference_borda_score.png", p4,
        width = 7, height = 5, dpi = 150)
 cat("  Saved: plots/preference_borda_score.png\n")
 

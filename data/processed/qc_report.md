@@ -1,11 +1,11 @@
 # QC Report: Presence/SSQ Data Normalization
 
-Generated: 2026-03-10T11:58:11.984859
+Generated: 2026-03-11T22:26:32.010912
 
 ## Summary
 - Total records: 432
-- From all_data.csv: 276
-- From data_2.csv: 156
+- From cohort_01 (23 users): 276
+- From cohort_02 (13 users): 156
 
 ## Category Checks
 - method_experienced values: ['Baseline', 'Dynamic FOV', 'Minimap', 'Overlay Path']
@@ -77,6 +77,6 @@ Generated: 2026-03-10T11:58:11.984859
 - None. All checks passed.
 
 ## Output Files
-- [x] merged_normalized.csv
+- [x] survey_normalized_combined_36_users.csv
 - [x] presence_dataset.csv
 - [x] ssq_dataset.csv

@@ -154,10 +154,10 @@ def safe_parse_timestamp(ts: str) -> str:
     ts = ts.strip()
     formats = [
         "%Y/%m/%d %I:%M:%S %p GMT+7",
+        "%d/%m/%Y %H:%M:%S",
         "%m/%d/%Y %H:%M:%S",
         "%Y-%m-%dT%H:%M:%S",
         "%Y-%m-%d %H:%M:%S",
-        "%d/%m/%Y %H:%M:%S",
         "%m/%d/%Y %I:%M:%S %p",
     ]
     for fmt in formats:
@@ -221,7 +221,7 @@ def load_source_1(path: str) -> pd.DataFrame:
     df = df.drop(columns=drop_cols)
 
     # Keep only needed columns
-    df["source"] = "all_data"
+    df["source"] = "cohort_01"
     return df[CONTEXT_COLS + PRESENCE_COLS + SSQ_COLS + SSQ_KENNEDY_COLS + ["source"]]
 
 
@@ -277,7 +277,7 @@ def load_source_2(path: str) -> pd.DataFrame:
     df = compute_kennedy_scores(df)
 
     # Drop extra columns (Cột 1, etc.)
-    df["source"] = "data_2"
+    df["source"] = "cohort_02"
     return df[CONTEXT_COLS + PRESENCE_COLS + SSQ_COLS + SSQ_KENNEDY_COLS + ["source"]]
 
 
@@ -357,8 +357,8 @@ def generate_qc_report(df: pd.DataFrame, issues: list[str], output_path: str):
         "",
         "## Summary",
         f"- Total records: {len(df)}",
-        f"- From all_data.csv: {len(df[df['source'] == 'all_data'])}",
-        f"- From data_2.csv: {len(df[df['source'] == 'data_2'])}",
+        f"- From cohort_01 (23 users): {len(df[df['source'] == 'cohort_01'])}",
+        f"- From cohort_02 (13 users): {len(df[df['source'] == 'cohort_02'])}",
         "",
         "## Category Checks",
         f"- method_experienced values: {sorted(df['method_experienced'].unique())}",
@@ -439,7 +439,7 @@ def generate_qc_report(df: pd.DataFrame, issues: list[str], output_path: str):
 
     lines.append("")
     lines.append("## Output Files")
-    lines.append("- [x] merged_normalized.csv")
+    lines.append("- [x] survey_normalized_combined_36_users.csv")
     lines.append("- [x] presence_dataset.csv")
     lines.append("- [x] ssq_dataset.csv")
 
@@ -449,14 +449,14 @@ def generate_qc_report(df: pd.DataFrame, issues: list[str], output_path: str):
 
 # ─── Main ───────────────────────────────────────────────────────────
 def main():
-    base = Path(__file__).parent
+    base = Path(__file__).parent.parent
 
-    print("Loading all_data.csv ...")
-    df1 = load_source_1(str(base / "all_data.csv"))
+    print("Loading survey_raw_cohort_01_23_users.csv ...")
+    df1 = load_source_1(str(base / "data" / "raw" / "survey_raw_cohort_01_23_users.csv"))
     print(f"  -> {len(df1)} rows")
 
-    print("Loading data_2.csv ...")
-    df2 = load_source_2(str(base / "data_2.csv"))
+    print("Loading survey_raw_cohort_02_13_users.csv ...")
+    df2 = load_source_2(str(base / "data" / "raw" / "survey_raw_cohort_02_13_users.csv"))
     print(f"  -> {len(df2)} rows")
 
     print("Merging ...")
@@ -473,22 +473,22 @@ def main():
         print("  All checks passed.")
 
     # Save merged_normalized.csv
-    merged.to_csv(str(base / "merged_normalized.csv"), index=False, encoding="utf-8")
-    print("Saved: merged_normalized.csv")
+    merged.to_csv(str(base / "data" / "processed" / "survey_normalized_combined_36_users.csv"), index=False, encoding="utf-8")
+    print("Saved: data/processed/survey_normalized_combined_36_users.csv")
 
     # Split: presence_dataset.csv
     presence_df = merged[CONTEXT_COLS + PRESENCE_COLS].copy()
-    presence_df.to_csv(str(base / "presence_dataset.csv"), index=False, encoding="utf-8")
-    print("Saved: presence_dataset.csv")
+    presence_df.to_csv(str(base / "data" / "processed" / "presence_dataset.csv"), index=False, encoding="utf-8")
+    print("Saved: data/processed/presence_dataset.csv")
 
     # Split: ssq_dataset.csv
     ssq_df = merged[CONTEXT_COLS + SSQ_COLS + SSQ_KENNEDY_COLS].copy()
-    ssq_df.to_csv(str(base / "ssq_dataset.csv"), index=False, encoding="utf-8")
-    print("Saved: ssq_dataset.csv")
+    ssq_df.to_csv(str(base / "data" / "processed" / "ssq_dataset.csv"), index=False, encoding="utf-8")
+    print("Saved: data/processed/ssq_dataset.csv")
 
     # QC Report
-    generate_qc_report(merged, issues, str(base / "qc_report.md"))
-    print("Saved: qc_report.md")
+    generate_qc_report(merged, issues, str(base / "data" / "processed" / "qc_report.md"))
+    print("Saved: data/processed/qc_report.md")
 
     # Final assertions
     assert "overall_sickness_severity" not in merged.columns, "overall_sickness_severity must not be in output!"
