@@ -1,0 +1,10 @@
+comparison,observed,CI95,SE,MDD_TSC,MDD_dz,kind,bound,diff,p_TOST,equivalent
+ROF - Minimap,-0.07,"[-3.24, 3.10]",1.56,4.5,0.48,MDD,NA,NA,NA,NA
+ROF - Path,1.77,"[-1.19, 4.72]",1.46,4.19,0.48,MDD,NA,NA,NA,NA
+Minimap - Path,1.84,"[-2.75, 6.42]",2.26,6.52,0.48,MDD,NA,NA,NA,NA
+ROF - Minimap,NA,NA,NA,NA,NA,TOST,+/-5,-0.07,.002,YES
+ROF - Path,NA,NA,NA,NA,NA,TOST,+/-5,1.77,.016,YES
+Minimap - Path,NA,NA,NA,NA,NA,TOST,+/-5,1.84,.085,no
+ROF - Minimap,NA,NA,NA,NA,NA,TOST,+/-15,-0.07,<.001,YES
+ROF - Path,NA,NA,NA,NA,NA,TOST,+/-15,1.77,<.001,YES
+Minimap - Path,NA,NA,NA,NA,NA,TOST,+/-15,1.84,<.001,YES

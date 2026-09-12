@@ -1,0 +1,325 @@
+Dấu thời gian,Tên đầy đủ của bạn là gì?,Bạn đã từng sử dụng kính thực tế ảo VR chưa?,Môi trường bạn vừa trải nghiệm,Phương pháp bạn vừa trải nghiệm,1. Tôi cảm thấy như mình đang ở trong môi trường được hiển thị trong video.,2. Tôi cảm thấy dễ dàng tập trung vào môi trường trong video.,3. Tôi cảm thấy mình kiểm soát được hướng nhìn và những gì mình chú ý đến.,4. Tôi cảm thấy hiện diện (có mặt thật sự) trong không gian ảo.,5. Tôi không nhận thức rõ về môi trường thực tế xung quanh mình.,1. Mức độ khó chịu chung (General discomfort),2. Mệt mỏi (Fatigue),3. Đau đầu (Headache),4. Mỏi mắt (Eye strain),5. Khó tập trung (về mắt) (Difficulty focusing),6. Tăng tiết nước bọt (Increased salivation),7. Đổ mồ hôi (Sweating),8. Buồn nôn (Nausea),9. Khó tập trung (về tinh thần) (Difficulty concentrating),10. Cảm giác nặng đầu (Fullness of head),11. Nhìn mờ (Blurred vision),12. Chóng mặt (khi mở mắt) (Dizziness with eyes open),13. Chóng mặt (khi nhắm mắt) (Dizziness with eyes closed),14. Chóng mặt nghiêm trọng / cảm giác quay cuồng (Vertigo / Feeling of spinning),15. Khó chịu trong dạ dày / cảm giác muốn nôn (Stomach awareness / Feeling want to vomit),16. Ợ hơi (Burping),SUM SSQ
+26/03/2026 10:16:54,Huỳnh Phúc Thành,Chưa,Driving,Reverse Optical Flow,Hơi đồng ý,Đồng ý,Đồng ý,Hơi đồng ý,Đồng ý,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1
+26/03/2026 10:28:53,Huỳnh Phúc Thành,Có,Walking,Reverse Optical Flow,Hơi đồng ý,Hơi đồng ý,Không đồng ý,Hơi đồng ý,Hơi đồng ý,0,0,0,1,0,0,0,0,0,0,2,0,0,0,0,0,3
+26/03/2026 10:40:35,Huỳnh Phúc Thành,Có,Cycling,Reverse Optical Flow,Đồng ý,Trung lập,Trung lập,Hơi đồng ý,Hơi đồng ý,0,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,3
+26/03/2026 10:55:11,Phúc Thành,Có,Driving,Overlay,Đồng ý,Trung lập,Hơi đồng ý,Trung lập,Hơi đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+26/03/2026 11:05:54,Phúc Thành,Có,Cycling,Overlay,Đồng ý,Hơi đồng ý,Trung lập,Đồng ý,Đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+26/03/2026 11:18:02,Huỳnh Phúc Thành,Có,Walking,Overlay,Hơi đồng ý,Hơi đồng ý,Hơi đồng ý,Trung lập,Hơi đồng ý,0,1,0,1,1,0,0,0,1,1,1,0,0,0,0,0,6
+26/03/2026 11:29:10,Huỳnh Phúc Thành,Có,Driving,Minimap,Trung lập,Trung lập,Hơi đồng ý,Đồng ý,Hơi đồng ý,1,1,0,1,0,0,0,0,0,0,1,0,0,0,0,0,4
+26/03/2026 11:40:38,Phúc Thành,Có,Walking,Minimap,Trung lập,Hơi không đồng ý,Hơi đồng ý,Hơi đồng ý,Trung lập,0,1,1,1,1,0,0,0,1,1,1,0,0,0,0,0,7
+26/03/2026 11:49:42,Phúc Thành,Có,Cycling,Minimap,Đồng ý,Đồng ý,Đồng ý,Hơi đồng ý,Hơi đồng ý,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+22/04/2026 9:35:44,Đặng Đỗ Thái Mỹ Trân,Chưa,Walking,Reverse Optical Flow,Hoàn toàn không đồng ý,Đồng ý,Đồng ý,Đồng ý,Đồng ý,1,0,0,1,1,0,0,0,0,1,1,1,0,0,0,0,6
+22/04/2026 9:46:47,Đặng Đỗ Thái Mỹ Trân,Chưa,Driving,Reverse Optical Flow,Hoàn toàn không đồng ý,Hoàn toàn không đồng ý,Hoàn toàn không đồng ý,Hoàn toàn không đồng ý,Đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22/04/2026 9:57:14,Đặng Đỗ Thái Mỹ Trân,Chưa,Cycling,Reverse Optical Flow,Hoàn toàn không đồng ý,Hoàn toàn không đồng ý,Hoàn toàn không đồng ý,Hoàn toàn không đồng ý,Đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22/04/2026 10:07:59,Đặng Đỗ Thái Mỹ Trân,Chưa,Walking,Overlay,Hoàn toàn không đồng ý,Đồng ý,Đồng ý,Đồng ý,Đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22/04/2026 10:16:12,Đặng Đỗ Thái Mỹ Trân,Chưa,Driving,Overlay,Hoàn toàn không đồng ý,Hoàn toàn không đồng ý,Hoàn toàn không đồng ý,Hoàn toàn không đồng ý,Đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22/04/2026 10:27:10,Đặng Đỗ Thái Mỹ Trân,Chưa,Cycling,Overlay,Hoàn toàn không đồng ý,Hoàn toàn không đồng ý,Hoàn toàn không đồng ý,Hoàn toàn không đồng ý,Đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22/04/2026 10:36:58,Đặng Đỗ Thái Mỹ Trân,Chưa,Walking,Minimap,Hoàn toàn không đồng ý,Hoàn toàn không đồng ý,Hoàn toàn không đồng ý,Hoàn toàn không đồng ý,Đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22/04/2026 10:45:02,Đặng Đỗ Thái Mỹ Trân,Chưa,Driving,Minimap,Hoàn toàn không đồng ý,Hoàn toàn không đồng ý,Hoàn toàn không đồng ý,Hoàn toàn không đồng ý,Đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22/04/2026 10:56:52,Đặng Đỗ Thái Mỹ Trân,Chưa,Cycling,Minimap,Hoàn toàn không đồng ý,Hoàn toàn không đồng ý,Hoàn toàn không đồng ý,Hoàn toàn không đồng ý,Đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22/05/2026 10:10:52,Lý Cẩm Khang,Có,Walking,Reverse Optical Flow,Đồng ý,Đồng ý,Đồng ý,Đồng ý,Trung lập,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22/05/2026 10:20:57,Lý Cẩm Khang,Có,Cycling,Reverse Optical Flow,Đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22/05/2026 10:31:11,Lý Cẩm Khang,Có,Driving,Reverse Optical Flow,Đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22/05/2026 10:45:31,Lý Cẩm Khang,Có,Walking,Overlay,Đồng ý,Đồng ý,Đồng ý,Hoàn toàn đồng ý,Hơi đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22/05/2026 10:54:25,Lý Cẩm Khang,Có,Cycling,Overlay,Đồng ý,Đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hơi đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22/05/2026 11:02:24,Lý Cẩm Khang,Có,Driving,Overlay,Đồng ý,Đồng ý,Đồng ý,Hoàn toàn đồng ý,Hơi đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22/05/2026 11:14:11,Lý Cẩm Khang,Có,Walking,Minimap,Đồng ý,Đồng ý,Đồng ý,Đồng ý,Hơi đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22/05/2026 11:22:10,Lý Cẩm Khang,Có,Cycling,Minimap,Đồng ý,Đồng ý,Đồng ý,Đồng ý,Hơi đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22/05/2026 11:31:23,Lý Cẩm Khang,Có,Driving,Minimap,Đồng ý,Đồng ý,Đồng ý,Đồng ý,Trung lập,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22/05/2026 13:12:26,Lâm Tuyết Nhung,Chưa,Cycling,Reverse Optical Flow,Trung lập,Hơi đồng ý,Trung lập,Hơi đồng ý,Không đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22/05/2026 13:31:10,Lâm Tuyết Nhung,Chưa,Walking,Reverse Optical Flow,Đồng ý,Không đồng ý,Đồng ý,Đồng ý,Không đồng ý,1,0,1,0,0,0,0,1,0,0,0,1,0,0,1,0,5
+22/05/2026 13:38:49,Lâm Tuyết Nhung,Chưa,Driving,Reverse Optical Flow,Đồng ý,Đồng ý,Đồng ý,Trung lập,Không đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22/05/2026 13:51:16,Lâm Tuyết Nhung,Chưa,Cycling,Overlay,Hơi đồng ý,Hơi đồng ý,Đồng ý,Hơi đồng ý,Không đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22/05/2026 14:01:10,Lâm Tuyết Nhung,Chưa,Walking,Overlay,Hơi đồng ý,Hơi đồng ý,Đồng ý,Hơi đồng ý,Không đồng ý,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,2
+22/05/2026 14:09:33,Lâm Tuyết Nhung,Chưa,Driving,Overlay,Đồng ý,Đồng ý,Đồng ý,Đồng ý,Không đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22/05/2026 14:19:52,Lâm Tuyết Nhung,Chưa,Cycling,Minimap,Đồng ý,Đồng ý,Đồng ý,Hơi đồng ý,Không đồng ý,1,0,0,0,0,0,0,0,0,0,0,2,0,1,0,0,4
+22/05/2026 14:30:35,Lâm Tuyết Nhung,Chưa,Walking,Minimap,Đồng ý,Đồng ý,Đồng ý,Đồng ý,Không đồng ý,1,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,3
+22/05/2026 14:39:57,Lâm Tuyết Nhung,Chưa,Driving,Minimap,Đồng ý,Đồng ý,Hơi đồng ý,Đồng ý,Không đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+26/05/2026 14:53:03,Mai Lê Hương Giang ,Chưa,Cycling,Reverse Optical Flow,Đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Đồng ý,Hơi đồng ý,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1
+26/05/2026 15:02:26,Mai Lê Hương Giang ,Chưa,Driving,Reverse Optical Flow,Đồng ý,Hoàn toàn đồng ý,Đồng ý,Đồng ý,Trung lập,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1
+26/05/2026 15:14:29,Mai Lê Hương Giang ,Chưa,Walking,Reverse Optical Flow,Đồng ý,Hoàn toàn đồng ý,Hơi đồng ý,Đồng ý,Trung lập,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,2
+26/05/2026 15:23:52,Mai Lê Hương Giang ,Chưa,Cycling,Overlay,Đồng ý,Hoàn toàn đồng ý,Đồng ý,Đồng ý,Hơi không đồng ý,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1
+26/05/2026 15:34:31,Mai Lê Hương Giang ,Chưa,Driving,Overlay,Đồng ý,Hơi không đồng ý,Đồng ý,Trung lập,Hơi không đồng ý,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1
+26/05/2026 15:38:17,Hoàng Nguyễn Hòa Bình,Có,Driving,Reverse Optical Flow,Đồng ý,Đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+26/05/2026 15:45:24,Mai Lê Hương Giang ,Chưa,Walking,Overlay,Hơi đồng ý,Hơi không đồng ý,Đồng ý,Trung lập,Hơi không đồng ý,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1
+26/05/2026 15:48:16,Hoàng Nguyễn Hòa Bình,Có,Cycling,Reverse Optical Flow,Đồng ý,Đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+26/05/2026 15:53:35,Mai Lê Hương Giang ,Chưa,Cycling,Minimap,Đồng ý,Hơi đồng ý,Đồng ý,Đồng ý,Hơi không đồng ý,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1
+26/05/2026 15:58:14,Hoàng Nguyễn Hòa Bình,Có,Walking,Reverse Optical Flow,Đồng ý,Đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+26/05/2026 16:02:50,Mai Lê Hương Giang ,Chưa,Driving,Minimap,Đồng ý,Hơi đồng ý,Trung lập,Đồng ý,Hơi không đồng ý,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1
+26/05/2026 16:05:40,Hoàng Nguyễn Hòa Bình,Có,Driving,Minimap,Đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+26/05/2026 16:14:10,Mai Lê Hương Giang ,Chưa,Walking,Minimap,Hơi đồng ý,Trung lập,Hơi đồng ý,Hơi đồng ý,Hơi không đồng ý,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1
+26/05/2026 16:16:31,Hoàng Nguyễn Hòa Bình,Có,Cycling,Minimap,Đồng ý,Đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+26/05/2026 16:34:12,Hoàng Nguyễn Hòa Bình,Có,Walking,Minimap,Đồng ý,Đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+26/05/2026 16:43:27,Hoàng Nguyễn Hòa Bình,Có,Driving,Overlay,Đồng ý,Đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+26/05/2026 16:53:55,Hoàng Nguyễn Hòa Bình,Có,Cycling,Overlay,Đồng ý,Đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+27/05/2026 16:07:03,Lê Gia Linh,Có,Driving,Reverse Optical Flow,Trung lập,Đồng ý,Hoàn toàn đồng ý,Hơi đồng ý,Hơi đồng ý,0,0,0,2,0,0,0,0,0,1,0,0,0,0,0,0,3
+27/05/2026 16:17:32,LÊ THÙY DÂN,Có,Walking,Reverse Optical Flow,Trung lập,Hơi không đồng ý,Đồng ý,Trung lập,Hơi đồng ý,2,2,2,0,1,0,0,2,1,2,0,0,2,1,1,0,16
+27/05/2026 16:21:30,Lê Gia Linh,Có,Walking,Reverse Optical Flow,Trung lập,Đồng ý,Hoàn toàn đồng ý,Hơi đồng ý,Hơi đồng ý,1,0,1,2,0,0,0,2,0,2,0,1,0,0,1,0,10
+27/05/2026 16:23:10,LÊ THÙY DÂN,Có,Driving,Reverse Optical Flow,Hơi đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+27/05/2026 16:29:43,Lê Gia Linh,Có,Cycling,Reverse Optical Flow,Hơi đồng ý,Đồng ý,Hoàn toàn đồng ý,Trung lập,Trung lập,1,0,0,1,0,0,0,1,0,2,0,0,0,0,2,1,8
+27/05/2026 16:31:40,LÊ THÙY DÂN,Có,Cycling,Reverse Optical Flow,Đồng ý,Đồng ý,Đồng ý,Đồng ý,Đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+27/05/2026 16:38:57,Lê Gia Linh,Có,Driving,Minimap,Trung lập,Đồng ý,Đồng ý,Trung lập,Hơi đồng ý,0,0,1,1,0,0,1,2,0,2,1,0,0,0,1,0,9
+27/05/2026 16:41:42,LÊ THÙY DÂN,Có,Walking,Minimap,Đồng ý,Đồng ý,Đồng ý,Đồng ý,Đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+27/05/2026 16:50:52,Lê Gia Linh,Có,Walking,Minimap,Hơi đồng ý,Đồng ý,Đồng ý,Trung lập,Trung lập,0,0,0,0,0,0,0,1,0,1,0,0,0,0,2,0,4
+27/05/2026 16:52:34,LÊ THÙY DÂN,Có,Driving,Minimap,Đồng ý,Đồng ý,Đồng ý,Đồng ý,Đồng ý,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,2
+27/05/2026 17:00:35,Lê Gia Linh,Có,Cycling,Minimap,Trung lập,Hơi đồng ý,Đồng ý,Hơi đồng ý,Trung lập,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,2
+27/05/2026 17:02:13,LÊ THÙY DÂN,Có,Cycling,Minimap,Đồng ý,Trung lập,Trung lập,Đồng ý,Đồng ý,2,0,1,0,1,0,0,1,0,0,0,2,0,1,0,0,8
+27/05/2026 17:11:52,Lê Gia Linh,Có,Driving,Overlay,Hơi đồng ý,Đồng ý,Đồng ý,Hơi đồng ý,Trung lập,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1
+27/05/2026 17:14:43,LÊ THÙY DÂN,Có,Walking,Overlay,Đồng ý,Trung lập,Hơi đồng ý,Đồng ý,Đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+27/05/2026 17:22:28,Lê Gia Linh,Có,Walking,Overlay,Hơi đồng ý,Đồng ý,Đồng ý,Hơi đồng ý,Trung lập,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,2
+27/05/2026 17:23:27,LÊ THÙY DÂN,Có,Driving,Overlay,Đồng ý,Hơi không đồng ý,Trung lập,Đồng ý,Đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+27/05/2026 17:29:40,Lê Gia Linh,Có,Cycling,Overlay,Trung lập,Đồng ý,Đồng ý,Hơi đồng ý,Trung lập,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,2
+27/05/2026 17:31:19,LÊ THÙY DÂN,Có,Cycling,Overlay,Đồng ý,Hơi không đồng ý,Hơi không đồng ý,Đồng ý,Đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+29/05/2026 10:03:43,Thái Phạm Như Quỳnh ,Có,Walking,Reverse Optical Flow,Hơi không đồng ý,Không đồng ý,Hơi không đồng ý,Hơi không đồng ý,Không đồng ý,2,1,0,1,1,0,0,0,0,0,2,0,0,0,0,0,7
+29/05/2026 10:18:57,Thái Phạm Như Quỳnh,Có,Cycling,Reverse Optical Flow,Hơi không đồng ý,Trung lập,Hơi đồng ý,Trung lập,Không đồng ý,1,0,0,1,1,0,0,0,0,0,2,0,0,0,0,0,5
+29/05/2026 10:29:12,Thái Phạm Như Quỳnh,Có,Driving,Reverse Optical Flow,Trung lập,Hơi đồng ý,Đồng ý,Hơi không đồng ý,Không đồng ý,1,0,1,2,0,0,0,0,0,0,2,0,0,0,0,0,6
+29/05/2026 10:40:46,Thái Phạm Như Quỳnh ,Có,Walking,Minimap,Hơi không đồng ý,Trung lập,Đồng ý,Hơi đồng ý,Không đồng ý,1,0,1,2,0,0,0,0,0,1,2,0,0,0,0,0,7
+29/05/2026 10:48:45,Thái Phạm Như Quỳnh,Có,Cycling,Minimap,Hơi đồng ý,Hơi đồng ý,Đồng ý,Trung lập,Không đồng ý,1,0,0,1,0,0,0,0,0,0,3,0,0,0,0,0,5
+29/05/2026 10:59:23,Thái Phạm Như Quỳnh,Có,Driving,Minimap,Trung lập,Hơi không đồng ý,Đồng ý,Hơi không đồng ý,Hơi không đồng ý,1,0,1,2,0,0,0,0,0,1,3,0,0,0,0,0,8
+29/05/2026 11:10:28,Thái Phạm Như Quỳnh ,Có,Walking,Overlay,Trung lập,Hơi đồng ý,Đồng ý,Hơi đồng ý,Hơi không đồng ý,1,0,0,2,1,0,0,0,0,1,3,0,0,0,0,0,8
+29/05/2026 11:18:41,Thái Phạm Như Quỳnh ,Có,Cycling,Overlay,Trung lập,Hơi đồng ý,Đồng ý,Hơi không đồng ý,Hơi không đồng ý,0,0,0,1,0,0,0,0,0,0,2,0,0,0,0,0,3
+29/05/2026 11:28:12,Thái Phạm Như Quỳnh ,Có,Driving,Overlay,Trung lập,Hơi đồng ý,Đồng ý,Trung lập,Hơi không đồng ý,0,0,0,1,0,0,0,0,0,0,2,0,0,0,0,0,3
+29/05/2026 12:46:38,Lê Trọng Hiếu,Chưa,Cycling,Reverse Optical Flow,Trung lập,Hơi đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn không đồng ý,0,0,0,1,0,0,0,0,0,0,2,0,0,0,0,0,3
+29/05/2026 12:56:36,Lê Trọng Hiếu,Chưa,Walking,Reverse Optical Flow,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn không đồng ý,0,0,0,0,0,0,0,0,0,2,2,0,0,0,0,0,4
+29/05/2026 13:09:28,Lê Trọng Hiếu,Chưa,Driving,Reverse Optical Flow,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn không đồng ý,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,2
+29/05/2026 13:22:51,Lê Trọng Hiếu,Chưa,Cycling,Minimap,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn không đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+29/05/2026 13:41:06,Lê Trọng Hiếu,Chưa,Walking,Minimap,Hoàn toàn không đồng ý,Hoàn toàn không đồng ý,Hoàn toàn không đồng ý,Hoàn toàn không đồng ý,Hoàn toàn không đồng ý,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,2
+29/05/2026 13:49:48,Lê Trọng Hiếu,Chưa,Driving,Minimap,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn không đồng ý,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,2
+29/05/2026 14:00:33,Lê Trọng Hiếu,Chưa,Cycling,Overlay,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn không đồng ý,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,2
+29/05/2026 14:13:57,Lê Trọng Hiếu,Chưa,Walking,Overlay,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn không đồng ý,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,2
+29/05/2026 14:21:41,Lê Trọng Hiếu,Chưa,Driving,Overlay,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn không đồng ý,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,2
+29/05/2026 14:48:16,Lương Thị Bạch Dương,Chưa,Cycling,Reverse Optical Flow,Hơi đồng ý,Đồng ý,Trung lập,Hơi đồng ý,Hơi đồng ý,2,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,3
+29/05/2026 14:50:51,Nguyễn Đặng Kim Ngân,Có,Driving,Minimap,Hơi đồng ý,Trung lập,Hơi đồng ý,Hơi đồng ý,Hơi không đồng ý,1,0,0,1,1,0,0,0,0,1,2,0,0,0,0,0,6
+29/05/2026 14:59:17,Lương Thị Bạch Dương,Chưa,Driving,Reverse Optical Flow,Trung lập,Hơi đồng ý,Hơi không đồng ý,Trung lập,Trung lập,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+29/05/2026 15:01:32,Nguyễn Đặng Kim Ngân,Có,Cycling,Minimap,Hơi đồng ý,Hơi đồng ý,Đồng ý,Hơi đồng ý,Hơi không đồng ý,1,0,1,2,2,0,0,0,1,0,2,0,0,0,0,0,9
+29/05/2026 15:14:25,Lương Thị Bạch Dương,Chưa,Walking,Reverse Optical Flow,Hơi đồng ý,Hơi đồng ý,Trung lập,Hơi đồng ý,Hơi đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+29/05/2026 15:19:32,Nguyễn Đặng Kim Ngân,Có,Walking,Minimap,Trung lập,Trung lập,Hơi đồng ý,Trung lập,Trung lập,1,1,1,2,1,0,0,0,1,2,2,1,1,0,0,0,13
+29/05/2026 15:23:29,Lương Thị Bạch Dương,Chưa,Cycling,Minimap,Hơi không đồng ý,Trung lập,Hơi không đồng ý,Hơi đồng ý,Trung lập,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+29/05/2026 15:27:37,Nguyễn Đặng Kim Ngân,Có,Driving,Reverse Optical Flow,Hơi đồng ý,Hơi không đồng ý,Trung lập,Trung lập,Hơi không đồng ý,2,2,1,3,2,0,0,0,1,3,3,1,1,0,0,0,19
+29/05/2026 15:33:57,Lương Thị Bạch Dương,Chưa,Driving,Minimap,Trung lập,Trung lập,Không đồng ý,Hơi đồng ý,Hơi đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+29/05/2026 15:36:47,Nguyễn Đặng Kim Ngân,Có,Cycling,Reverse Optical Flow,Hơi không đồng ý,Hơi không đồng ý,Trung lập,Hơi đồng ý,Hơi không đồng ý,1,1,0,2,2,0,0,0,0,2,2,1,0,0,0,0,11
+29/05/2026 15:44:54,Lương Thị Bạch Dương,Chưa,Walking,Minimap,Trung lập,Trung lập,Hơi không đồng ý,Trung lập,Hơi đồng ý,1,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,4
+29/05/2026 15:47:17,Nguyễn Đặng Kim Ngân,Có,Driving,Reverse Optical Flow,Hơi không đồng ý,Không đồng ý,Hơi không đồng ý,Hơi không đồng ý,Hơi không đồng ý,2,2,2,3,2,1,0,1,1,3,1,1,1,0,0,0,20
+29/05/2026 15:53:05,Lương Thị Bạch Dương,Chưa,Cycling,Overlay,Hơi không đồng ý,Trung lập,Không đồng ý,Trung lập,Hơi đồng ý,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1
+29/05/2026 15:55:24,Nguyễn Đặng Kim Ngân,Có,Driving,Overlay,Hơi đồng ý,Hơi không đồng ý,Trung lập,Hơi đồng ý,Trung lập,2,1,1,3,2,0,0,1,1,3,3,1,1,0,0,0,19
+29/05/2026 16:03:41,Lương Thị Bạch Dương,Chưa,Driving,Overlay,Trung lập,Trung lập,Hơi không đồng ý,Trung lập,Hơi đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+29/05/2026 16:07:52,Nguyễn Đặng Kim Ngân,Có,Cycling,Overlay,Hơi không đồng ý,Hơi đồng ý,Hơi đồng ý,Hơi đồng ý,Trung lập,1,1,1,3,3,1,0,0,1,3,3,1,1,0,0,0,19
+29/05/2026 16:17:50,Lương Thị Bạch Dương,Chưa,Walking,Overlay,Hơi đồng ý,Hơi đồng ý,Hơi không đồng ý,Trung lập,Hơi đồng ý,1,0,1,0,0,0,0,1,0,1,0,0,0,0,0,0,4
+29/05/2026 16:20:07,Nguyễn Đặng Kim Ngân,Có,Driving,Overlay,Hơi không đồng ý,Hơi không đồng ý,Hơi đồng ý,Trung lập,Trung lập,1,1,1,3,1,0,0,0,1,3,3,1,1,0,0,0,16
+01/06/2026 9:43:36,Lê Phan Nhật Minh,Chưa,Driving,Minimap,Đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Đồng ý,Hơi đồng ý,1,0,0,0,0,0,0,1,0,1,0,1,0,0,0,0,4
+01/06/2026 9:53:36,Lê Phan Nhật Minh,Chưa,Walking,Minimap,Đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Đồng ý,Hơi đồng ý,1,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,3
+01/06/2026 10:01:13,Lê Phan Nhật Minh,Chưa,Cycling,Minimap,Đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Đồng ý,Hơi đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 10:12:33,Lê Phan Nhật Minh,Chưa,Driving,Reverse Optical Flow,Đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Đồng ý,Hơi đồng ý,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+01/06/2026 10:26:52,Lê Phan Nhật Minh,Chưa,Walking,Reverse Optical Flow,Đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Đồng ý,Hơi đồng ý,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+01/06/2026 10:33:41,Lê Phan Nhật Minh,Chưa,Cycling,Reverse Optical Flow,Đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Đồng ý,Hơi đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 10:44:20,Lê Phan Nhật Minh,Chưa,Driving,Overlay,Đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Đồng ý,Hơi đồng ý,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1
+01/06/2026 10:59:11,Lê Phan Nhật Minh,Chưa,Walking,Overlay,Đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Đồng ý,Hơi đồng ý,1,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,3
+01/06/2026 11:10:29,Lê Phan Nhật Minh,Chưa,Cycling,Overlay,Đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Đồng ý,Hơi đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 13:37:01,Nguyễn Thảo Linh,Chưa,Walking,Minimap,Đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Đồng ý,Đồng ý,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,2
+01/06/2026 13:45:23,Nguyễn Thảo Linh,Chưa,Driving,Minimap,Đồng ý,Đồng ý,Hơi đồng ý,Đồng ý,Hoàn toàn đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 13:55:32,Phạm Minh Hoà,Có,Walking,Minimap,Hơi đồng ý,Đồng ý,Đồng ý,Đồng ý,Đồng ý,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+01/06/2026 14:10:54,Nguyễn Thảo Linh,Có,Cycling,Minimap,Đồng ý,Đồng ý,Đồng ý,Đồng ý,Hơi đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 14:12:54,Phạm Minh Hoà,Có,Cycling,Minimap,Hơi đồng ý,Đồng ý,Hơi đồng ý,Hoàn toàn đồng ý,Đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 14:17:10,Nguyễn Quỳnh Tú Hân,Có,Cycling,Minimap,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Đồng ý,Không đồng ý,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,2
+01/06/2026 14:18:22,Trần Ngọc Hân ,Có,Cycling,Minimap,Đồng ý,Đồng ý,Hoàn toàn đồng ý,Đồng ý,Trung lập,2,1,1,2,1,0,0,0,1,2,1,1,1,0,0,0,13
+01/06/2026 14:21:08,Nguyễn Thảo Linh,Có,Walking,Reverse Optical Flow,Đồng ý,Đồng ý,Đồng ý,Đồng ý,Hơi đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 14:21:30,Phạm Minh Hoà,Có,Driving,Minimap,Đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Đồng ý,Hoàn toàn đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 14:27:40,Nguyễn Quỳnh Tú Hân,Có,Walking,Minimap,Hoàn toàn đồng ý,Đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Không đồng ý,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,2
+01/06/2026 14:28:05,Trần Ngọc Hân,Có,Driving,Minimap,Trung lập,Trung lập,Đồng ý,Đồng ý,Đồng ý,1,1,0,2,1,0,0,0,0,2,1,1,1,0,0,0,10
+01/06/2026 14:30:11,Nguyễn Thảo Linh,Có,Driving,Reverse Optical Flow,Đồng ý,Hơi đồng ý,Đồng ý,Đồng ý,Đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 14:33:31,Phạm Minh Hòa,Có,Walking,Reverse Optical Flow,Đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Đồng ý,Không đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 14:34:54,Nguyễn Quỳnh Tú Hân,Có,Driving,Minimap,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Không đồng ý,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1
+01/06/2026 14:37:31,Trần Ngọc Hân ,Có,Walking,Minimap,Hơi đồng ý,Hơi đồng ý,Đồng ý,Đồng ý,Hơi đồng ý,2,2,2,2,1,1,0,1,0,2,2,2,2,2,0,0,21
+01/06/2026 14:40:23,Nguyễn Thảo Linh,Có,Cycling,Reverse Optical Flow,Đồng ý,Đồng ý,Đồng ý,Đồng ý,Đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 14:42:15,Phạm Minh Hòa,Có,Cycling,Reverse Optical Flow,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn không đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 14:44:14,Nguyễn Quỳnh Tú Hân,Có,Cycling,Reverse Optical Flow,Đồng ý,Đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Không đồng ý,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1
+01/06/2026 14:46:20,Trần Ngọc Hân,Có,Cycling,Reverse Optical Flow,Hơi đồng ý,Hơi đồng ý,Đồng ý,Đồng ý,Trung lập,1,1,1,1,1,1,1,1,1,2,2,1,1,1,1,0,17
+01/06/2026 14:52:15,Nguyễn Thảo Linh,Có,Walking,Overlay,Đồng ý,Hoàn toàn đồng ý,Đồng ý,Đồng ý,Đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 14:54:20,Phạm Minh Hòa ,Có,Driving,Reverse Optical Flow,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Đồng ý,Hoàn toàn đồng ý,Hoàn toàn không đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 14:57:51,Nguyễn Quỳnh Tú Hân ,Có,Walking,Reverse Optical Flow,Đồng ý,Đồng ý,Hoàn toàn đồng ý,Hơi đồng ý,Không đồng ý,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1
+01/06/2026 14:58:08,Trần Ngọc Hân ,Có,Driving,Reverse Optical Flow,Đồng ý,Đồng ý,Đồng ý,Đồng ý,Trung lập,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,2
+01/06/2026 15:01:36,Nguyễn Thảo Linh,Có,Driving,Overlay,Hơi đồng ý,Đồng ý,Đồng ý,Đồng ý,Đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 15:04:33,Phạm Minh Hòa,Có,Walking,Overlay,Đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn không đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 15:06:16,Nguyễn Quỳnh Tú Hân ,Có,Driving,Reverse Optical Flow,Đồng ý,Đồng ý,Đồng ý,Đồng ý,Không đồng ý,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,2
+01/06/2026 15:07:35,Trần Ngọc Hân ,Có,Walking,Reverse Optical Flow,Hơi đồng ý,Trung lập,Đồng ý,Hơi đồng ý,Trung lập,0,0,1,1,0,0,0,0,0,0,1,1,1,0,0,0,5
+01/06/2026 15:10:27,Nguyễn Thảo Linh,Có,Cycling,Overlay,Đồng ý,Đồng ý,Đồng ý,Đồng ý,Đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 15:11:54,Phạm Minh Hòa ,Có,Cycling,Overlay,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn không đồng ý,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+01/06/2026 15:13:36,Nguyễn Quỳnh Tú Hân ,Có,Cycling,Overlay,Hoàn toàn đồng ý,Đồng ý,Đồng ý,Hoàn toàn đồng ý,Không đồng ý,1,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,3
+01/06/2026 15:15:21,Trần Ngọc Hân ,Có,Cycling,Overlay,Hơi đồng ý,Hơi đồng ý,Hơi đồng ý,Trung lập,Trung lập,1,1,1,1,0,0,0,1,0,1,1,1,0,0,1,0,9
+01/06/2026 15:39:32,Phạm Minh Hòa ,Có,Driving,Overlay,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn không đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 15:43:02,Nguyễn Quỳnh Tú Hân ,Có,Walking,Overlay,Hơi đồng ý,Trung lập,Hơi không đồng ý,Đồng ý,Không đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 15:47:14,Trần Ngọc Hân ,Có,Driving,Overlay,Trung lập,Hơi đồng ý,Hơi đồng ý,Hơi đồng ý,Trung lập,0,1,1,1,0,0,0,0,0,0,0,1,1,0,0,0,5
+01/06/2026 16:02:58,Nguyễn Quỳnh Tú Hân,Có,Driving,Overlay,Hơi đồng ý,Đồng ý,Hơi không đồng ý,Đồng ý,Không đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 16:08:54,Trần Ngọc Hân ,Có,Walking,Overlay,Hơi đồng ý,Hơi đồng ý,Hơi đồng ý,Hơi đồng ý,Hơi đồng ý,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+02/06/2026 13:42:25,Nguyễn Gia Huy ,Có,Driving,Minimap,Trung lập,Hơi không đồng ý,Hơi đồng ý,Hơi không đồng ý,Hơi không đồng ý,1,0,1,1,2,0,0,0,0,1,2,0,0,0,0,0,8
+02/06/2026 13:52:33,Nguyễn Gia Huy ,Có,Cycling,Minimap,Không đồng ý,Trung lập,Hơi đồng ý,Hơi không đồng ý,Không đồng ý,1,1,1,2,2,0,0,0,1,1,2,1,1,1,0,0,14
+02/06/2026 14:03:21,Nguyễn Gia Huy ,Có,Walking,Minimap,Trung lập,Trung lập,Hơi không đồng ý,Không đồng ý,Không đồng ý,1,1,1,1,2,0,0,0,1,1,2,0,0,0,0,0,10
+02/06/2026 14:12:35,Nguyễn Gia Huy ,Có,Driving,Overlay,Hơi đồng ý,Trung lập,Trung lập,Hơi đồng ý,Không đồng ý,1,1,1,1,0,0,0,0,0,1,1,0,0,0,0,1,7
+02/06/2026 14:22:34,Nguyễn Gia Huy ,Có,Cycling,Overlay,Hơi đồng ý,Không đồng ý,Không đồng ý,Không đồng ý,Hơi không đồng ý,1,1,0,0,1,0,0,0,0,1,1,0,0,0,0,1,6
+02/06/2026 14:33:25,Nguyễn Gia Huy ,Có,Walking,Overlay,Hơi đồng ý,Trung lập,Không đồng ý,Không đồng ý,Không đồng ý,1,1,1,0,0,0,0,0,1,1,2,0,0,0,0,1,8
+02/06/2026 14:41:12,Nguyễn Gia Huy ,Có,Driving,Reverse Optical Flow,Hơi đồng ý,Trung lập,Hơi không đồng ý,Hơi không đồng ý,Không đồng ý,1,1,0,0,0,0,0,0,1,1,1,0,0,0,0,1,6
+02/06/2026 14:52:47,Nguyễn Gia Huy ,Có,Cycling,Reverse Optical Flow,Trung lập,Hơi đồng ý,Hơi không đồng ý,Không đồng ý,Không đồng ý,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,1,4
+02/06/2026 15:04:26,Nguyễn Gia Huy ,Có,Walking,Reverse Optical Flow,Hơi đồng ý,Trung lập,Hơi không đồng ý,Không đồng ý,Không đồng ý,0,0,0,0,1,0,0,0,1,1,1,0,0,0,0,1,5
+03/06/2026 10:54:59,Nguyễn Đại Dũng,Chưa,Driving,Minimap,Đồng ý,Trung lập,Đồng ý,Trung lập,Không đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+03/06/2026 11:06:53,Nguyễn Đại Dũng ,Chưa,Walking,Minimap,Hơi đồng ý,Hơi đồng ý,Đồng ý,Đồng ý,Hơi không đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+03/06/2026 11:14:39,Nguyễn Đại Dũng,Chưa,Cycling,Minimap,Hơi đồng ý,Hơi đồng ý,Đồng ý,Đồng ý,Không đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+03/06/2026 11:23:36,Nguyễn Đại Dũng,Chưa,Driving,Overlay,Hơi đồng ý,Hơi đồng ý,Đồng ý,Đồng ý,Không đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+03/06/2026 11:36:12,Nguyễn Đại Dũng,Chưa,Walking,Overlay,Hơi đồng ý,Hơi đồng ý,Đồng ý,Đồng ý,Không đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+03/06/2026 11:45:11,Nguyễn Đại Dũng,Chưa,Cycling,Overlay,Hơi đồng ý,Hơi đồng ý,Đồng ý,Đồng ý,Không đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+03/06/2026 11:53:11,Nguyễn Đại Dũng,Chưa,Driving,Reverse Optical Flow,Hơi đồng ý,Trung lập,Đồng ý,Đồng ý,Hoàn toàn không đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+03/06/2026 12:07:07,Nguyễn Đại Dũng,Chưa,Walking,Reverse Optical Flow,Hơi đồng ý,Hơi đồng ý,Đồng ý,Đồng ý,Hoàn toàn không đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+03/06/2026 12:16:38,Nguyễn Đại Dũng,Chưa,Cycling,Reverse Optical Flow,Hơi đồng ý,Hơi đồng ý,Đồng ý,Đồng ý,Hoàn toàn không đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+03/06/2026 14:41:21,Nguyễn Hoàng Lân,Có,Walking,Minimap,Hoàn toàn đồng ý,Đồng ý,Hoàn toàn đồng ý,Đồng ý,Đồng ý,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,2
+03/06/2026 14:51:34,Trần Nguyên Anh,Chưa,Walking,Minimap,Hoàn toàn đồng ý,Trung lập,Hơi đồng ý,Trung lập,Đồng ý,0,0,1,0,0,0,0,0,0,0,0,1,1,0,0,0,3
+03/06/2026 14:55:42,Nguyễn Hoàng Lân,Có,Cycling,Minimap,Đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Đồng ý,1,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,4
+03/06/2026 14:57:29,Trần Nguyên Anh,Có,Driving,Minimap,Hoàn toàn đồng ý,Đồng ý,Trung lập,Trung lập,Hơi đồng ý,0,0,1,0,0,1,0,0,0,1,0,0,0,0,0,0,3
+03/06/2026 15:04:35,Nguyễn Hoàng Lân,Có,Driving,Minimap,Đồng ý,Đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Đồng ý,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,2
+03/06/2026 15:07:21,Trần Nguyên Anh,Có,Cycling,Minimap,Đồng ý,Hơi đồng ý,Trung lập,Đồng ý,Hơi đồng ý,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,2
+03/06/2026 15:18:09,Nguyễn Hoàng Lân,Có,Walking,Overlay,Đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Đồng ý,1,1,0,1,0,0,0,0,0,0,0,1,1,1,0,0,6
+03/06/2026 15:21:09,Trần Nguyên Anh,Chưa,Walking,Overlay,Đồng ý,Trung lập,Trung lập,Hơi đồng ý,Không đồng ý,1,1,1,0,0,0,0,0,0,2,1,0,1,0,0,0,7
+03/06/2026 15:27:27,Nguyễn Hoàng Lân,Có,Cycling,Overlay,Đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+03/06/2026 15:29:35,Trần Nguyên Anh,Chưa,Driving,Overlay,Hơi đồng ý,Trung lập,Trung lập,Hoàn toàn đồng ý,Hơi đồng ý,0,1,1,1,0,0,0,0,0,1,0,0,0,0,0,0,4
+03/06/2026 15:38:21,Nguyễn Hoàng Lân,Có,Driving,Overlay,Đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1
+03/06/2026 15:40:06,Trần Nguyên Anh,Chưa,Cycling,Overlay,Trung lập,Trung lập,Hơi đồng ý,Đồng ý,Không đồng ý,0,0,0,1,0,0,0,1,0,1,0,1,0,0,0,0,4
+03/06/2026 15:49:53,Nguyễn Hoàng Lân,Có,Walking,Reverse Optical Flow,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,1,0,0,1,0,0,0,0,0,1,0,1,1,1,0,0,6
+03/06/2026 15:53:34,Trần Nguyên Anh,Chưa,Walking,Reverse Optical Flow,Hơi đồng ý,Hơi đồng ý,Hơi không đồng ý,Trung lập,Trung lập,0,2,1,1,0,0,0,0,0,2,2,0,0,0,1,0,9
+03/06/2026 16:02:39,Nguyễn Hoàng Lân,Có,Cycling,Reverse Optical Flow,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0,0,3
+03/06/2026 16:04:24,Trần Nguyên Anh,Chưa,Driving,Reverse Optical Flow,Trung lập,Hơi đồng ý,Đồng ý,Trung lập,Hơi không đồng ý,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1
+03/06/2026 16:13:29,Nguyễn Hoàng Lân,Có,Driving,Reverse Optical Flow,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Đồng ý,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0,0,3
+03/06/2026 16:15:09,Trần Nguyên Anh,Chưa,Cycling,Reverse Optical Flow,Trung lập,Trung lập,Trung lập,Đồng ý,Trung lập,0,0,1,1,1,0,0,0,0,0,1,0,0,0,0,0,4
+04/06/2026 15:47:28,Trần Thị Khánh Vy,Chưa,Cycling,Minimap,Đồng ý,Đồng ý,Hơi đồng ý,Trung lập,Hoàn toàn đồng ý,1,0,1,2,0,0,0,0,1,0,1,2,0,2,0,0,10
+04/06/2026 16:00:02,Trần Thị Khánh Vy,Chưa,Walking,Minimap,Đồng ý,Đồng ý,Đồng ý,Đồng ý,Đồng ý,2,1,1,1,0,0,0,1,0,1,1,0,0,0,1,0,9
+04/06/2026 16:08:14,Trần Thị Khánh Vy,Có,Driving,Minimap,Hơi đồng ý,Hơi đồng ý,Không đồng ý,Trung lập,Trung lập,1,1,1,1,0,0,0,1,1,2,1,0,0,1,1,0,11
+04/06/2026 16:18:40,Trần Thị Khánh Vy,Có,Cycling,Overlay,Hoàn toàn đồng ý,Đồng ý,Đồng ý,Đồng ý,Đồng ý,1,1,0,0,0,0,0,1,0,1,1,0,0,1,2,0,8
+04/06/2026 16:29:47,Trần Thị Khánh Vy,Có,Walking,Overlay,Đồng ý,Đồng ý,Đồng ý,Đồng ý,Hoàn toàn đồng ý,1,1,1,1,0,1,0,1,0,1,0,0,0,1,1,0,9
+04/06/2026 16:39:05,Trần Thị Khánh Vy,Có,Driving,Overlay,Đồng ý,Đồng ý,Hơi đồng ý,Đồng ý,Đồng ý,1,1,1,1,1,0,0,1,0,1,1,0,0,1,1,0,10
+04/06/2026 16:47:57,Trần Thị Khánh Vy,Có,Cycling,Reverse Optical Flow,Đồng ý,Đồng ý,Đồng ý,Đồng ý,Đồng ý,1,1,0,1,0,0,0,0,0,1,1,0,0,1,1,0,7
+04/06/2026 17:03:26,Trần Thị Khánh Vy,Có,Walking,Reverse Optical Flow,Đồng ý,Đồng ý,Đồng ý,Đồng ý,Đồng ý,2,2,1,3,0,0,0,3,0,1,2,0,0,2,2,0,18
+04/06/2026 17:12:55,Trần Thị Khánh Vy,Có,Driving,Reverse Optical Flow,Đồng ý,Đồng ý,Đồng ý,Đồng ý,Đồng ý,1,0,1,1,0,0,0,1,0,1,1,0,0,1,2,0,9
+05/06/2026 9:35:29,Nguyễn Văn Khôi,Có,Cycling,Minimap,Hơi không đồng ý,Hơi không đồng ý,Đồng ý,Trung lập,Đồng ý,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,3
+05/06/2026 9:44:18,Nguyễn Văn Khôi ,Có,Driving,Minimap,Trung lập,Hơi đồng ý,Hơi không đồng ý,Không đồng ý,Đồng ý,1,0,0,1,0,0,0,0,1,0,1,0,0,0,0,0,4
+05/06/2026 9:56:07,Nguyễn Văn Khôi ,Có,Walking,Minimap,Không đồng ý,Không đồng ý,Hơi đồng ý,Đồng ý,Hơi đồng ý,1,0,1,1,1,0,0,0,1,1,0,0,0,0,0,0,6
+05/06/2026 10:05:41,Trịnh Hồ Anh Thư ,Chưa,Driving,Overlay,Đồng ý,Đồng ý,Hoàn toàn đồng ý,Hơi đồng ý,Trung lập,0,0,1,2,0,0,0,1,0,2,3,1,1,0,0,0,11
+05/06/2026 10:06:22,Đỗ Anh Thư ,Chưa,Driving,Overlay,Hơi đồng ý,Hơi không đồng ý,Đồng ý,Không đồng ý,Hơi không đồng ý,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,2
+05/06/2026 10:07:34,Nguyễn Văn Khôi ,Có,Cycling,Overlay,Trung lập,Đồng ý,Đồng ý,Hơi không đồng ý,Trung lập,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+05/06/2026 10:16:38,Trịnh Hồ Anh Thư ,Có,Walking,Overlay,Hơi đồng ý,Đồng ý,Đồng ý,Hoàn toàn đồng ý,Hơi đồng ý,1,0,1,2,0,0,0,0,1,2,2,1,1,0,0,0,11
+05/06/2026 10:17:39,Đỗ Anh Thư ,Chưa,Cycling,Overlay,Hơi đồng ý,Không đồng ý,Hơi đồng ý,Không đồng ý,Không đồng ý,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,2
+05/06/2026 10:18:15,Nguyễn Văn Khôi ,Có,Driving,Overlay,Không đồng ý,Đồng ý,Không đồng ý,Đồng ý,Đồng ý,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,0,3
+05/06/2026 10:24:56,Trịnh Hồ Anh Thư ,Chưa,Cycling,Overlay,Hơi đồng ý,Đồng ý,Hoàn toàn đồng ý,Hơi đồng ý,Trung lập,1,0,1,2,1,0,0,0,0,2,2,1,2,0,0,0,12
+05/06/2026 10:27:26,Đỗ Anh Thư ,Chưa,Walking,Overlay,Đồng ý,Hơi đồng ý,Đồng ý,Hơi không đồng ý,Hơi không đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 10:30:14,Nguyễn Văn Khôi ,Có,Walking,Overlay,Hoàn toàn không đồng ý,Không đồng ý,Hoàn toàn không đồng ý,Không đồng ý,Trung lập,2,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,4
+05/06/2026 10:34:28,Trịnh Hồ Anh Thư ,Chưa,Driving,Minimap,Đồng ý,Hoàn toàn đồng ý,Đồng ý,Hoàn toàn đồng ý,Đồng ý,1,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,4
+05/06/2026 10:36:11,Đỗ Anh Thư ,Chưa,Driving,Minimap,Hơi không đồng ý,Hơi không đồng ý,Đồng ý,Hơi không đồng ý,Không đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 10:37:50,Nguyễn Văn Khôi ,Có,Cycling,Reverse Optical Flow,Hơi đồng ý,Trung lập,Hơi đồng ý,Hơi đồng ý,Trung lập,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 10:46:20,Trịnh Hồ Anh Thư ,Chưa,Walking,Minimap,Hơi đồng ý,Hơi đồng ý,Đồng ý,Trung lập,Trung lập,1,0,0,1,0,0,0,0,0,1,1,0,0,0,0,0,4
+05/06/2026 10:47:22,Đỗ Anh Thư ,Chưa,Cycling,Minimap,Hơi không đồng ý,Hơi đồng ý,Đồng ý,Hơi không đồng ý,Hơi không đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 10:48:19,Nguyễn Văn Khôi ,Có,Driving,Reverse Optical Flow,Hơi đồng ý,Hơi đồng ý,Hơi đồng ý,Hơi đồng ý,Hơi đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 10:55:09,Trịnh Hồ Anh Thư ,Chưa,Cycling,Minimap,Hơi đồng ý,Hơi đồng ý,Đồng ý,Trung lập,Hơi không đồng ý,2,0,1,2,1,0,0,0,1,2,1,2,2,0,0,0,14
+05/06/2026 10:57:48,Đỗ Anh Thư ,Chưa,Walking,Minimap,Trung lập,Hơi đồng ý,Đồng ý,Không đồng ý,Không đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 10:59:57,Nguyễn Văn Khôi,Có,Walking,Reverse Optical Flow,Hơi đồng ý,Hơi không đồng ý,Trung lập,Hơi đồng ý,Trung lập,1,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,3
+05/06/2026 11:08:18,Trịnh Hồ Anh Thư ,Chưa,Driving,Reverse Optical Flow,Đồng ý,Trung lập,Đồng ý,Hơi đồng ý,Trung lập,2,1,2,1,0,0,0,1,1,2,0,2,2,0,1,0,15
+05/06/2026 11:21:49,Đỗ Anh Thư ,Chưa,Driving,Reverse Optical Flow,Hơi đồng ý,Hơi đồng ý,Đồng ý,Đồng ý,Trung lập,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 11:25:54,Trịnh Hồ Anh Thư ,Chưa,Walking,Reverse Optical Flow,Hơi đồng ý,Trung lập,Đồng ý,Trung lập,Trung lập,2,2,2,1,0,0,0,1,0,2,1,1,2,0,1,0,15
+05/06/2026 11:31:32,Đỗ Anh Thư ,Chưa,Cycling,Reverse Optical Flow,Hơi không đồng ý,Hơi không đồng ý,Đồng ý,Hơi không đồng ý,Hơi đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 11:34:01,Trịnh Hồ Anh Thư ,Chưa,Cycling,Reverse Optical Flow,Đồng ý,Hoàn toàn đồng ý,Đồng ý,Hơi đồng ý,Hơi đồng ý,1,1,1,2,0,0,0,1,0,2,1,1,1,0,1,0,12
+05/06/2026 12:02:20,Đỗ Anh Thư ,Chưa,Walking,Reverse Optical Flow,Hơi không đồng ý,Hơi đồng ý,Đồng ý,Hơi đồng ý,Hơi không đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 13:09:26,Lê Quỳnh Như ,Chưa,Walking,Overlay,Hơi đồng ý,Đồng ý,Hơi đồng ý,Hơi không đồng ý,Hơi không đồng ý,0,0,0,0,0,0,0,1,0,0,1,2,1,0,0,0,5
+05/06/2026 13:16:49,Lê Quỳnh Như ,Chưa,Driving,Overlay,Đồng ý,Đồng ý,Hơi đồng ý,Hơi đồng ý,Không đồng ý,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,2
+05/06/2026 13:31:29,Lê Quỳnh Như,Chưa,Cycling,Overlay,Đồng ý,Đồng ý,Hơi đồng ý,Đồng ý,Không đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 13:37:42,Nguyễn Ngọc Minh Ánh,Chưa,Walking,Overlay,Hoàn toàn đồng ý,Đồng ý,Đồng ý,Hoàn toàn đồng ý,Đồng ý,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,0,3
+05/06/2026 13:40:40,Lê Quỳnh Như,Chưa,Walking,Minimap,Đồng ý,Đồng ý,Đồng ý,Hơi đồng ý,Hơi không đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1
+05/06/2026 13:45:36,Nguyễn Ngọc Minh Ánh,Chưa,Cycling,Overlay,Đồng ý,Hơi đồng ý,Đồng ý,Hoàn toàn đồng ý,Trung lập,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1
+05/06/2026 13:49:20,Lê Quỳnh Như,Chưa,Driving,Minimap,Hơi đồng ý,Đồng ý,Đồng ý,Hơi không đồng ý,Hơi không đồng ý,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+05/06/2026 13:53:27,Nguyễn Ngọc Minh Ánh,Chưa,Driving,Overlay,Đồng ý,Hơi đồng ý,Đồng ý,Đồng ý,Hơi đồng ý,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,3
+05/06/2026 13:58:11,Lê Quỳnh Như,Chưa,Cycling,Minimap,Đồng ý,Đồng ý,Đồng ý,Trung lập,Hơi không đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 14:01:56,Nguyễn Ngọc Minh Ánh,Chưa,Walking,Minimap,Hoàn toàn đồng ý,Hơi đồng ý,Hơi đồng ý,Đồng ý,Đồng ý,1,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,4
+05/06/2026 14:11:27,Lê Quỳnh Như,Chưa,Walking,Reverse Optical Flow,Đồng ý,Hơi đồng ý,Đồng ý,Hơi đồng ý,Hơi không đồng ý,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,2
+05/06/2026 14:12:34,Nguyễn Ngọc Minh Ánh,Chưa,Cycling,Minimap,Hoàn toàn đồng ý,Đồng ý,Hoàn toàn đồng ý,Đồng ý,Hơi đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 14:19:31,Lê Quỳnh Như ,Chưa,Driving,Reverse Optical Flow,Đồng ý,Đồng ý,Đồng ý,Hơi đồng ý,Hơi đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 14:19:46,Hoàng Thị Tố Như ,Có,Cycling,Overlay,Trung lập,Hơi đồng ý,Đồng ý,Không đồng ý,Hoàn toàn không đồng ý,1,0,1,0,0,0,0,0,1,1,0,0,0,0,0,0,4
+05/06/2026 14:20:52,Nguyễn Ngọc Minh Ánh,Chưa,Driving,Minimap,Đồng ý,Hơi đồng ý,Đồng ý,Hoàn toàn đồng ý,Hơi đồng ý,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1
+05/06/2026 14:30:16,Lê Quỳnh Như ,Chưa,Cycling,Reverse Optical Flow,Trung lập,Hơi không đồng ý,Hơi đồng ý,Hơi đồng ý,Hơi không đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 14:33:56,Nguyễn Ngọc Minh Ánh,Chưa,Walking,Reverse Optical Flow,Đồng ý,Trung lập,Trung lập,Đồng ý,Hơi đồng ý,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,4
+05/06/2026 14:48:22,Hoàng Thị Tố Như,Có,Driving,Overlay,Trung lập,Hơi không đồng ý,Đồng ý,Không đồng ý,Không đồng ý,1,0,1,1,0,0,0,0,1,1,0,1,0,0,0,0,6
+05/06/2026 14:52:18,Nguyễn Ngọc Minh Ánh,Chưa,Cycling,Reverse Optical Flow,Hơi đồng ý,Hơi đồng ý,Đồng ý,Đồng ý,Hoàn toàn đồng ý,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,2
+05/06/2026 14:54:42,Hoàng Thị Tố Như,Có,Cycling,Minimap,Hơi không đồng ý,Không đồng ý,Đồng ý,Trung lập,Hơi không đồng ý,1,0,1,1,1,0,0,0,1,2,0,0,0,0,0,0,7
+05/06/2026 14:59:47,Hoàng Thị Tố Như,Có,Walking (lúc đầu quên điền),Overlay,Trung lập,Trung lập,Đồng ý,Trung lập,Hơi không đồng ý,1,0,1,0,0,0,0,0,0,1,0,1,1,0,0,0,5
+05/06/2026 15:01:17,Nguyễn Ngọc Minh Ánh,Chưa,Driving,Reverse Optical Flow,Hoàn toàn đồng ý,Đồng ý,Hơi đồng ý,Đồng ý,Hơi đồng ý,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1
+05/06/2026 15:08:12,Hoàng Thị Tố Như,Có,Walking,Minimap,Trung lập,Hơi đồng ý,Đồng ý,Hơi không đồng ý,Không đồng ý,2,0,2,1,0,0,0,0,0,2,0,1,1,0,0,0,9
+05/06/2026 15:24:53,Hoàng Thị Tố Như,Có,Driving,Minimap,Hơi không đồng ý,Hơi đồng ý,Đồng ý,Không đồng ý,Không đồng ý,1,0,1,1,0,0,0,0,1,1,0,0,1,0,0,0,6
+05/06/2026 15:35:55,Hoàng Thị Tố Như,Có,Cycling,Reverse Optical Flow,Trung lập,Hơi đồng ý,Đồng ý,Hơi không đồng ý,Hơi không đồng ý,1,0,1,1,0,0,0,0,0,1,1,1,1,0,0,0,7
+05/06/2026 15:45:32,Hoàng Thị Tố Như,Có,Walking,Reverse Optical Flow,Trung lập,Hơi không đồng ý,Đồng ý,Không đồng ý,Không đồng ý,2,1,2,1,0,0,0,0,1,2,1,1,1,0,0,0,12
+05/06/2026 15:53:08,Hoàng Thị Tố Như,Có,Driving,Reverse Optical Flow,Hơi không đồng ý,Trung lập,Đồng ý,Hơi không đồng ý,Không đồng ý,1,0,1,1,0,0,0,0,1,2,0,0,1,0,0,0,7
+05/06/2026 16:55:17,Tăng Triều Tường ,Có,Driving,Overlay,Đồng ý,Đồng ý,Hoàn toàn đồng ý,Đồng ý,Đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 16:55:21,Tăng Triều Khánh,Chưa,Cycling,Overlay,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Đồng ý,Trung lập,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 17:04:46,Tăng Triều Tường ,Có,Cycling,Overlay,Đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Đồng ý,Đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 17:07:59,Tăng Triều Khánh,Chưa,Driving,Overlay,Đồng ý,Đồng ý,Trung lập,Đồng ý,Không đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 17:16:44,Tăng Triều Khánh,Chưa,Walking,Overlay,Hơi đồng ý,Đồng ý,Hoàn toàn đồng ý,Hơi đồng ý,Hơi không đồng ý,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+05/06/2026 17:20:04,Tăng Triều Tường ,Có,Walking,Overlay,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Đồng ý,Đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 17:25:32,Tăng Triều Khánh,Chưa,Cycling,Minimap,Hơi đồng ý,Đồng ý,Hoàn toàn đồng ý,Hơi đồng ý,Trung lập,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,2
+05/06/2026 17:26:40,Tăng Triều Tường ,Có,Driving,Reverse Optical Flow,Hơi đồng ý,Đồng ý,Hoàn toàn đồng ý,Trung lập,Đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 17:35:01,Tăng Triều Khánh,Chưa,Driving,Minimap,Đồng ý,Hoàn toàn đồng ý,Đồng ý,Hơi đồng ý,Không đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 17:36:11,Tăng Triều Tường ,Có,Cycling,Reverse Optical Flow,Hoàn toàn đồng ý,Đồng ý,Hoàn toàn đồng ý,Đồng ý,Đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 17:47:26,Tăng Triều Khánh,Chưa,Walking,Minimap,Trung lập,Hơi không đồng ý,Đồng ý,Trung lập,Trung lập,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,2
+05/06/2026 17:51:26,Tăng Triều Tường ,Có,Walking,Reverse Optical Flow,Hoàn toàn đồng ý,Đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 17:57:27,Tăng Triều Khánh,Chưa,Cycling,Reverse Optical Flow,Hoàn toàn không đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Không đồng ý,Hơi không đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 17:59:45,Tăng Triều Tường ,Có,Driving,Minimap,Đồng ý,Hơi đồng ý,Hoàn toàn đồng ý,Hơi đồng ý,Đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 18:07:38,Tăng Triều Khánh,Chưa,Driving,Reverse Optical Flow,Hoàn toàn không đồng ý,Không đồng ý,Hoàn toàn đồng ý,Không đồng ý,Trung lập,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,2
+05/06/2026 18:11:36,Tăng Triều Tường ,Có,Cycling,Minimap,Đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Đồng ý,Đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 18:18:58,Tăng Triều Khánh,Chưa,Walking,Reverse Optical Flow,Không đồng ý,Đồng ý,Hoàn toàn đồng ý,Hơi không đồng ý,Trung lập,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,2
+05/06/2026 18:26:22,Tăng Triều Tường ,Có,Walking,Minimap,Hoàn toàn đồng ý,Đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+08/06/2026 7:58:48,Nguyễn Quốc Huy ,Chưa,Driving,Overlay,Hơi đồng ý,Trung lập,Đồng ý,Đồng ý,Trung lập,1,0,0,1,2,0,0,0,1,1,2,0,0,0,0,0,8
+08/06/2026 8:08:04,Nguyễn Quốc Huy ,Chưa,Walking,Overlay,Đồng ý,Trung lập,Đồng ý,Hơi đồng ý,Hơi đồng ý,1,0,1,1,1,0,0,0,2,1,1,2,0,0,0,0,10
+08/06/2026 8:16:49,Nguyễn Quốc Huy ,Chưa,Cycling,Overlay,Hơi đồng ý,Hơi đồng ý,Đồng ý,Hơi đồng ý,Đồng ý,1,0,1,2,1,0,0,1,1,1,2,1,0,0,0,0,11
+08/06/2026 8:26:25,Nguyễn Quốc Huy ,Chưa,Driving,Reverse Optical Flow,Đồng ý,Hơi đồng ý,Đồng ý,Hơi đồng ý,Hơi đồng ý,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,2
+08/06/2026 8:37:56,Nguyễn Quốc Huy ,Chưa,Walking,Reverse Optical Flow,Đồng ý,Hơi đồng ý,Đồng ý,Hơi đồng ý,Hơi đồng ý,1,1,1,1,1,0,0,1,1,2,0,1,0,0,0,0,10
+08/06/2026 8:46:24,Nguyễn Quốc Huy ,Chưa,Cycling,Reverse Optical Flow,Hơi đồng ý,Hơi đồng ý,Đồng ý,Đồng ý,Hơi đồng ý,1,2,1,1,1,0,0,1,1,2,1,1,0,0,0,0,12
+08/06/2026 8:58:11,Nguyễn Quốc Huy ,Chưa,Driving,Minimap,Hơi đồng ý,Hơi không đồng ý,Hơi đồng ý,Hơi đồng ý,Hơi đồng ý,0,0,0,2,2,0,0,0,1,1,1,1,0,0,0,0,8
+08/06/2026 9:10:00,Nguyễn Quốc Huy ,Chưa,Walking,Minimap,Hơi đồng ý,Trung lập,Đồng ý,Hơi đồng ý,Trung lập,1,1,1,1,1,0,0,0,2,2,1,1,0,0,0,0,11
+08/06/2026 9:23:13,Nguyễn Quốc Huy ,Chưa,Cycling,Minimap,Trung lập,Hơi đồng ý,Đồng ý,Hơi đồng ý,Hơi đồng ý,1,1,1,1,1,0,0,0,1,1,1,1,0,0,0,0,9
+08/06/2026 10:07:32,Trương Thị Anh Thư,Có,Walking,Overlay,Hơi đồng ý,Hơi đồng ý,Trung lập,Hơi đồng ý,Hơi đồng ý,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,2
+08/06/2026 10:18:24,Trương Thị Anh Thư,Có,Driving,Overlay,Đồng ý,Đồng ý,Hơi đồng ý,Hơi đồng ý,Hơi đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+08/06/2026 10:27:29,Trương Thị Anh Thư,Có,Cycling,Overlay,Đồng ý,Đồng ý,Đồng ý,Đồng ý,Đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+08/06/2026 10:30:50,Đỗ Thị Thanh Hiền,Có,Walking,Overlay,Hoàn toàn không đồng ý,Hoàn toàn không đồng ý,Hoàn toàn không đồng ý,Hoàn toàn không đồng ý,Hoàn toàn không đồng ý,1,1,1,1,1,1,0,1,1,1,1,1,0,0,0,0,11
+08/06/2026 10:39:37,Đỗ  Thị Thanh Hiền,Có,Cycling,Overlay,Hoàn toàn không đồng ý,Hoàn toàn không đồng ý,Hoàn toàn không đồng ý,Hoàn toàn không đồng ý,Hoàn toàn không đồng ý,2,0,1,0,0,0,1,0,0,1,0,1,1,0,0,0,7
+08/06/2026 10:40:49,Trương Thị Anh Thư,Có,Walking,Reverse Optical Flow,Trung lập,Hơi không đồng ý,Trung lập,Trung lập,Trung lập,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+08/06/2026 10:49:46,Đỗ Thị Thanh Hiền,Có,Driving,Overlay,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn không đồng ý,1,0,0,0,1,0,0,0,0,0,0,1,0,1,0,0,4
+08/06/2026 10:50:07,Trương Thị Anh Thư,Có,Driving,Reverse Optical Flow,Trung lập,Hơi không đồng ý,Trung lập,Trung lập,Hơi không đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+08/06/2026 10:58:57,Trương Thị Anh Thư,Có,Cycling,Reverse Optical Flow,Trung lập,Trung lập,Hơi đồng ý,Hơi đồng ý,Trung lập,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+08/06/2026 11:05:55,Đỗ Thị Thanh Hiền,Có,Walking,Reverse Optical Flow,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn không đồng ý,1,1,1,1,0,0,1,0,0,0,0,0,0,0,1,1,7
+08/06/2026 11:11:26,Trương Thị Anh Thư,Có,Walking,Minimap,Đồng ý,Đồng ý,Hơi không đồng ý,Đồng ý,Đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+08/06/2026 11:17:18,Đỗ Thị Thanh Hiền,Có,Cycling,Reverse Optical Flow,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Đồng ý,Hoàn toàn không đồng ý,0,0,1,0,0,0,0,0,0,0,1,1,0,1,0,0,4
+08/06/2026 11:19:26,Trương Thị Anh Thư,Có,Driving,Minimap,Hơi đồng ý,Hơi đồng ý,Đồng ý,Đồng ý,Hơi đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+08/06/2026 11:25:35,Đỗ Thị Thanh Hiền,Có,Driving,Reverse Optical Flow,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,2,2,1,0,1,1,1,0,1,0,1,1,1,1,0,0,13
+08/06/2026 11:28:15,Trương Thị Anh Thư,Có,Cycling,Minimap,Hơi đồng ý,Hơi đồng ý,Hơi đồng ý,Đồng ý,Hơi đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+08/06/2026 12:02:47,Đỗ Thị Thanh Hiền,Có,Walking,Minimap,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Đồng ý,Hoàn toàn không đồng ý,0,1,1,0,1,0,0,0,1,1,1,1,1,1,0,0,9
+08/06/2026 12:11:24,Đỗ Thị Thanh Hiền,Có,Cycling,Minimap,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,1,1,1,1,1,1,0,0,1,1,0,0,0,1,0,0,9
+08/06/2026 12:20:33,Đỗ Thị Thanh Hiền,Có,Driving,Minimap,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn không đồng ý,1,1,0,0,2,2,0,0,0,0,0,0,0,1,1,0,8
+08/06/2026 16:54:54,Mạch Chấn Minh,Có,Cycling,Overlay,Hơi không đồng ý,Đồng ý,Hoàn toàn đồng ý,Hơi không đồng ý,Hơi đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+08/06/2026 17:06:06,Mạch Chấn Minh,Có,Walking,Overlay,Trung lập,Đồng ý,Hoàn toàn đồng ý,Trung lập,Hơi đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+08/06/2026 17:14:06,Mạch Chấn Minh,Có,Driving,Overlay,Trung lập,Đồng ý,Hoàn toàn đồng ý,Trung lập,Hơi đồng ý,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+08/06/2026 17:23:50,Mạch Chấn Minh,Có,Cycling,Reverse Optical Flow,Hơi không đồng ý,Hơi đồng ý,Hoàn toàn đồng ý,Hơi không đồng ý,Đồng ý,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+08/06/2026 17:37:24,Mạch Chấn Minh,Có,Walking,Reverse Optical Flow,Trung lập,Đồng ý,Hoàn toàn đồng ý,Trung lập,Đồng ý,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,2
+08/06/2026 17:45:38,Mạch Chấn Minh,Có,Driving,Reverse Optical Flow,Trung lập,Đồng ý,Hoàn toàn đồng ý,Trung lập,Đồng ý,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,2
+08/06/2026 17:54:41,Mạch Chấn Minh,Có,Cycling,Minimap,Đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hơi đồng ý,Đồng ý,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1
+08/06/2026 18:05:07,Mạch Chấn Minh,Có,Walking,Minimap,Hơi đồng ý,Đồng ý,Hoàn toàn đồng ý,Hơi đồng ý,Đồng ý,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1
+08/06/2026 18:14:31,Mạch Chấn Minh,Có,Driving,Minimap,Đồng ý,Đồng ý,Hoàn toàn đồng ý,Hơi đồng ý,Đồng ý,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1
+09/06/2026 14:01:54,Trần Đức An,Có,Cycling,Overlay,Hoàn toàn đồng ý,Đồng ý,Hoàn toàn đồng ý,Đồng ý,Hoàn toàn đồng ý,1,0,1,1,0,0,0,1,0,1,1,1,0,0,0,0,7
+09/06/2026 14:11:27,Trần Đức An,Có,Driving,Overlay,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,1,0,1,1,0,0,0,1,1,1,1,0,0,1,0,0,8
+09/06/2026 14:23:56,Trần Đức An,Có,Walking,Overlay,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,2,1,2,1,1,0,0,1,0,1,0,0,0,0,0,0,9
+09/06/2026 14:33:46,Trần Đức An,Có,Cycling,Reverse Optical Flow,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,2
+09/06/2026 14:45:08,Trần Đức An,Có,Driving,Reverse Optical Flow,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,1,0,1,1,0,0,0,1,1,0,0,0,0,0,0,0,5
+09/06/2026 14:56:44,Trần Đức An,Có,Walking,Reverse Optical Flow,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,1,0,0,1,0,0,0,0,1,0,1,0,0,0,0,0,4
+09/06/2026 15:05:50,Trần Đức An,Có,Cycling,Minimap,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,3
+09/06/2026 15:15:19,Trần Đức An,Có,Driving,Minimap,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,1,0,0,0,0,0,0,1,1,1,0,0,0,0,0,1,5
+09/06/2026 15:27:44,Trần Đức An,Có,Walking,Minimap,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,2,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,7
+30/06/2026 12:34:39,Hoàng Nguyễn Hòa Bình,Có,Walking,Overlay,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+12/03/2026 14:21:10,Trần Trọng Nguyễn,Có,Driving,Reverse Optical Flow,Hơi đồng ý,Đồng ý,Hoàn toàn đồng ý,Hơi đồng ý,Hơi đồng ý,0,0,0,1,1,0,0,0,1,1,0,0,0,0,0,0,4
+12/03/2026 14:30:34,Trần Trọng Nguyễn,Có,Cycling,Reverse Optical Flow,Hơi không đồng ý,Đồng ý,Hoàn toàn đồng ý,Trung lập,Hơi không đồng ý,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+12/03/2026 14:42:47,Trần Trọng Nguyễn,Có,Walking,Reverse Optical Flow,Hơi đồng ý,Đồng ý,Hoàn toàn đồng ý,Đồng ý,Hơi không đồng ý,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,2
+12/03/2026 14:50:23,Trần Trọng Nguyễn,Có,Driving,Overlay,Hơi đồng ý,Hoàn toàn đồng ý,Hoàn toàn đồng ý,Đồng ý,Hơi không đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+12/03/2026 15:01:10,Trần Trọng Nguyễn,Có,Cycling,Overlay,Trung lập,Đồng ý,Hoàn toàn đồng ý,Đồng ý,Hơi không đồng ý,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,2
+12/03/2026 15:13:15,Trần Trọng Nguyễn,Có,Walking,Overlay,Hơi đồng ý,Đồng ý,Hoàn toàn đồng ý,Đồng ý,Hơi không đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+12/03/2026 15:19:11,Trần Trọng Nguyễn,Có,Driving,Minimap,Hơi đồng ý,Đồng ý,Hoàn toàn đồng ý,Đồng ý,Hơi không đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+12/03/2026 15:33:17,Trần Trọng Nguyễn,Có,Cycling,Minimap,Hơi đồng ý,Đồng ý,Hoàn toàn đồng ý,Hơi đồng ý,Hơi không đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+12/03/2026 15:43:34,Trần Trọng Nguyễn ,Có,Walking,Minimap,Hơi đồng ý,Đồng ý,Hoàn toàn đồng ý,Hơi đồng ý,Hơi không đồng ý,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0

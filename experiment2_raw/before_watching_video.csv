@@ -1,0 +1,325 @@
+Dấu thời gian,Tên đầy đủ của bạn là gì?,Môi trường bạn sắp trải nghiệm,Phương pháp bạn sắp trải nghiệm,1. Mức độ khó chịu chung (General discomfort),2. Mệt mỏi (Fatigue),3. Đau đầu (Headache),4. Mỏi mắt (Eye strain),5. Khó tập trung (về mắt) (Difficulty focusing),6. Tăng tiết nước bọt (Increased salivation),7. Đổ mồ hôi (Sweating),8. Buồn nôn (Nausea),9. Khó tập trung (về tinh thần) (Difficulty concentrating),10. Cảm giác nặng đầu (Fullness of head),11. Nhìn mờ (Blurred vision),12. Chóng mặt (khi mở mắt) (Dizziness with eyes open),13. Chóng mặt (khi nhắm mắt) (Dizziness with eyes closed),14. Chóng mặt nghiêm trọng / cảm giác quay cuồng (Vertigo / Feeling of spinning),15. Khó chịu trong dạ dày / cảm giác muốn nôn (Stomach awareness / Feeling want to vomit),16. Ợ hơi (Burping),SUM SSQ
+26/03/2026 10:09:51,Huỳnh Phúc Thành,Driving,Reverse Optical Flow,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1
+26/03/2026 10:23:55,Huỳnh Phúc Thành,Walking,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+26/03/2026 10:37:00,Huỳnh Phúc Thành,Cycling,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1
+26/03/2026 10:52:17,Phúc Thành,Driving,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+26/03/2026 11:00:27,Huỳnh Phúc Thành,Walking,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+26/03/2026 11:02:26,Phúc Thành,Cycling,Path overlay,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,2
+26/03/2026 11:26:36,Phúc Thành,Driving,Minimap,0,1,0,1,0,0,0,0,0,0,1,0,0,0,0,1,4
+26/03/2026 11:36:29,Phúc Thành,Walking,Minimap,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,2
+26/03/2026 11:46:57,Phúc Thành,Cycling,Minimap,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,0,3
+22/04/2026 9:29:40,Đặng Đỗ Thái Mỹ Trân,Walking,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22/04/2026 9:44:05,Đặng Đỗ Thái Mỹ Trân,Driving,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22/04/2026 9:53:55,Đặng Đỗ Thái Mỹ Trân,Cycling,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22/04/2026 10:03:39,Đặng Đỗ Thái Mỹ Trân,Walking,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22/04/2026 10:14:00,Đặng Đỗ Thái Mỹ Trân,Driving,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22/04/2026 10:24:37,Đặng Đỗ Thái Mỹ Trân,Cycling,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22/04/2026 10:33:12,Đặng Đỗ Thái Mỹ Trân,Walking,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22/04/2026 10:42:45,Đặng Đỗ Thái Mỹ Trân,Driving,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22/04/2026 10:53:35,Đặng Đỗ Thái Mỹ Trân,Cycling,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22/05/2026 10:04:27,Lý Cẩm Khang (2k6),Walking,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1
+22/05/2026 10:18:04,Lý Cẩm Khang,Cycling,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22/05/2026 10:28:57,Lý Cẩm Khang,Driving,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22/05/2026 10:41:58,Lý Cẩm Khang,Walking,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22/05/2026 10:51:54,Lý Cẩm Khang,Cycling,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22/05/2026 11:00:21,Lý Cẩm Khang,Driving,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22/05/2026 11:10:43,Lý Cẩm Khang,Walking,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22/05/2026 11:19:57,Lý Cẩm Khang,Cycling,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22/05/2026 11:29:15,Lý Cẩm Khang,Driving,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22/05/2026 13:06:44,Lâm Tuyết Nhung (2k5),Cycling,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22/05/2026 13:22:56,Lâm Tuyết Nhung,Walking,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22/05/2026 13:35:34,Lâm Tuyết Nhung,Driving,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22/05/2026 13:45:36,Lâm Tuyết Nhung,Cycling,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22/05/2026 13:56:35,Lâm Tuyết Nhung,Walking,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22/05/2026 14:06:19,Lâm Tuyết Nhung,Driving,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22/05/2026 14:16:27,Lâm Tuyết Nhung,Cycling,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22/05/2026 14:25:46,Lâm Tuyết Nhung,Walking,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22/05/2026 14:36:06,Lâm Tuyết Nhung,Driving,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+26/05/2026 14:49:32,Mai Lê Hương Giang (2k7),Cycling,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+26/05/2026 14:59:57,Mai Lê Hương Giang ,Driving,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+26/05/2026 15:10:03,Mai Lê Hương Giang ,Walking,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+26/05/2026 15:20:27,Mai Lê Hương Giang ,Cycling,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+26/05/2026 15:31:14,Mai Lê Hương Giang ,Driving,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+26/05/2026 15:33:55,Hoàng Nguyễn Hòa Bình (2k7),Driving,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+26/05/2026 15:41:00,Mai Lê Hương Giang ,Walking,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+26/05/2026 15:43:02,Hoàng Nguyễn Hòa Bình,Cycling,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+26/05/2026 15:50:27,Mai Lê Hương Giang ,Cycling,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+26/05/2026 15:53:07,Hoàng Nguyễn Hòa Bình,Walking,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+26/05/2026 16:00:10,Mai Lê Hương Giang ,Driving,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+26/05/2026 16:01:32,Hoàng Nguyễn Hòa Bình,Driving,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+26/05/2026 16:10:11,Mai Lê Hương Giang ,Walking,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+26/05/2026 16:10:53,Hoàng Nguyễn Hòa Bình,Cycling,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+26/05/2026 16:30:09,Hoàng Nguyễn Hòa Bình,Walking,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+26/05/2026 16:40:39,Hoàng Nguyễn Hòa Bình,Driving,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+26/05/2026 16:50:31,Hoàng Nguyễn Hòa Bình,Cycling,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+26/05/2026 17:02:04,Hoàng Nguyễn Hoà Bình,Walking,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+27/05/2026 15:41:32,LÊ THÙY DÂN ,Walking,Reverse Optical Flow,0,1,1,1,0,1,0,0,0,1,0,0,0,0,0,0,5
+27/05/2026 16:03:15,Lê Gia Linh,Driving,Reverse Optical Flow,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+27/05/2026 16:16:42,Lê Gia Linh,Walking,Reverse Optical Flow,0,0,0,2,0,0,0,1,0,1,0,0,0,0,0,0,4
+27/05/2026 16:18:31,LÊ THÙY DÂN,Driving,Reverse Optical Flow,2,2,2,0,0,0,0,1,1,1,0,0,0,0,0,0,9
+27/05/2026 16:26:37,Lê Gia Linh,Cycling,Reverse Optical Flow,1,0,0,1,0,0,0,2,0,1,0,0,0,0,1,0,6
+27/05/2026 16:28:53,LÊ THÙY DÂN,Cycling,Reverse Optical Flow,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+27/05/2026 16:36:32,Lê Gia Linh,Driving,Minimap,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,2
+27/05/2026 16:37:35,LÊ THÙY DÂN,Walking,Minimap,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+27/05/2026 16:46:21,Lê Gia Linh,Walking,Minimap,0,0,0,0,0,0,0,1,0,1,0,0,0,0,1,0,3
+27/05/2026 16:47:27,LÊ THÙY DÂN,Driving,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+27/05/2026 16:57:35,Lê Gia Linh,Cycling,Minimap,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,2
+27/05/2026 16:58:32,LÊ THÙY DÂN ,Cycling,Minimap,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,2
+27/05/2026 17:05:57,Lê Gia Linh,Driving,Path overlay,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1
+27/05/2026 17:10:10,LÊ THÙY DÂN,Walking,Path overlay,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+27/05/2026 17:16:30,Lê Gia Linh,Walking,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+27/05/2026 17:17:25,LÊ THÙY DÂN,Driving,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+27/05/2026 17:27:05,Lê Gia Linh,Cycling,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+27/05/2026 17:28:34,LÊ THÙY DÂN,Cycling,Path overlay,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+29/05/2026 9:56:43,Thái Phạm Như Quỳnh,Walking,Reverse Optical Flow,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+29/05/2026 10:10:33,Thái Phạm Như Quỳnh ,Cycling,Reverse Optical Flow,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+29/05/2026 10:26:04,Thái Phạm Như Quỳnh ,Driving,Reverse Optical Flow,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+29/05/2026 10:36:22,Thái Phạm Như Quỳnh,Walking,Minimap,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+29/05/2026 10:45:44,Thái Phạm Như Quỳnh ,Cycling,Minimap,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+29/05/2026 10:57:00,Thái Phạm Như Quỳnh ,Driving,Minimap,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+29/05/2026 11:06:25,Thái Phạm Như Quỳnh ,Walking,Path overlay,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+29/05/2026 11:15:58,Thái Phạm Như Quỳnh ,Cycling,Path overlay,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+29/05/2026 11:26:00,Thái Phạm Như Quỳnh ,Driving,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+29/05/2026 12:41:52,Lê Trọng Hiếu,Cycling,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+29/05/2026 12:52:03,Lê Trọng Hiếu,Walking,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+29/05/2026 13:06:38,Lê Trọng Hiếu,Driving,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+29/05/2026 13:20:09,Lê Trọng Hiếu,Cycling,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+29/05/2026 13:29:27,Lê Trọng Hiếu,Walking,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+29/05/2026 13:47:05,Lê Trọng Hiếu,Driving,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+29/05/2026 13:57:35,Lê Trọng Hiếu,Cycling,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+29/05/2026 14:07:45,Lê Trọng Hiếu,Walking,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+29/05/2026 14:19:28,Lê Trọng Hiếu,Driving,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+29/05/2026 14:41:39,Lương Thị Bạch Dương,Cycling,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+29/05/2026 14:45:18,Nguyễn Đặng Kim Ngân,Driving,Minimap,1,0,0,2,1,0,0,0,0,1,1,1,1,0,1,0,9
+29/05/2026 14:56:55,Lương Thị Bạch Dương ,Driving,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+29/05/2026 14:57:31,Nguyễn Đặng Kim Ngân,Cycling,Minimap,0,0,0,1,0,0,0,0,0,0,0,1,1,1,0,0,4
+29/05/2026 15:07:10,Lương Thị Bạch Dương,Walking,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+29/05/2026 15:07:40,Nguyễn Đặng Kim Ngân ,Walking,Minimap,0,1,0,1,1,0,0,0,0,1,0,0,0,0,0,0,4
+29/05/2026 15:20:59,Lương Thị Bạch Dương,Cycling,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+29/05/2026 15:21:38,Nguyễn Đặng Kim Ngân,Driving,Reverse Optical Flow,0,0,0,2,1,0,0,0,0,2,2,0,0,0,0,0,7
+29/05/2026 15:30:23,Lương Thị Bạch Dương,Driving,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+29/05/2026 15:31:52,Nguyễn Đặng Kim Ngân,Cycling,Reverse Optical Flow,1,1,1,3,2,0,0,0,1,3,1,1,1,0,0,0,15
+29/05/2026 15:40:43,Lương Thị Bạch Dương,Walking,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+29/05/2026 15:41:46,Nguyễn Đặng Kim Ngân,Walking,Reverse Optical Flow,1,3,1,3,2,0,0,0,1,3,3,1,0,0,0,0,18
+29/05/2026 15:50:38,Lương Thị Bạch Dương,Cycling,Path overlay,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1
+29/05/2026 15:52:22,Nguyễn Đặng Kim Ngân,Driving,Path overlay,1,2,1,3,1,1,0,0,0,3,3,1,0,0,0,0,16
+29/05/2026 16:01:05,Lương Thị Bạch Dương,Driving,Path overlay,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,2
+29/05/2026 16:06:00,Nguyễn Đặng Kim Ngân,Cycling,Path overlay,1,1,1,3,2,1,0,0,1,3,3,1,1,0,0,0,18
+29/05/2026 16:12:49,Lương Thị Bạch Dương,Walking,Path overlay,1,0,0,0,0,0,0,1,0,1,0,0,0,0,1,0,4
+29/05/2026 16:14:27,Nguyễn Đặng  Kim Ngân,Walking,Path overlay,0,1,1,3,3,0,0,0,1,3,3,1,1,0,0,0,17
+01/06/2026 9:34:48,Lê Phan Nhật Minh,Driving,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 9:48:20,Lê Phan Nhật Minh,Walking,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 9:57:58,Lê Phan Nhật Minh,Cycling,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 10:09:25,Lê Phan Nhật Minh,Driving,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 10:21:28,Lê Phan Nhật Minh,Walking,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 10:31:03,Lê Phan Nhật Minh,Cycling,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 10:40:49,Lê Phan Nhật Minh,Driving,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 10:51:07,Lê Phan Nhật Minh,Walking,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 11:07:44,Lê Phan Nhật Minh,Cycling,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 13:28:28,Nguyễn Thảo Linh,Walking,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 13:41:46,Nguyễn Thảo Linh,Driving,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 13:50:17,Phạm Minh Hoà,Walking,Minimap,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+01/06/2026 13:56:28,Nguyễn Thảo Linh,Cycling,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 14:09:29,Phạm Minh Hoà,Cycling,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 14:11:59,Nguyễn Quỳnh Tú Hân,Cycling,Minimap,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,2
+01/06/2026 14:13:11,Trần Ngọc Hân,Cycling,Minimap,1,1,1,1,0,0,0,1,1,0,1,1,1,1,1,0,11
+01/06/2026 14:16:05,Phạm Minh Hoà,Driving,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 14:16:11,Nguyễn Thảo Linh,Walking,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 14:22:19,Nguyễn Quỳnh Tú Hân,Walking,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 14:22:34,Trần Ngọc Hân ,Driving,Minimap,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+01/06/2026 14:27:19,Nguyễn Thảo Linh,Driving,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 14:28:03,Phạm Minh Hoà,Walking,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 14:31:52,Nguyễn Quỳnh Tú Hân,Driving,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 14:32:39,Trần Ngọc Hân,Walking,Minimap,1,1,1,1,1,0,0,1,0,1,0,0,0,0,1,0,8
+01/06/2026 14:37:02,Nguyễn Thảo Linh,Cycling,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 14:38:41,Phạm Minh Hòa ,Cycling,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 14:40:14,Nguyễn Quỳnh Tú Hân,Cycling,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 14:41:47,Trần Ngọc Hân,Cycling,Reverse Optical Flow,1,1,1,1,1,0,0,0,0,0,0,1,1,0,0,0,7
+01/06/2026 14:47:08,Nguyễn Thảo Linh,Walking,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 14:49:10,Phạm Minh Hòa ,Driving,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 14:52:01,Nguyễn Quỳnh Tú Hân,Walking,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 14:53:43,Trần Ngọc Hân,Driving,Reverse Optical Flow,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+01/06/2026 14:58:26,Nguyễn Thảo Linh,Driving,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 14:59:26,Phạm Minh Hòa ,Walking,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 15:01:37,Nguyễn Quỳnh Tú Hân ,Driving,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 15:04:00,Trần Ngọc Hân ,Walking,Reverse Optical Flow,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1
+01/06/2026 15:07:33,Nguyễn Thảo Linh,Cycling,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 15:08:36,Phạm Minh Hòa ,Cycling,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 15:09:55,Nguyễn Quỳnh Tú Hân ,Cycling,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 15:11:26,Trần Ngọc Hân ,Cycling,Path overlay,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,3
+01/06/2026 15:15:22,Phạm Minh Hoà,Driving,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 15:37:36,Nguyễn Quỳnh Tú Hân ,Walking,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 15:38:57,Trần Ngọc Hân,Driving,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 15:59:49,Nguyễn Quỳnh Tú Hân,Driving,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+01/06/2026 15:59:55,Trần Ngọc Hân ,Walking,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+02/06/2026 13:37:08,Nguyễn Gia Huy ,Driving,Minimap,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,32
+02/06/2026 13:47:38,Nguyễn Gia Huy ,Cycling,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+02/06/2026 13:58:17,Nguyễn Gia Huy ,Walking,Minimap,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,1,4
+02/06/2026 14:08:57,Nguyễn Gia Huy ,Driving,Path overlay,1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,1,4
+02/06/2026 14:18:52,Nguyễn Gia Huy ,Cycling,Path overlay,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,4
+02/06/2026 14:28:39,Nguyễn Gia Huy ,Walking,Path overlay,1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,1,4
+02/06/2026 14:38:13,Nguyễn Gia Huy ,Driving,Reverse Optical Flow,0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,1,4
+02/06/2026 14:49:23,Nguyễn Gia Huy ,Cycling,Reverse Optical Flow,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,1,3
+02/06/2026 14:59:45,Nguyễn Gia Huy ,Walking,Reverse Optical Flow,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,1,3
+03/06/2026 10:47:51,Nguyễn Đại Dũng,Driving,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+03/06/2026 10:58:27,Nguyễn Đại Dũng,Walking,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+03/06/2026 11:10:28,Nguyễn Đại Dũng,Cycling,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+03/06/2026 11:19:42,Nguyễn Đại Dũng,Driving,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+03/06/2026 11:29:51,Nguyễn Đại Dũng,Walking,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+03/06/2026 11:41:00,Nguyễn Đại Dũng ,Cycling,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+03/06/2026 11:50:00,Nguyễn Đại Dũng,Driving,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+03/06/2026 12:01:16,Nguyễn Đại Dũng,Walking,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+03/06/2026 12:10:46,Nguyễn Đại Dũng,Cycling,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+03/06/2026 14:27:17,Nguyễn Hoàng Lân,Walking,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+03/06/2026 14:35:27,Trần Nguyên Anh,Walking,Minimap,1,0,1,1,1,2,0,1,1,1,0,2,0,0,0,0,11
+03/06/2026 14:53:09,Trần Nguyên Anh,Driving,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+03/06/2026 14:53:48,Nguyễn Hoàng Lân,Cycling,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+03/06/2026 15:01:35,Nguyễn Hoàng Lân,Driving,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+03/06/2026 15:02:19,Trần Nguyên Anh,Cycling,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+03/06/2026 15:12:50,Nguyễn Hoàng Lân,Walking,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+03/06/2026 15:13:23,Trần Nguyên Anh,Walking,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+03/06/2026 15:24:10,Nguyễn Hoàng Lân,Cycling,Path overlay,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+03/06/2026 15:25:22,Trần Nguyên Anh,Driving,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+03/06/2026 15:35:27,Nguyễn Hoàng Lân,Driving,Path overlay,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,2
+03/06/2026 15:36:38,Trần Nguyên Anh,Cycling,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+03/06/2026 15:45:13,Nguyễn Hoàng Lân,Walking,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+03/06/2026 15:45:50,Trần Nguyên Anh,Walking,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+03/06/2026 15:59:42,Nguyễn Hoàng Lân,Cycling,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+03/06/2026 16:00:33,Trần Nguyên Anh,Driving,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+03/06/2026 16:10:35,Nguyễn Hoàng Lân,Driving,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+03/06/2026 16:11:22,Trần Nguyên Anh,Cycling,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+04/06/2026 15:43:05,Trần Thị Khánh Vy,Cycling,Minimap,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,16
+04/06/2026 15:55:08,Trần Thị Khánh Vy,Walking,Minimap,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,4
+04/06/2026 16:04:51,Trần Thị Khánh Vy,Driving,Minimap,1,1,2,1,0,0,0,1,0,1,0,0,0,0,0,0,7
+04/06/2026 16:15:11,Trần Thị Khánh Vy,Cycling,Path overlay,1,1,1,0,0,0,0,1,0,1,0,0,0,1,1,0,7
+04/06/2026 16:25:29,Trần Thị Khánh Vy,Walking,Path overlay,1,1,1,0,0,0,0,1,0,1,1,0,0,1,1,0,8
+04/06/2026 16:35:54,Trần Thị Khánh Vy,Driving,Path overlay,1,1,1,1,0,1,0,1,0,1,1,0,0,1,1,1,11
+04/06/2026 16:45:07,Trần Thị Khánh Vy,Cycling,Reverse Optical Flow,1,1,1,1,1,0,0,1,0,1,2,0,0,1,1,3,14
+04/06/2026 16:58:30,Trần Thị Khánh Vy,Walking,Reverse Optical Flow,1,1,1,1,0,0,0,1,0,1,1,0,0,1,1,0,9
+04/06/2026 17:10:09,Trần Thị Khánh Vy,Driving,Reverse Optical Flow,1,1,1,1,1,1,1,1,1,1,1,0,0,2,1,0,14
+05/06/2026 9:31:27,Nguyễn Văn Khôi ,Cycling,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 9:41:09,Nguyễn Văn Khôi ,Driving,Minimap,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+05/06/2026 9:51:06,Nguyễn Văn Khôi ,Walking,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 9:54:28,Trịnh Hồ Anh Thư ,Driving,Path overlay,2,2,1,1,1,0,0,1,1,2,1,2,1,1,2,0,18
+05/06/2026 9:57:56,Đỗ Anh Thư ,Driving,Path overlay,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,2
+05/06/2026 10:04:17,Nguyễn Văn Khôi,Cycling,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 10:11:00,Trịnh Hồ Anh Thư ,Walking,Path overlay,1,1,0,2,0,0,0,0,0,1,0,0,0,0,0,0,5
+05/06/2026 10:12:26,Đỗ Anh Thư ,Cycling,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 10:14:53,Nguyễn Văn Khôi,Driving,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 10:20:57,Trịnh Hồ Anh Thư ,Cycling,Path overlay,1,0,1,0,0,0,0,1,1,2,1,1,1,0,0,0,9
+05/06/2026 10:21:52,Đỗ Anh Thư ,Walking,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 10:25:10,Nguyễn Văn Khôi,Walking,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 10:31:02,Trịnh Hồ Anh Thư ,Driving,Minimap,1,1,0,1,0,0,0,0,0,1,0,0,0,0,0,0,4
+05/06/2026 10:32:02,Đỗ Anh Thư ,Driving,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 10:34:59,Nguyễn Văn Khôi,Cycling,Reverse Optical Flow,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+05/06/2026 10:41:10,Trịnh Hồ Anh Thư ,Walking,Minimap,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1
+05/06/2026 10:42:02,Đỗ Anh Thư ,Cycling,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 10:44:58,Nguyễn Văn Khôi ,Driving,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 10:51:12,Trịnh Hồ Anh Thư ,Cycling,Minimap,1,0,0,2,0,0,0,0,1,2,0,0,1,1,0,0,8
+05/06/2026 10:52:06,Đỗ Anh Thư ,Walking,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 10:54:47,Nguyễn Văn Khôi,Walking,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 11:00:45,Trịnh Hồ Anh Thư ,Driving,Reverse Optical Flow,1,0,1,1,0,0,0,0,0,1,0,1,1,0,1,0,7
+05/06/2026 11:02:47,Đỗ Anh Thư ,Driving,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 11:21:04,Trịnh Hồ Anh Thư ,Walking,Reverse Optical Flow,2,1,2,1,1,0,0,1,1,1,0,2,1,0,1,0,14
+05/06/2026 11:27:16,Trịnh Hồ Anh Thư ,Cycling,Reverse Optical Flow,1,1,2,1,0,0,0,1,0,2,1,1,2,0,1,0,13
+05/06/2026 11:28:18,Đỗ Anh Thư ,Cycling,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 11:58:13,Đỗ Anh Thư ,Walking,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 13:03:24,Lê Quỳnh Như ,Walking,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 13:13:20,Lê Quỳnh Như ,Driving,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 13:27:01,Lê Quỳnh Như,Cycling,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 13:28:31,Nguyễn Ngọc Minh Ánh,Walking,Path overlay,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+05/06/2026 13:36:33,Lê Quỳnh Như,Walking,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 13:40:14,Nguyễn Ngọc Minh Ánh,Cycling,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 13:46:38,Lê Quỳnh Như,Driving,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 13:47:54,Nguyễn Ngọc Minh Ánh,Driving,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 13:55:29,Lê Quỳnh Như,Cycling,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 13:57:44,Nguyễn Ngọc Minh Ánh,Walking,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 14:05:58,Lê Quỳnh Như,Walking,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 14:08:32,Nguyễn Ngọc Minh Ánh,Cycling,Minimap,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+05/06/2026 14:14:22,Hoàng Thị Tố Như,Cycling,Path overlay,1,0,2,1,1,1,0,0,2,2,0,1,2,0,0,0,13
+05/06/2026 14:17:16,Lê Quỳnh Như ,Driving,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 14:18:07,Nguyễn Ngọc Minh Ánh,Driving,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 14:24:32,Hoàng Thị Tố Như,Walking,Path overlay,0,0,1,1,0,0,0,0,0,1,0,1,0,0,0,0,4
+05/06/2026 14:26:21,Lê Quỳnh Như ,Cycling,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 14:29:21,Nguyễn Ngọc Minh Ánh,Walking,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 14:32:55,Hoàng Thị Tố Như,Driving,Path overlay,0,0,1,1,0,0,0,0,0,1,0,1,0,0,0,0,4
+05/06/2026 14:49:39,Nguyễn Ngọc Minh Ánh,Cycling,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 14:51:10,Hoàng Thị Tố Như,Cycling,Minimap,1,0,1,1,0,0,0,0,1,1,0,1,1,0,0,0,7
+05/06/2026 14:58:54,Nguyễn Ngọc Minh Ánh,Driving,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 15:02:17,Hoàng Thị Tố Như,Walking,Minimap,1,1,1,1,0,0,0,0,1,2,0,0,1,0,0,0,8
+05/06/2026 15:22:06,Hoàng Thị Tố Như,Driving,Minimap,2,1,2,1,0,0,0,0,1,2,0,1,1,0,0,0,11
+05/06/2026 15:31:44,Hoàng Thị Tố Như,Cycling,Reverse Optical Flow,2,1,1,1,0,0,0,0,1,1,0,1,1,0,0,0,9
+05/06/2026 15:41:36,Hoàng Thị Tố Như,Walking,Reverse Optical Flow,2,1,2,1,0,0,0,0,1,2,1,1,1,0,0,0,12
+05/06/2026 15:50:44,Hoàng Thị Tố Như,Driving,Reverse Optical Flow,1,1,1,1,0,0,0,0,1,0,0,0,1,0,0,0,6
+05/06/2026 16:50:08,Tăng Triều Khánh,Cycling,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 16:50:17,Tăng Triều Tường ,Driving,Path overlay,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+05/06/2026 17:01:16,Tăng Triều Tường ,Cycling,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 17:01:57,Tăng Triều Khánh,Driving,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 17:11:55,Tăng Triều Khánh,Walking,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 17:11:57,Tăng Triều Tường ,Walking,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 17:21:51,Tăng Triều Khánh,Cycling,Minimap,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+05/06/2026 17:22:16,Tăng Triều Tường ,Driving,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 17:31:54,Tăng Triều Khánh,Driving,Minimap,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+05/06/2026 17:32:08,Tăng Triều Tường ,Cycling,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 17:42:43,Tăng Triều Khánh,Walking,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 17:42:49,Tăng Triều Tường ,Walking,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 17:53:54,Tăng Triều Khánh,Cycling,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 17:55:19,Tăng Triều Tường ,Driving,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 18:05:05,Tăng Triều Khánh,Driving,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 18:06:12,Tăng Triều Tường ,Cycling,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 18:14:36,Tăng Triều Khánh,Walking,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+05/06/2026 18:15:24,Tăng Triều Tường ,Walking,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+08/06/2026 7:51:38,Nguyễn Quốc Huy ,Driving,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+08/06/2026 8:02:15,Nguyễn Quốc Huy ,Walking,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+08/06/2026 8:12:23,Nguyễn Quốc Huy ,Cycling,Path overlay,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,2
+08/06/2026 8:22:09,Nguyễn Quốc Huy ,Driving,Reverse Optical Flow,1,0,1,1,1,0,0,0,1,1,0,0,0,0,0,0,6
+08/06/2026 8:32:52,Nguyễn Quốc Huy ,Walking,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+08/06/2026 8:42:55,Nguyễn Quốc Huy ,Cycling,Reverse Optical Flow,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+08/06/2026 8:54:31,Nguyễn Quốc Huy ,Driving,Minimap,1,1,0,1,1,0,0,0,1,1,0,0,0,0,0,0,6
+08/06/2026 9:04:59,Nguyễn Quốc Huy ,Walking,Minimap,0,1,0,1,1,0,0,0,1,1,0,0,0,0,0,0,5
+08/06/2026 9:19:56,Nguyễn Quốc Huy ,Cycling,Minimap,1,1,0,1,1,0,0,0,1,1,0,0,0,0,0,0,6
+08/06/2026 9:59:46,Trương Thị Anh Thư,Walking,Path overlay,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,2
+08/06/2026 10:13:44,Trương Thị Anh Thư,Driving,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+08/06/2026 10:20:49,Đỗ  Thị Thanh Hiền,Walking,Path overlay,2,1,1,2,3,1,1,1,2,1,0,1,1,1,0,0,18
+08/06/2026 10:23:48,Trương Thị Anh Thư,Cycling,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+08/06/2026 10:34:29,Đỗ Thị Thanh Hiền,Cycling,Path overlay,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,2
+08/06/2026 10:35:55,Trương Thị Anh Thư,Walking,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+08/06/2026 10:44:40,Đỗ Thị Thanh Hiền,Driving,Path overlay,0,0,1,0,2,0,0,1,0,0,0,1,0,1,0,0,6
+08/06/2026 10:46:33,Trương Thị Anh Thư,Driving,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+08/06/2026 10:56:15,Trương Thị Anh Thư,Cycling,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+08/06/2026 10:59:44,Đỗ Thị Thanh Hiền,Walking,Reverse Optical Flow,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+08/06/2026 11:06:26,Trương Thị Anh Thư,Walking,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+08/06/2026 11:09:18,Đỗ Thị Thanh Hiền,Cycling,Reverse Optical Flow,1,1,1,1,1,0,0,0,0,1,1,1,1,1,0,0,10
+08/06/2026 11:16:25,Trương Thị Anh Thư,Driving,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+08/06/2026 11:22:37,Đỗ Thị Thanh Hiền,Driving,Reverse Optical Flow,1,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,3
+08/06/2026 11:25:16,Trương Thị Anh Thư,Cycling,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+08/06/2026 11:51:06,Đỗ Thị Thanh Hiền,Walking,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+08/06/2026 12:06:09,Đỗ Thị Thanh Hiền,Cycling,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+08/06/2026 12:16:53,Đỗ Thị Thanh Hiền,Driving,Minimap,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,0,6
+08/06/2026 16:50:08,Mạch Chấn Minh,Cycling,Path overlay,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+08/06/2026 17:01:28,Mạch Chấn Minh,Walking,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+08/06/2026 17:11:39,Mạch Chấn Minh,Driving,Path overlay,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+08/06/2026 17:20:49,Mạch Chấn Minh,Cycling,Reverse Optical Flow,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+08/06/2026 17:31:45,Mạch Chấn Minh,Walking,Reverse Optical Flow,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+08/06/2026 17:41:45,Mạch Chấn Minh,Driving,Reverse Optical Flow,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,2
+08/06/2026 17:51:48,Mạch Chấn Minh,Cycling,Minimap,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1
+08/06/2026 18:01:30,Mạch Chấn Minh,Walking,Minimap,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1
+08/06/2026 18:11:42,Mạch Chấn Minh,Driving,Minimap,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1
+09/06/2026 13:58:27,Trần Đức An,Cycling,Path overlay,0,0,0,1,1,0,0,0,0,1,0,0,0,0,0,0,3
+09/06/2026 14:08:57,Trần Đức An,Driving,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+09/06/2026 14:19:29,Trần Đức An,Walking,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+09/06/2026 14:30:29,Trần Đức An,Cycling,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+09/06/2026 14:42:24,Trần Đức An,Driving,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+09/06/2026 14:52:57,Trần Đức An,Walking,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+09/06/2026 15:03:18,Trần Đức An,Cycling,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+09/06/2026 15:11:48,Trần Đức An,Driving,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+09/06/2026 15:24:01,Trần Đức An,Walking,Minimap,0,1,1,1,1,0,0,1,0,0,0,0,0,0,0,0,5
+12/03/2026 14:14:22,Trần Trọng Nguyễn,Driving,Reverse Optical Flow,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1
+12/03/2026 14:26:47,Trần Trọng Nguyễn,Cycling,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+12/03/2026 14:37:39,Trần Trọng Nguyễn,Walking,Reverse Optical Flow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+12/03/2026 14:47:37,Trần Trọng Nguyễn,Driving,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+12/03/2026 14:58:24,Trần Trọng Nguyễn,Cycling,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+12/03/2026 15:07:30,Trần Trọng Nguyễn,Walking,Path overlay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+12/03/2026 15:17:05,Trần Trọng Nguyễn,Driving,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+12/03/2026 15:28:11,Trần Trọng Nguyễn,Cycling,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+12/03/2026 15:39:32,Trần Trọng Nguyễn,Walking,Minimap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
