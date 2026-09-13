@@ -1,0 +1,64 @@
+ABSOLUTE POST-EXPOSURE SSQ TSC — STUDY 1 vs STUDY 2
+Both studies scored with Kennedy (1993) Table 4 weights; no participant overlap.
+Study 1 measured SSQ after each trial only; Study 2 values are the POST scores.
+
+==== Between-study tests ====
+
+--- All conditions (participant means, n = 36 vs 36) ---
+  Study 1: M = 58.03 (SD 29.18), Mdn = 61.71
+  Study 2: M = 17.98 (SD 19.86), Mdn = 8.93
+  Difference = 40.05, 95% CI [28.28, 51.81]; Welch t(61.7) = 6.81, p = 4.8e-09
+  Mann-Whitney W = 1124, p = 8.8e-08; Cohen's d = 1.60
+  Ratio of means S1/S2 = 3.23, bootstrap 95% CI [2.25, 4.96]
+
+--- Shared methods only (Minimap + Path Overlay) (participant means, n = 36 vs 36) ---
+  Study 1: M = 56.12 (SD 29.31), Mdn = 58.91
+  Study 2: M = 17.52 (SD 19.87), Mdn = 8.10
+  Difference = 38.59, 95% CI [26.79, 50.39]; Welch t(61.6) = 6.54, p = 1.4e-08
+  Mann-Whitney W = 1113, p = 1.7e-07; Cohen's d = 1.54
+  Ratio of means S1/S2 = 3.20, bootstrap 95% CI [2.22, 5.00]
+
+==== Trial-level summaries by study ====
+   Study   n  mean    sd median    lo    hi
+ Study 1 432 58.03 41.14  52.36 54.14 61.92
+ Study 2 324 17.98 23.12   7.48 15.46 20.51
+
+==== Method x Video cell means (n = 36 per cell) ====
+   Study       Method   Video  n  mean    sd median    lo    hi
+ Study 1     Baseline Walking 36 78.02 49.16  78.54 61.39 94.65
+ Study 1     Baseline Cycling 36 68.36 45.25  72.93 53.05 83.67
+ Study 1     Baseline Driving 36 68.36 49.06  57.97 51.76 84.96
+ Study 1  Dynamic FOV Walking 36 54.65 46.08  44.88 39.06 70.24
+ Study 1  Dynamic FOV Cycling 36 48.72 38.16  37.40 35.81 61.63
+ Study 1  Dynamic FOV Driving 36 41.56 30.26  37.40 31.32 51.79
+ Study 1      Minimap Walking 36 60.36 40.16  50.49 46.77 73.95
+ Study 1      Minimap Cycling 36 55.27 36.25  48.62 43.00 67.53
+ Study 1      Minimap Driving 36 50.91 38.07  52.36 38.02 63.79
+ Study 1 Path Overlay Walking 36 56.00 31.63  52.36 45.29 66.70
+ Study 1 Path Overlay Cycling 36 58.18 41.28  46.75 44.21 72.15
+ Study 1 Path Overlay Driving 36 56.00 36.20  52.36 43.75 68.24
+ Study 2          ROF Walking 36 25.66 27.79  20.57 16.26 35.06
+ Study 2          ROF Cycling 36 15.90 21.83   5.61  8.51 23.28
+ Study 2          ROF Driving 36 15.17 23.53   5.61  7.20 23.13
+ Study 2      Minimap Walking 36 20.99 23.99  11.22 12.87 29.10
+ Study 2      Minimap Cycling 36 18.08 23.68   5.61 10.06 26.09
+ Study 2      Minimap Driving 36 16.31 18.59   7.48 10.02 22.60
+ Study 2 Path Overlay Walking 36 19.74 22.13  11.22 12.25 27.23
+ Study 2 Path Overlay Cycling 36 15.48 23.06   5.61  7.68 23.28
+ Study 2 Path Overlay Driving 36 14.54 22.79   3.74  6.83 22.26
+
+Cell-mean range: Study 1 41.6-78.0; Study 2 14.5-25.7
+
+==== Shared methods: Study 1 / Study 2 ratio of cell means ====
+       Method   Video Study 1 Study 2 ratio
+      Minimap Walking   60.36   20.99  2.88
+      Minimap Cycling   55.27   18.08  3.06
+      Minimap Driving   50.91   16.31  3.12
+ Path Overlay Walking   56.00   19.74  2.84
+ Path Overlay Cycling   58.18   15.48  3.76
+ Path Overlay Driving   56.00   14.54  3.85
+
+==== Share of trials with POST TSC = 0 ====
+   Study zero   n   pct
+ Study 1   18 432  4.2%
+ Study 2  117 324 36.1%
