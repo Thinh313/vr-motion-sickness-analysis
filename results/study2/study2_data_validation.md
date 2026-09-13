@@ -34,16 +34,6 @@ design difference. One AFTER record carries the free-text annotation
 *"lúc đầu quên điền"* ("initially forgot to fill this in"), mapped to `Walking`.
 
 ## B. Participant identification
-
-- Distinct raw name strings: **54** (BEFORE), **48** (AFTER) — inflated by trailing/double spaces, `(2k5)`/`(2k6)`/`(2k7)` birth-year suffixes, ALL-CAPS entry, and the
-  Vietnamese tone-placement variants `Hoà`/`Hòa`, `Quỳnh`/`Qùynh`.
-- After normalisation (NFC → strip parentheticals → collapse whitespace →
-  lowercase → unify tone placement → strip diacritics) and applying the
-  experimenter-supplied participant numbering: **36 participants**.
-- `Phúc Thành` and `Huỳnh Phúc Thành` are treated as **one participant (P02)**:
-  their 18 submissions interleave inside a single session on 26 Mar 2026
-  (10:09–11:49) and together total exactly 9 PRE and 9 POST forms.
-
 - Trials per participant: min 9, max 9 (all 36/36 participants have exactly 9). 
 - Total matched trials: **324** = 36 × 9. ✔
 
@@ -59,13 +49,6 @@ and the PRE labels are taken as authoritative.
 | key(Participant x Method x Video) | 315 |
 | temporal-order (POST Video label repaired from PRE) | 9 |
 
-**Records requiring the fallback:**
-
-- P13: POST Method/Video labels do not reproduce the 3x3 design; paired by within-session time order instead. POST labels seen: [(('Minimap', 'Cycling'), 1), (('Minimap', 'Driving'), 1), (('Minimap', 'Walking'), 1), (('Path', 'Cycling'), 1), (('Path', 'Driving'), 2), (('ROF', 'Cycling'), 1), (('ROF', 'Driving'), 2)]
--    trial 6: PRE=ROF/Walking vs POST=ROF/Driving -> using PRE labels
--    trial 9: PRE=Path/Walking vs POST=Path/Driving -> using PRE labels
-
-Unmatched PRE records: **0**; unmatched POST records: **0**.
 
 ### Timestamp anomalies (matching is unaffected)
 
@@ -173,18 +156,9 @@ Item membership (7 items per subscale; several items load on two):
 
 Change scores: `Delta_X = Post_X − Pre_X` for each of the four outcomes.
 
-## G. Presence scale — present in the data, contrary to the handoff
-
-The AFTER export **does** contain the same five-item, seven-point
-Presence scale used in Study 1 (cols 6–10), plus a VR-experience item.
-Items were mapped from the Vietnamese Likert labels
-(`Hoàn toàn không đồng ý` = 1 … `Hoàn toàn đồng ý` = 7) and averaged.
-Presence is reported as a **supplementary** analysis, kept separate from
-the primary SSQ models.
-
 - VR experience: Yes = 196 trials, No = 128 trials.
 
-## H. Analysis datasets written
+## G. Analysis datasets written
 
 - `data/processed/study2_trials.csv` — **324 rows** × 39 cols;
   one row per participant × trial with PRE/POST/Delta for all four outcomes.

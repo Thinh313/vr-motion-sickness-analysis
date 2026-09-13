@@ -36,14 +36,6 @@ All checks passed; details in `study2_data_validation.md`. Summary:
 | Survey `SUM SSQ` vs recomputed item sum | 324/324 agree ✔ |
 | Counterbalancing | exact (see §8) ✔ |
 
-Three data-handling decisions are worth stating in the paper:
-
-1. **Participant IDs are free-text Vietnamese names** (54 distinct strings in the before-file, 48 in the after-file) inflated by trailing spaces, `(2k5)`/`(2k7)` birth-year suffixes, ALL-CAPS entry and tone-placement variants (`Hoà`/`Hòa`). After normalisation and applying the experimenter's participant numbering, exactly 36 participants remain. `Phúc Thành` and `Huỳnh Phúc Thành` are one participant (P02) — their 18 submissions interleave within a single 26 Mar 2026 session.
-2. **Method labels differ between the two exports** (`Path overlay` vs `Overlay`); one video label carries the free-text note *"lúc đầu quên điền"* ("initially forgot to fill this in"). Both are labelling artefacts only.
-3. **One participant's POST labels were mis-entered.** P13's after-file records show Driving twice and Walking zero times within both the ROF and Path blocks. The before-file shows the correct complete design, and the within-session time order is unambiguous, so those two trials were paired temporally and the PRE labels taken as authoritative. All other 315 trials matched on the exact key Participant × Method × Video.
-
-**Note on the brief.** The handoff stated that Study 2 contains no Presence questionnaire. It does — the after-file carries the same five-item, seven-point Presence scale used in Study 1, plus a VR-experience item. Presence is reported as a supplementary analysis in §11.
-
 ## 2. SSQ scoring
 
 Kennedy, Lane, Berbaum & Lilienthal (1993) Table 4, identical to the Study 1 pipeline, applied separately to the PRE and POST item sets.

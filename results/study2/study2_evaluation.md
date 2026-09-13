@@ -34,22 +34,13 @@ Tài liệu này tóm tắt và diễn giải kết quả của Study 2. Số li
 Tất cả các kiểm tra đều đạt: 324 dòng ở mỗi file, đúng **36 người × 9 trial**, ghép PRE↔POST
 được 324/324, không có giá trị thiếu, không trùng lặp, thang điểm mục SSQ đúng 0–3.
 
-Ba điểm cần lưu ý khi viết bài:
+Nhưng điểm cần lưu y:
 
-1. **Mã người tham gia là họ tên tự do bằng tiếng Việt** (54 chuỗi khác nhau ở file before,
-   48 ở file after) do khoảng trắng thừa, hậu tố `(2k5)`/`(2k7)`, viết HOA toàn bộ, và biến thể
-   dấu `Hoà`/`Hòa`. Sau khi chuẩn hoá và áp dụng bảng đánh số người tham gia, còn đúng 36 người.
-   `Phúc Thành` và `Huỳnh Phúc Thành` là **một người (P02)** — 18 phiếu của họ xen kẽ nhau trong
-   cùng một buổi ngày 26/03/2026.
-2. **Nhãn phương pháp khác nhau giữa hai file** (`Path overlay` và `Overlay`); một bản ghi video
+1. **Nhãn phương pháp khác nhau giữa hai file** (`Path overlay` và `Overlay`); một bản ghi video
    có ghi chú *"lúc đầu quên điền"*. Đây chỉ là khác biệt nhãn, không phải khác biệt thiết kế.
-3. **Một người nhập sai nhãn POST.** P13 có hai trial ghi Driving và không có Walking trong cả
+2. **Một người nhập sai nhãn POST.** P13 có hai trial ghi Driving và không có Walking trong cả
    khối ROF lẫn Path. File before ghi đúng thiết kế đầy đủ và thứ tự thời gian trong buổi là rõ
    ràng, nên hai trial này được ghép theo thời gian và lấy nhãn từ bản ghi PRE.
-
-**Lưu ý về đề bài:** tài liệu handoff nói Study 2 không có thang Presence. **Thực tế là có** —
-file after chứa đúng thang Presence 5 mục, 7 mức đã dùng ở Study 1, kèm câu hỏi kinh nghiệm VR.
-Presence được phân tích bổ sung ở mục 7.
 
 ## 2. Thống kê mô tả
 
