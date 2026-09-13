@@ -1,0 +1,205 @@
+SHARED CELLS: STUDY 1 vs STUDY 2 — MIXED ANOVA ON POST SSQ
+Study (between) x Method [Minimap, Path Overlay] (within) x Video (within)
+N = 36 + 36 participants, 432 observations (6 per participant)
+
+==== 1. Cell means, POST TSC (n = 36 per cell) ====
+       Method   Video M_Study 1 M_Study 2 SD_Study 1 SD_Study 2 ratio
+      Minimap Walking     60.36     20.99      40.16      23.99  2.88
+      Minimap Cycling     55.27     18.08      36.25      23.68  3.06
+      Minimap Driving     50.91     16.31      38.07      18.59  3.12
+ Path Overlay Walking     56.00     19.74      31.63      22.13  2.84
+ Path Overlay Cycling     58.18     15.48      41.28      23.06  3.76
+ Path Overlay Driving     56.00     14.54      36.20      22.79  3.85
+
+==== 2. Mixed ANOVA, all four SSQ outcomes (Holm across DVs per effect) ====
+             DV             Effect           df     F     p p_holm eta2G sig
+            TSC              Study  1.00, 70.00 42.76 <.001  <.001 0.287 ***
+         Nausea              Study  1.00, 70.00 41.66 <.001  <.001 0.259 ***
+     Oculomotor              Study  1.00, 70.00 41.33 <.001  <.001 0.283 ***
+ Disorientation              Study  1.00, 70.00 34.06 <.001  <.001 0.231 ***
+            TSC             Method  1.00, 70.00  0.03  .873  1.000 0.000    
+         Nausea             Method  1.00, 70.00  0.00  .948  1.000 0.000    
+     Oculomotor             Method  1.00, 70.00  0.18  .671  1.000 0.000    
+ Disorientation             Method  1.00, 70.00  0.00 1.000  1.000 0.000    
+            TSC       Study:Method  1.00, 70.00  0.57  .453  1.000 0.001    
+         Nausea       Study:Method  1.00, 70.00  0.61  .437  1.000 0.001    
+     Oculomotor       Study:Method  1.00, 70.00  0.77  .385  1.000 0.001    
+ Disorientation       Study:Method  1.00, 70.00  0.16  .692  1.000 0.000    
+            TSC              Video 1.70, 119.16  1.61  .207   .622 0.004    
+         Nausea              Video 1.52, 106.58  1.36  .258   .622 0.005    
+     Oculomotor              Video 1.82, 127.16  2.02  .141   .565 0.005    
+ Disorientation              Video 1.77, 124.16  1.08  .337   .622 0.003    
+            TSC        Study:Video 1.70, 119.16  0.10  .880  1.000 0.000    
+         Nausea        Study:Video 1.52, 106.58  0.05  .906  1.000 0.000    
+     Oculomotor        Study:Video 1.82, 127.16  1.01  .361  1.000 0.002    
+ Disorientation        Study:Video 1.77, 124.16  0.06  .921  1.000 0.000    
+            TSC       Method:Video 1.79, 125.50  0.83  .428   .856 0.001    
+         Nausea       Method:Video 1.80, 125.76  1.31  .272   .817 0.002    
+     Oculomotor       Method:Video 1.84, 128.46  1.84  .166   .665 0.002    
+ Disorientation       Method:Video 1.82, 127.25  0.48  .600   .856 0.001    
+            TSC Study:Method:Video 1.79, 125.50  1.17  .309   .927 0.001    
+         Nausea Study:Method:Video 1.80, 125.76  2.71  .076   .305 0.003    
+     Oculomotor Study:Method:Video 1.84, 128.46  0.71  .482   .963 0.001    
+ Disorientation Study:Method:Video 1.82, 127.25  0.60  .534   .963 0.001    
+
+Mauchly sphericity tests (TSC):
+                   Test statistic p-value
+Video                      0.8251  0.0013
+Study:Video                0.8251  0.0013
+Method:Video               0.8845  0.0145
+Study:Method:Video         0.8845  0.0145
+
+==== 3. Study 1 vs Study 2 within each Method x Video cell ====
+(emmeans on the mixed-ANOVA model; Bonferroni across the 6 cells)
+
+--- TSC (Study 1 − Study 2) ---
+       Method   Video  diff      CI95_bonf    t df p_bonf    d
+      Minimap Walking 39.37 [18.20, 60.55] 5.05 70  <.001 1.19
+ Path Overlay Walking 36.26 [18.79, 53.73] 5.64 70  <.001 1.33
+      Minimap Cycling 37.19 [17.60, 56.79] 5.15 70  <.001 1.21
+ Path Overlay Cycling 42.70 [21.30, 64.10] 5.42 70  <.001 1.28
+      Minimap Driving 34.59 [15.42, 53.77] 4.90 70  <.001 1.15
+ Path Overlay Driving 41.45 [22.09, 60.81] 5.81 70  <.001 1.37
+
+--- Nausea (Study 1 − Study 2) ---
+       Method   Video  diff      CI95_bonf    t df p_bonf    d
+      Minimap Walking 24.11  [9.30, 38.93] 4.42 70  <.001 1.04
+ Path Overlay Walking 20.67  [8.97, 32.37] 4.80 70  <.001 1.13
+      Minimap Cycling 19.87  [9.07, 30.68] 4.99 70  <.001 1.18
+ Path Overlay Cycling 23.32 [11.46, 35.18] 5.34 70  <.001 1.26
+      Minimap Driving 18.02  [6.43, 29.61] 4.22 70  <.001 0.99
+ Path Overlay Driving 24.38 [14.20, 34.56] 6.51 70  <.001 1.53
+
+--- Oculomotor (Study 1 − Study 2) ---
+       Method   Video  diff      CI95_bonf    t df p_bonf    d
+      Minimap Walking 32.43 [14.48, 50.37] 4.91 70  <.001 1.16
+ Path Overlay Walking 30.95 [15.04, 46.87] 5.28 70  <.001 1.24
+      Minimap Cycling 35.79 [17.69, 53.90] 5.37 70  <.001 1.27
+ Path Overlay Cycling 39.80 [20.76, 58.83] 5.68 70  <.001 1.34
+      Minimap Driving 29.48 [12.36, 46.60] 4.68 70  <.001 1.10
+ Path Overlay Driving 36.00 [18.66, 53.35] 5.64 70  <.001 1.33
+
+--- Disorientation (Study 1 − Study 2) ---
+       Method   Video  diff      CI95_bonf    t df p_bonf    d
+      Minimap Walking 51.81 [20.25, 83.38] 4.46 70  <.001 1.05
+ Path Overlay Walking 47.95 [22.18, 73.71] 5.05 70  <.001 1.19
+      Minimap Cycling 43.69 [15.47, 71.91] 4.20 70  <.001 0.99
+ Path Overlay Cycling 51.81 [19.97, 83.66] 4.42 70  <.001 1.04
+      Minimap Driving 48.33 [19.49, 77.18] 4.55 70  <.001 1.07
+ Path Overlay Driving 52.59 [23.78, 81.39] 4.96 70  <.001 1.17
+
+==== 4. How the Study difference varies (TSC EMMs) ====
+
+Study x Video:
+Video = Walking:
+ Study   emmean   SE df lower.CL upper.CL
+ Study 1   58.2 4.67 70    48.85     67.5
+ Study 2   20.4 4.67 70    11.04     29.7
+
+Video = Cycling:
+ Study   emmean   SE df lower.CL upper.CL
+ Study 1   56.7 5.00 70    46.76     66.7
+ Study 2   16.8 5.00 70     6.82     26.7
+
+Video = Driving:
+ Study   emmean   SE df lower.CL upper.CL
+ Study 1   53.5 4.47 70    44.54     62.4
+ Study 2   15.4 4.47 70     6.52     24.3
+
+Results are averaged over the levels of: Method 
+Confidence level used: 0.95 
+
+Study x Method:
+Method = Minimap:
+ Study   emmean   SE df lower.CL upper.CL
+ Study 1   55.5 4.43 70    46.69     64.3
+ Study 2   18.5 4.43 70     9.63     27.3
+
+Method = Path.Overlay:
+ Study   emmean   SE df lower.CL upper.CL
+ Study 1   56.7 4.41 70    47.93     65.5
+ Study 2   16.6 4.41 70     7.80     25.4
+
+Results are averaged over the levels of: Video 
+Confidence level used: 0.95 
+
+Video contrasts within each study (Bonferroni):
+Study = Study 1:
+ contrast          estimate   SE df lower.CL upper.CL t.ratio p.value
+ Walking - Cycling     1.45 4.54 70    -9.67    12.58   0.321  1.0000
+ Walking - Driving     4.73 3.35 70    -3.50    12.95   1.410  0.4891
+ Cycling - Driving     3.27 3.42 70    -5.12    11.67   0.956  1.0000
+
+Study = Study 2:
+ contrast          estimate   SE df lower.CL upper.CL t.ratio p.value
+ Walking - Cycling     3.58 4.54 70    -7.54    14.71   0.790  1.0000
+ Walking - Driving     4.93 3.35 70    -3.29    13.16   1.472  0.4367
+ Cycling - Driving     1.35 3.42 70    -7.04     9.75   0.395  1.0000
+
+Results are averaged over the levels of: Method 
+Confidence level used: 0.95 
+Conf-level adjustment: bonferroni method for 3 estimates 
+P value adjustment: bonferroni method for 3 tests 
+
+Method contrast within each study:
+Study = Study 1:
+ contrast               estimate   SE df lower.CL upper.CL t.ratio p.value
+ Minimap - Path.Overlay    -1.21 2.89 70    -6.98     4.55  -0.419  0.6763
+
+Study = Study 2:
+ contrast               estimate   SE df lower.CL upper.CL t.ratio p.value
+ Minimap - Path.Overlay     1.87 2.89 70    -3.89     7.63   0.647  0.5198
+
+Results are averaged over the levels of: Video 
+Confidence level used: 0.95 
+
+==== 5. Assumption checks and robustness (TSC) ====
+
+Levene test (median-centred) on participant means, by Study:
+Levene's Test for Homogeneity of Variance (center = median)
+      Df F value  Pr(>F)  
+group  1   5.845 0.01823 *
+      70                  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Levene test within each cell (Holm across 6):
+       Method   Video     F     p p_holm
+      Minimap Walking  6.87  .011   .032
+      Minimap Cycling  4.92  .030   .060
+      Minimap Driving 12.98 <.001   .004
+ Path Overlay Walking  3.63  .061   .061
+ Path Overlay Cycling 12.67 <.001   .004
+ Path Overlay Driving  8.01  .006   .024
+
+With equal group sizes (36 vs 36) the mixed ANOVA is fairly robust to unequal
+variances, but the checks below do not rely on that assumption.
+
+Shapiro-Wilk on model residuals: W = 0.950, p = <.001
+
+Per-cell Welch t-tests and Mann-Whitney tests (Holm across 6 cells):
+       Method   Video welch_t welch_p_holm mw_p_holm
+      Minimap Walking    5.05        <.001     <.001
+      Minimap Cycling    5.15        <.001     <.001
+      Minimap Driving    4.90        <.001     <.001
+ Path Overlay Walking    5.64        <.001     <.001
+ Path Overlay Cycling    5.42        <.001     <.001
+ Path Overlay Driving    5.81        <.001     <.001
+
+Sensitivity: mixed ANOVA on log(TSC + 1) — tests PROPORTIONAL rather than
+additive differences, and stabilises the variance gap between studies:
+Anova Table (Type 3 tests)
+
+Response: logTSC
+              Effect           df  MSE         F   ges p.value
+1              Study        1, 70 8.36 41.25 ***  .303   <.001
+2             Method        1, 70 0.75      0.34 <.001    .559
+3       Study:Method        1, 70 0.75      2.26  .002    .138
+4              Video 1.94, 136.14 0.69   5.67 **  .010    .005
+5        Study:Video 1.94, 136.14 0.69      1.35  .002    .263
+6       Method:Video 1.91, 133.59 0.45      0.07 <.001    .929
+7 Study:Method:Video 1.91, 133.59 0.45      0.40 <.001    .664
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '+' 0.1 ' ' 1
+
+Sphericity correction method: GG 
