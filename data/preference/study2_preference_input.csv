@@ -1,0 +1,37 @@
+Participant,rank_ROF,rank_Minimap,rank_Path,best_sickness,most_realistic,pick_note
+1,3,1,2,,,
+2,3,1,2,,,
+3,2,1,3,Path,ROF,
+4,3,2,1,,,
+5,1,2,3,,,
+6,1,2,3,,,
+7,1,2,3,,,
+8,2,3,1,,,"says ROF worst and Minimap better at sickness, but names no single best"
+9,2,1,3,,,"says ROF ~ Path for sickness; no pick"
+10,3,2,1,Path,ROF,"realism pick phrased as 'cảm giác đắm chìm tốt nhất' (immersion)"
+11,1,2,3,,,
+12,1,3,2,None,ROF,"'Ko có giao diện nào giúp giảm say' -> coded None"
+13,2,3,1,,,
+14,2,3,1,ROF,Minimap,
+15,2,3,1,Path,ROF,
+16,1,3,2,ROF,ROF,"adds 'dù ko thấy say'"
+17,1,2,3,,ROF,
+18,3,2,1,Path,Minimap,
+19,1,3,2,ROF,ROF,
+20,3,1,2,,Minimap,
+21,1,2,3,ROF,Minimap,
+22,3,1,2,Minimap,Minimap,"realism: ROF for sunny Cycling only, Minimap overall -> Minimap"
+23,1,2,3,ROF,ROF,
+24,3,1,2,Minimap,Path,
+25,1,3,2,ROF,ROF,
+26,3,1,2,Minimap,Path,
+27,3,2,1,Path,Path,
+28,3,1,2,Minimap,Minimap,
+29,1,3,2,ROF,ROF,
+30,3,2,1,,Path,
+31,3,2,1,Path,Path,
+32,3,2,1,Minimap,Path,"ranking corrected by experimenter from interview audio (Oct 2026)"
+33,3,2,1,,Path,
+34,2,3,1,Minimap,ROF,
+35,3,1,2,Minimap,Minimap,
+36,2,1,3,ROF,Path,"sickness: ROF named, Minimap 'cũng giảm say rất tốt' -> ROF"

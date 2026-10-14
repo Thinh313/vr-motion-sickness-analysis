@@ -309,14 +309,3 @@ Ba khác biệt cần nói rõ thay vì làm mờ đi:
    video không xử lý thì **cần một nghiên cứu có điều kiện Baseline**.
 
 ---
-
-## Lưu ý quan trọng khi viết bài
-
-**Không được viết** những câu như *"ROF giảm say chuyển động so với VR không xử lý"* — Study 2
-**không có** điều kiện Baseline nên không có bằng chứng cho loại phát biểu này.
-
-**Nên viết** những câu như:
-
-- *"ROF tạo ra mức tăng SSQ trước→sau không khác biệt có ý nghĩa so với Minimap và Path Overlay."*
-- *"Video Walking gây mức tăng triệu chứng lớn hơn đáng kể so với Cycling và Driving."*
-- *"Không tìm thấy bằng chứng cho thấy hiệu quả của phương pháp phụ thuộc vào loại chuyển động camera."*

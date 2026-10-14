@@ -1,0 +1,209 @@
+User_1_Trần Trọng Nguyễn: Minimap > Overlay > ROF
+vì minimap giúp nhìn cảnh vật tốt hơn + định hướng. overlay vẫn giúp định hướng tốt nhưng tệ hơn minimap vì mũi tên quá to, che cảnh vật
+ROF là tệ nhất vì quá nhiều vector chuyển động.
+User_2_Huỳnh Phúc Thành: Minimap > Overlay > Reverse Optical Flow
+minimap ko chắn tầm nhìn, vừa đủ để nhìn lúc cần thiết, ko quá gây chú ý. Reverse Optical Flow ko có tác dụng giảm chóng mặt nhiều, mặc dù ko quá gây chú ý bằng Overlay Path. Overlaypath có hướng dẫn rõ ràng hơn ROF, có tác dụng mặc dù gây mất tapajn trung hơn RÒF.
+User_3_Đặng Đỗ Thái Mỹ Trân: Minimap > ROF > Overlay Path
+Minimap cân bằng giữa việc giảm say và cảm giác thật, ROF mang lại cảm giác thật nhất vì ít can thiệp, Overlay Path giảm say tốt nhất nhưng can thiệp nhiều vào trải nghiệm nhất
+User_4_Lý Cẩm Khang: Path overlay > Minimap > ROF
+        Path ko đè lên cảnh vật, ko khiến thấy khó chịu; giúp cảnh vật mượt hơn; path overlay chỉ có 1 đường mỏng thay vì xuất hiện theo nhóm như ROF. Minimap ko quá to, ko che cảnh vật xung quanh. ROF can thiệp quá nhiều vào cảnh vật; hiện 1 nhóm vector khiến mất cảm giác thật.
+User_5_Lâm Tuyết Nhung: ROF > Minimap > Overlay Path
+Thích ROF nhất vì thích cảnh vật hơn, mà vector chuyển động của ROF ko che nhiều. Minimap đôi khi có tập trung vô thay vì nhìn cảnh. Overlay Path ko giúp làm giảm cảm giác chóng mặt
+User_6_Mai Lê Hương Giang: ROF > Minimap > Overlay Path
+Vì không có gì chắn phía trước nhiều, cảm giác tạo hiệu ứng gió. Overlay Path có mũi tên to nhất, chắn cảnh, gây xao nhãng.
+User_7_Hoàng Nguyễn Hòa Bình: ROF > Minimap > Overlay Path
+Mũi tên ROF ít bị delay. Overlay Path bị delay nhiều nhất.
+User_8_Lê Gia Linh: Overlay > ROF > Minimap
+    Overlay tốt nhất giúp dự đoán hướng đi, tập trung vô đỡ say. ROF giảm say tệ nhất, Minimap thì giảm say tốt hơn nhưng ko thật.
+User_9_LÊ THÙY DÂN: Minimap > ROF > Path Overlay
+Minimap ko ảnh hưởng tới góc nhìn, có thể xác định được tổng quan hướng, ko phân tán sự chú ý. Path overlay bị phân tán sự chú ý. rof ~ path overlay trong việc giảm chóng mặt, cua gapass vẫn bị.
+User_10_Thái Phạm Như Quỳnh: Path overlay > Minimap > ROF
+Path Overlay tốt nhất vì sẽ dự đoán hướng, chuẩn bị tâm lí. Minimap nếu chỉnh lại độ trẽ( đang hơi nhanh), gây bổi rối. giảm say tốt nhất: overlay; cảm giác đắm chìm tốt nhất: ROF.
+User_11_Lê Trọng Hiếu: ROF > Minimap > Overlay Path
+không che, khôn khiến phân tâm nhiều, trải nghiệm tốt hơn, minimap hình dung hướng đi tốt hơn overlay.
+User_12_Lương Thị Bạch Dương: ROF > Path overlay > Minimap
+ROF tốt nhất vì cảm giác điều khiển được ko gian, những đường dẫn khiến cảm giác ko đc điều khiển. Overlay giúp biết đc hướng đi còn minimap ko. Ko có giao diện nào giúp giảm say. ROF cảm giác chân thực nhất.
+User_13_Nguyễn Đặng Kim Ngân: Overlay Path > ROF > Minimap
+Overlay tốt nhất vì giúp người dùng nên nhìn vào hướng nào khi mới vào video. Minimap thì ko nhìn thấy xuất hiện.
+User_14_Lê Phan Nhật Minh: Path overlay > ROF > Minimap
+Path overlay cân bằng thực tế + nhức đầu. Minimap tệ nhất vì ko chú ý tới.
+Giarm say tốt nhất: ROF
+Cảm giác chân thực nhất: minimap.
+User_15_Nguyễn Thảo Linh: Overlay > ROF > Minimap
+Overlay tốt nhất vì có chỉ đường, cảm giác đi thoải mái nhất, cảm giác say, bất ngờ nhẹ hơn vì mũi tên của overlay rõ ràng hơn và biết đi theo hướng nào. Minimap tệ nhất vì đường đi hơi nhỏ và khó tập trung vào chỉ dẫn, có 1 đoạn lại hiện ra 2 đường đi giao nhau
+Giam say tốt nhất: Path overlay. tôt hơn minimap vì chỉ đường rõ ràng hơn, ko bị bất ngờ với góc quay
+Cảm giác chân thực nhất: ROF vì các vector chuyển động ko ảnh hưởng quá nhiều tới góc độ nhìn. Path overlay chân thực hơn minimap vì cảm giác đi thoải mái hơn so vs lúc ở trong minimap.
+User_16_Phạm Minh Hoà: ROF > Overlay > Minimap
+ROF tốt nhất vì chân thực hơn và 2 cái kia can thiệp qá nhiều vào việc chỉ quỹ đạo, cảm giác như chơi game nhiều hơn trải nghiệm thực, ROF cảm giác tự chủ hơn.
+Minimap tệ nhất vì mới vào ko hiểu minimap đang làm gì.
+Giarm say tốt nhất (dù ko thấy say): ROF
+Cảm giác chân thực nhất: ROF
+User_17_Nguyễn Quỳnh Tú Hân: ROF > minimap > Overlay
+ROF mượt nhất. Overlay tệ nhất vì góc nhìn lệch
+Cảm giác chân thực nhất ROF
+User_18_Trần Ngọc Hân: Overlay > Miimap > ROF
+overlay vì đỡ chóng mặt hơn. ROF tệ nhất vì che cảnh, lúc nhìn chỗ khác vẫn có vector chuyển động gây chóng mặt.
+Chân thực nhất: minimap vì ko chiếm khung hình nhiều
+Giarm say tốt nhất: Overlay khi biết trc hướng nhìn sẽ nhìn theo đỡ bị bất ngờ.
+User_19_Nguyễn Gia Huy: ROF > Overlay > Minimap
+ROF tốt nhất vì ko tạo cảm giác chóng mặt say sóng, ko gây xao nhãng như chỉ đường, giúp tập trung nhiều hơn. Minimap tệ nhất vì gây xao nhãng ko chú ý cảnh vật được. Overlay mặc dù chỉ đường tốt hơn nhưng cái chính là trải nghiệm môi trường, ko quan tâm chỉ đường.
+Giup giảm say tốt nhất: ROF vì vector chuyển động giúp trung hòa cảnh vật xung quanh, giúp tập trung quan sát nhiều thứ xung quanh hơn
+Chân thực nhất: ROF vì các vector hòa hợp với họa tiết xung quanh giúp bạn trải nghiệm hứng thú hơn.
+User_20_Nguyễn Đại Dũng: Minimap > Overlay > ROF
+Minimap tốt nhất vì ko ảnh hưởng khả năng quan sát, overlay thì có gây phân tâm.
+ROF che cảnh vật. ROF gây phân tâm nhiều hơn overlay.
+Chân thực nhất: minimap vì ko ảnh hưởng trực tiếp tới quan cảnh
+User_21_Nguyễn Hoàng Lân: ROF > Minimap > Overlay
+ROF tốt nhất vì giúp đỡ say và trải nghiệm tốt hơn. Overlay tệ nhất vì ko giúp giảm chóng mặt, buồn nôn.
+Chân thực nhất: Minimap vì nếu ko để ý map thì để ý cảnh vật tốt hơn vì minimao ko chiếm nhiều 0 gian, nhìn phía trên trực quan.
+Giarm say tốt nhất: ROF
+User_22_Trần Nguyên Anh: Minimap > Overlay > ROF
+Minimap tốt nhất vì minimap tiện hơn (nhỏ hơn giúp dễ nhìn hơn, đỡ bị phân tâm), ko khiến phân tâm quá nhiều. Tốt hơn overlay vì chỉ đường khá bao quát, biết trc đc quỹ đạo để chuẩn bị sắn tâm lí (nhìn vô minimap và tiếp tục nhìn cảnh theo hướng dự đoán).
+Overlay bị delay.
+ROF tệ nhất vì màu chói và khiến 0 thấy hết cảnh vật.
+Giram say tốt nhất: minimap
+Chân thực nhất: ROF chân thực trong hoàn cảnh trời nắng cycling. Nhưng nhìn chung thì minimap chân thực vì minimap nhỏ và ko che cảnh vật xung quanh, cảm giác đc hòa làm 1, ko bị khuất nhiều góc.
+User_23_Trần Thị Khánh Vy: ROF > Minimap > Overlay.
+ROF tốt nhất vì thấy chân thực hơn khi quẹo (giống hiệu ứng gió). Minimap thì bản đồ nằm gọn ở dưới, nên user có thể dễ dàng quan sát cảnh .Overlay tệ nhất vì đường dẫn chiếm màn hình quá nhiều (gần 1 nửa đoạn đường, chiếm tầm nhìn nhiều).
+Giarm say tốt nhất: ROF (ko giải thích đc lí do)
+Chân thực nhất: ROF vì tạo hiệu ứng gió.
+
++ User24_Nguyễn Văn Khôi: Minimap > Overlay > ROF
+
+Minimap tốt nhất vì giúp nhìn cảnh xung quanh tốt nhất + quen thuộc nhất (giống google map). ROF gây cảm giác chóng mặt nhất nhưng user ko giải thích được lí do. Minimap giảm say tốt nhất vì nó không chiếm màn hình nhiều, khi nào cần thì mới nhìn. Overlay mang lại cảm giác chân thật nhất vì nó ở dưới đất tạo cảm giác đang đứng trên cao, giống ngoài đời hơn.
++ User_25_Trịnh Hồ Anh Thư: ROF > Overlay > Minimap
+
+ROF tốt nhất vì các vector nằm nép bên, tránh tầm nhìn thẳng phía trước nên không bị phân tán sự chú ý, hòa nhập với cảnh vật giúp vừa theo dõi vừa quan sát xung quanh thoải mái.
+
+Overlay xếp nhì vì giúp chỉ hướng tốt nhưng người dùng hay bị tập trung nhìn men theo đường dẫn trước rồi mới quan sát cảnh.
+
+Minimap tệ nhất vì một số chỗ chỉ sai hướng, mũi tên dao động liên tục làm mất tập trung và không giảm bớt cảm giác chóng mặt.
+
+Giảm say tốt nhất: ROF (cảm giác đỡ bị đảo mắt qua lại và không có vật cản che phía trước).
+
+Chân thực nhất: ROF (hình ảnh chi tiết, sắc nét, hòa hợp và mang lại trải nghiệm tốt nhất).
++ User_26_Đỗ Anh Thư: Minimap > Overlay > ROF
+
+Minimap tốt nhất vì tiện lợi, nằm ngay trong tầm nhìn (không phải cúi nhìn xuống sàn như overlay), hiển thị đường đi dài hơn và canh thời gian tới chỗ rẽ rất hợp lý.
+
+Overlay xếp nhì vì đường dẫn nằm dưới đường khiến phải đảo mắt nhìn xuống gây ảnh hưởng việc ngắm đường, nhưng đỡ khó chịu hơn ROF.
+
+ROF tệ nhất vì có quá nhiều vệt trắng gây chói, cảm giác ko thoải mái nhất.
+
+Giảm say tốt nhất: Minimap (tập trung nhìn vào bản đồ thay vì nhìn vào cảnh vật giúp tránh bị chóng mặt khi camera chuyển hướng nhiều).
+
+Chân thực nhất: Overlay (vì ít để ý đường dẫn nên dành hầu hết sự chú ý để quan sát cảnh vật xung quanh).
++ User_27_Lê Quỳnh Như: Overlay > Minimap > ROF
+
+Overlay tốt nhất vì chỉ đường rõ ràng, cho biết trước hướng rẽ mà không đánh lạc hướng người xem khỏi cảnh vật xung quanh.
+
+Minimap xếp nhì vì kích thước nhỏ ở góc, dễ bị quên hướng mà map đã chỉ nhìn khi đang chú ý ngắm cảnh.
+
+ROF tệ nhất vì hiệu ứng chớp chớp chiếm nhiều không gian, che cảnh vật và dễ gây choáng mắt.
+
+Giảm say tốt nhất: Overlay (chỉ đường đáng tin cậy, nằm cố định dưới tầm nhìn dễ thấy mà không choán chỗ cảnh vật).
+
+Chân thực nhất: Overlay (sau khi loại bỏ yếu tố âm thanh của ROF, overlay hữu ích và không chắn tầm nhìn ngắm cảnh).
+
++ User_28_Nguyễn Ngọc Minh Ánh: Minimap > Overlay > ROF
+
+Minimap tốt nhất vì ít gây phân tâm nhất, kích thước nhỏ ở góc dưới màn hình giúp người dùng chủ động chọn nhìn hoặc không nhìn.
+
+Overlay xếp nhì vì hiện to ngay chính giữa màn hình làm chắn tầm nhìn, đôi khi khiến người dùng chỉ chăm chăm nhìn mũi tên mà bỏ qua cảnh vật.
+
+ROF tệ nhất vì hiện nhiều vector, che khuất cảnh và làm chú ý vào các vector nhiều hơn; chớp nháy liên tục làm mất sự tập trung vào cảnh chính.
+
+Giảm say tốt nhất: Minimap (nhìn vào map thấy mũi tên nhỏ giúp biết trước hướng đi để chuẩn bị tâm lý mà không chiếm màn hình).
+
+Chân thực nhất: Minimap (ít che khuất cảnh vật xung quanh nhất trong cả 3 giao diện).
++ User_29_Hoàng Thị Tố Như: ROF > Overlay > Minimap
+
+ROF tốt nhất vì không chắn tầm nhìn chính, giúp người dùng tập trung hoàn toàn vào cảnh vật.
+
+Overlay xếp nhì vì có ích cho người mới dùng VR để nắm bắt hướng đi, dù nằm ở giữa gây chú ý nhiều hơn ROF.
+
+Minimap tệ nhất vì cảm giác bị thừa thãi, nằm khuất và không hỗ trợ được nhiều.
+
+Giảm say tốt nhất: ROF (theo đánh giá cá nhân của user).
+
+Chân thực nhất: ROF (vì các vector chỉ xuất hiện ở hai bên, không chắn cảnh vật chính như minimap và overlay).
+
++ User_30_Tăng Triều Khánh: Overlay > Minimap > ROF
+
+Overlay tốt nhất vì không xâm phạm tầm nhìn, không ảnh hưởng đến cảm giác chân thật và chỉ nằm kín đáo phía dưới chân.
+
+Minimap xếp nhì vì gây phân tâm do nằm ngay giữa màn hình, quay mặt đi đâu cũng đập vào mắt.
+
+ROF tệ nhất vì ảnh hưởng tiêu cực đến toàn bộ trải nghiệm, làm mất tính chân thật và trông như video bị lỗi.
+
+Cảm giác chân thực nhất: Overlay (vì không che chắn hay làm ảnh hưởng xấu đến khung cảnh).
++ User_31_Tăng Triều Tường: Overlay > Minimap > ROF
+
+Overlay tốt nhất vì độ trễ ít, nằm gọn dưới chân nên ít gây xao nhãng và không chắn tầm nhìn ngắm cảnh.
+
+Minimap xếp nhì vì bị trễ 1–2 giây so với chuyển động thực tế dù giúp nhận biết hướng đi.
+
+ROF tệ nhất vì các vector xuất hiện đè lên tầm nhìn phía trên, xuất hiện không cần thiết và làm ảnh hưởng trải nghiệm ngắm cảnh.
+
+Giảm say tốt nhất: Overlay (vì khi nhìn vào mũi tên chỉ đường thì nó có hướng chỉ định rõ).
+
+Chân thực nhất: Overlay (vì nằm ở dưới sàn, không xuất hiện nhiều như ROF hay chắn tầm nhìn phía trên như hai giao diện còn lại).
+
++ User_32_Nguyễn Quốc Huy:
+
+ Overlay > Minimap > ROF
+
+        ROF tệ nhất vì có quá nhiều chuyển động giật giật gây loạn mắt và mất tập trung.
+
+        Overlay có mũi tên chỉ đường khá to, đôi lúc gây khó chịu. Nhưng khi dùng để chỉ đường thì nó lại tốt hơn minimap.
+
+        Minimap nhỏ gọn, thoải mái trong tầm nhìn
+
+        Giảm say tốt nhất: Minimap vì khi bị say user ko xử lí được nhiều hình ảnh (không nhìn bao quát cảnh vật xung quanh nữa) mà chỉ có thể nhìn vào một góc nhỏ.
+
+        Chân thực nhất: Path Overlay vì nhìn đường mũi tên overlay sẽ dễ hơn và không cần phải quá tập trung như minimap ("có thời gian tận hưởng hơn", vừa biết trước đường đi vừa có khoảng thời gian tận hưởng ngắm cảnh thay vì phải liên tục làm việc dán mắt vào minimap).
+
++ User_33_Trương Thị Anh Thư: Overlay > Minimap > ROF
+
+Overlay tốt nhất vì giao diện dễ nhìn, mang lại cảm giác chân thật nhất và giúp tăng mức độ tập trung vào môi trường.
+
+Minimap xếp nhì vì phải chia đôi tầm nhìn để quan sát và xuất hiện hơi sớm so với khúc cua thực tế, nhưng vẫn có chỉ đường rõ ràng hơn ROF.
+
+ROF tệ nhất vì các vệt trắng chớp nháy liên tục ở các vị trí ngẫu nhiên, không rõ mục đích chỉ dẫn và thậm chí gây choáng nhẹ.
+
+Chân thực nhất: Overlay (đường dẫn rõ ràng, tự nhiên, mang lại cảm giác nhập vai và hòa nhập vào không gian tốt nhất).
+
++ User_34_Đỗ Thị Thanh Hiền: Overlay > ROF > Minimap
+
+Overlay tốt nhất vì đạt được sự cân bằng tối ưu giữa việc định hướng chuyển động và bảo tồn cảm giác chân thực của cảnh quan xung quanh.
+
+ROF xếp nhì vì mang lại cảm giác chuyển động tự nhiên nhất và không che khuất khung cảnh.
+
+Minimap xếp cuối (về mặt trải nghiệm không gian) vì lấy đi quá nhiều sự chú ý của người dùng (chiếm 60%), khiến người xem không cảm nhận được cảnh vật.
+
+Giảm say tốt nhất: Minimap (tập trung nhìn bản đồ giúp phân tán sự chú ý khỏi chuyển động rung lắc của cảnh vật).
+
+Chân thực nhất: ROF (giúp nhìn cảnh tốt nhất).
++ User_35_Mạch Chấn Minh: Minimap > Overlay > ROF
+
+Minimap tốt nhất vì quen dùng nhất, thiết kế nhỏ gọn không chiếm diện tích bối cảnh và giúp tập trung ngắm cảnh vật rõ ràng nhất.
+
+Overlay xếp nhì vì chỉ đường trực quan nhưng to hơn, chiếm diện tích khung hình và chưa quen dùng bằng minimap.
+
+ROF tệ nhất vì gây phân tâm (distract) khỏi bối cảnh, khiến người dùng mãi để ý xem các vệt trắng là gì thay vì thưởng thức video.
+
+Giảm say tốt nhất: Minimap (quen dùng, hiển thị hướng đi rõ ràng để kịp thời điều chỉnh mắt/hướng đầu theo khúc cua).
+
+Chân thực nhất: Minimap (giúp tập trung cảm nhận không gian thực tế tốt nhất, không bị phân tán sự chú ý vào mũi tên chỉ đường overlay hay là vector).
+
++ User_36_Trần Đức An: Minimap > ROF > Overlay
+
+Minimap tốt nhất vì quen thuộc như dùng Google Maps, giúp nhìn bao quát lộ trình và chuẩn bị tâm lý trước, không bị bất ngờ.
+
+ROF xếp nhì vì các vector dàn trải tự nhiên, không gây mất tập trung và mang lại cảm giác chuyển động vật lý.
+
+Overlay tệ nhất vì các khúc cua chuyển hướng đến quá đột ngột (khi sắp quẹo trái/phải thì mũi tên cong qua trái phải ngay lập tức làm bất ngờ), đường uốn lượn gây mất tập trung và tạo cảm giác say.
+
+Giảm say tốt nhất: ROF (các đường vector ngược chiều tạo cảm giác chuyển động vật lý thật, giúp não đỡ bị say; Minimap cũng giảm say rất tốt nhờ cho nhìn trước lộ trình).
+
+Chân thực nhất: Overlay (đường dẫn gắn liền trong không gian 3D giúp hòa nhập vào chuyển động thực tế mà không cần liếc nhìn map, dù giao diện này dễ gây say hơn).
