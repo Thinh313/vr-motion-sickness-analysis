@@ -1,0 +1,7 @@
+Ordering,n,Pct
+Minimap > Path > ROF,8,22.22222222222222
+Path > Minimap > ROF,8,22.22222222222222
+ROF > Minimap > Path,7,19.444444444444443
+ROF > Path > Minimap,5,13.88888888888889
+Path > ROF > Minimap,5,13.88888888888889
+Minimap > ROF > Path,3,8.333333333333334

@@ -124,7 +124,7 @@ trials <- read_csv(file.path(BASE, "data/processed/study2_trials.csv"),
 W <- as.matrix(pref[, c("rank_ROF", "rank_Minimap", "rank_Path")])
 colnames(W) <- METHODS
 stopifnot(
-  nrow(pref) == 36, identical(sort(pref$Participant), 1:36),
+  nrow(pref) == 36, all(sort(pref$Participant) == 1:36),
   all(apply(W, 1, function(r) identical(sort(as.integer(r)), 1:3))),
   all(na.omit(pref$best_sickness)  %in% c(METHODS, "None")),
   all(na.omit(pref$most_realistic) %in% METHODS),
@@ -276,7 +276,7 @@ sub("3.2 Prevalence: participants citing each attribute FOR (+) / AGAINST (-) ea
 qcell <- qual %>%
   mutate(Val = ifelse(Valence > 0, "Pos", "Neg")) %>%
   count(Method, Code, Val) %>%
-  complete(Method = METHODS, Code = CODES, Val = c("Pos", "Neg"), fill = list(n = 0)) %>%
+  tidyr::complete(Method = METHODS, Code = CODES, Val = c("Pos", "Neg"), fill = list(n = 0)) %>%
   pivot_wider(names_from = Val, values_from = n) %>%
   mutate(Family = factor(unname(CODE_FAMILY[Code]), FAMILIES),
          Total = Pos + Neg, TwoSided = Pos >= 3 & Neg >= 3,
@@ -298,8 +298,9 @@ reason_tab <- function(rank_pos, val) {
   qrank %>% filter(Rank == rank_pos, Valence == val) %>%
     distinct(Participant, Method, Code) %>%
     count(Code, Method) %>%
-    complete(Code = CODES, Method = METHODS, fill = list(n = 0)) %>%
+    tidyr::complete(Code = CODES, Method = METHODS, fill = list(n = 0)) %>%
     pivot_wider(names_from = Method, values_from = n) %>%
+    select(Code, all_of(METHODS)) %>%
     mutate(All = ROF + Minimap + Path)
 }
 n_first <- table(factor(rkc$Method[rkc$Rank == 1], METHODS))
@@ -312,14 +313,14 @@ reasons <- reason_tab(1, 1) %>% rename_with(~ paste0("First_", .x), -Code) %>%
 cat(sprintf("Ranked first: ROF n = %d, Minimap n = %d, Path n = %d; ranked last: ROF n = %d, Minimap n = %d, Path n = %d\n\n",
             n_first[["ROF"]], n_first[["Minimap"]], n_first[["Path"]],
             n_last[["ROF"]], n_last[["Minimap"]], n_last[["Path"]]))
-show(reasons)
+print(as.data.frame(reasons), digits = 3, row.names = FALSE)
 wtab(reasons, "t05_reasons_first_last.csv")
 
 sub("3.4 What does 'balance' rest on? Construct families cited in favour of the #1 interface")
 fam_first <- qrank %>% filter(Rank == 1, Valence > 0) %>%
   distinct(Participant, Family) %>%
   mutate(v = TRUE) %>%
-  complete(Participant = 1:36, Family = FAMILIES, fill = list(v = FALSE)) %>%
+  tidyr::complete(Participant = 1:36, Family = FAMILIES, fill = list(v = FALSE)) %>%
   pivot_wider(names_from = Family, values_from = v)
 fam_sum <- tibble(
   Pattern = c("Cites perceived sickness", "Cites perceived realism",
@@ -370,7 +371,11 @@ tension <- qrank %>%
                         .groups = "drop"),
             by = c("Participant", "Method")) %>%
   arrange(Rank, Participant)
-show(tension %>% select(Participant, Method, Rank, Flag, For, Against))
+if (nrow(tension) == 0) {
+  cat("None: every participant gave >= 1 favourable ranking reason for their #1 interface, and no\n",
+      "last-ranked interface drew more favourable than unfavourable ranking reasons. Ties (equal\n",
+      "for/against) appear among the mixed evaluations in 3.6.\n", sep = "")
+} else show(tension %>% select(Participant, Method, Rank, Flag, For, Against))
 wtab(tension, "t07_tension_cases.csv")
 
 sub("3.8 Mixed-methods joint display (ranking | measured outcomes | perceived picks | reasons)")
@@ -516,7 +521,7 @@ pick_tab <- bind_rows(
   tibble(Question = "Perceived most realistic", Pick = na.omit(pref$most_realistic))
 ) %>%
   count(Question, Pick) %>%
-  complete(Question, Pick = c(METHODS, "None"), fill = list(n = 0)) %>%
+  tidyr::complete(Question, Pick = c(METHODS, "None"), fill = list(n = 0)) %>%
   filter(!(Pick == "None" & n == 0)) %>%
   group_by(Question) %>% mutate(N = sum(n), Pct = 100 * n / N) %>% ungroup()
 show(pick_tab)
@@ -574,11 +579,7 @@ wtab(eqb, "t15_equivalence_bounds.csv")
 sub("5.2 First / last split per interface (descriptive)")
 cat("Many 1st AND many last places = divisive; many last places only = consensually disliked.\n\n")
 split_tab <- desc %>%
-  transmute(Method, First, Last, FirstPct, LastPct,
-            Pattern = case_when(First >= 9 & Last >= 9 ~ "divisive (>= 25% first AND last)",
-                                Last >= 18 ~ "mostly last",
-                                First >= 18 ~ "mostly first",
-                                TRUE ~ "mixed"))
+  transmute(Method, First, Last, FirstPct, LastPct)
 show(split_tab)
 wtab(split_tab, "t16_first_last_split.csv")
 
@@ -654,11 +655,11 @@ save_fig(p1, "pref1_rank_distribution.png", 7.5, 3.6)
 d2 <- pw %>% mutate(Pair = factor(paste(A, "over", B), rev(paste(A, "over", B))))
 p2 <- ggplot(d2, aes(y = Pair, x = Prop)) +
   geom_vline(xintercept = .5, colour = INK2, linewidth = .4, linetype = "dashed") +
-  geom_errorbarh(aes(xmin = CI95_lo, xmax = CI95_hi), height = 0, linewidth = 1.1,
+  geom_errorbar(aes(xmin = CI95_lo, xmax = CI95_hi), orientation = "y", width = 0, linewidth = 1.1,
                  colour = "#2f6fb0") +
   geom_point(size = 3, colour = INK) +
-  geom_text(aes(label = sprintf("%d/%d   Holm p = %s", A_preferred, n, fmt_p(p_holm))),
-            nudge_y = .3, size = 3.1, colour = INK2) +
+  geom_text(aes(x = 1, label = sprintf("%d/%d, Holm p = %s", A_preferred, n, fmt_p(p_holm))),
+            hjust = 1, size = 3.1, colour = INK2) +
   scale_x_continuous(limits = c(0, 1), breaks = seq(0, 1, .1)) +
   labs(title = "Pairwise preference between interfaces",
        subtitle = "Proportion of participants ranking A above B, exact 95% CI; dashed line = 50:50",
@@ -673,12 +674,12 @@ p3 <- ggplot(pl_tab, aes(x = factor(Method, METHODS), y = P_first, colour = Meth
   geom_errorbar(aes(ymin = CI_lo, ymax = CI_hi), width = .12, linewidth = .8) +
   geom_point(size = 3.2) +
   geom_text(aes(label = sprintf("%.2f", P_first)), nudge_x = .22, colour = INK, size = 3.4) +
-  annotate("text", x = 3.45, y = 1 / 3, label = "chance", vjust = -.5, hjust = 1,
+  annotate("text", x = .55, y = 1 / 3, label = "chance (1/3)", vjust = -.5, hjust = 0,
            size = 3, colour = INK2) +
   scale_colour_manual(values = PAL_METHOD, guide = "none") +
   scale_y_continuous(limits = c(0, .7), breaks = seq(0, .7, .1)) +
   labs(title = "Plackett–Luce estimate of P(ranked most balanced)",
-       subtitle = sprintf("Supplementary model of the same rankings; 95%% participant-bootstrap CI. LR χ²(2) = %.2f, p = %s",
+       subtitle = sprintf("Supplementary model of the same rankings, 95%% bootstrap CI.\nLR test vs equal worth: χ²(2) = %.2f, p = %s",
                           pl_LR, fmt_p(pl_p)),
        x = NULL, y = "P(ranked 1st)") +
   theme_pub()

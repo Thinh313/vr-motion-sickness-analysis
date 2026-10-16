@@ -1,0 +1,3 @@
+Measure,n_contributing,n_excluded_ties,MeanTau,CI95_lo,CI95_hi,Wilcoxon_p
+Measured Delta TSC (smaller increase = better),34,2,0.09902961288660435,-0.14408763192842225,0.33236769606301164,0.3654345037932274
+Measured Presence (higher = better),33,3,0.09646980057794768,-0.13483302250858117,0.3334213306132191,0.42513489956379846

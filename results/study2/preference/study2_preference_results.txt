@@ -1,0 +1,340 @@
+
+==========================================================================================
+STUDY 2 — 'MOST BALANCED INTERFACE' PREFERENCE RANKING + QUALITATIVE ANALYSIS
+==========================================================================================
+Question : rank the three interfaces by how well each BALANCES immersion and
+           motion-sickness mitigation (1 = most balanced).
+Coverage : 36/36 complete strict rankings (no ties).
+Secondary: best-sickness pick n = 22 (incl. 1 'None'); most-realistic pick n = 26 (not asked systematically; exploratory).
+Coding   : 225 coded cells (Participant x Method x Code x Valence), 36 participants, 11 codes in 3 families (data/preference/study2_qual_codebook.md).
+Terms    : 'balance' = the ranking; 'perceived' = interview statements/picks;
+           'measured' = Delta SSQ / Presence questionnaires. These are not interchangeable.
+NOTE     : Study 2 has no Baseline condition — all statements are method-vs-method.
+
+==========================================================================================
+1. PRIMARY — RANK DISTRIBUTION, FRIEDMAN, PAIRWISE SIGN TESTS
+==========================================================================================
+
+--- 1.1 Rank summary (1 = most balanced; Borda: 2 pts for 1st, 1 for 2nd) ---
+
+  Method  n MeanRank    SD MedianRank First Second Last Borda FirstPct LastPct
+     ROF 36     2.11 0.887          2    12      8   16    32     33.3    44.4
+ Minimap 36     1.97 0.774          2    11     15   10    37     30.6    27.8
+    Path 36     1.92 0.806          2    13     13   10    39     36.1    27.8
+
+--- 1.2 Friedman test + Kendall's W (omnibus) ---
+
+Friedman chi2(2) = 0.722, p = 0.697; Kendall's W = 0.0100 (n = 36)
+A non-significant Friedman test is absence of evidence for a difference, not evidence
+of equal preference (see 5.1 for how precisely the pairwise splits are estimated).
+
+--- 1.3 Pairwise preference: proportion ranking A above B, exact 95% CI, exact sign test (Holm) ---
+
+       A       B A_preferred B_preferred  n  Prop CI95_lo CI95_hi     p p_holm
+     ROF Minimap          17          19 36 0.472   0.304   0.645 0.868      1
+     ROF    Path          15          21 36 0.417   0.255   0.592 0.405      1
+ Minimap    Path          18          18 36 0.500   0.329   0.671 1.000      1
+
+==========================================================================================
+2. SUPPLEMENTARY — PLACKETT-LUCE MODEL (same 36 rankings; model-based summary)
+==========================================================================================
+Call: PlackettLuce(rankings = R, npseudo = 0)
+
+Coefficients:
+        Estimate Std. Error z value Pr(>|z|)
+ROF       0.0000         NA      NA       NA
+Minimap   0.2705     0.3140   0.861    0.389
+Path      0.3225     0.3176   1.015    0.310
+
+Residual deviance:  127.81 on 106 degrees of freedom
+AIC:  131.81 
+Number of iterations: 2
+
+Likelihood-ratio test vs equal worth: LR chi2(2) = 1.198, p = 0.549
+
+Worth as P(ranked most balanced); 95% CI = participant bootstrap (B = 2000, 0 failed fits). Chance = .333
+  Method LogWorth P_first CI_lo CI_hi Observed_first QuasiSE
+     ROF    0.000   0.271 0.166 0.398          0.333   0.233
+ Minimap    0.270   0.355 0.247 0.473          0.306   0.210
+    Path    0.322   0.374 0.262 0.507          0.361   0.216
+
+==========================================================================================
+3. QUALITATIVE CONTENT ANALYSIS (unit of prevalence = participant)
+==========================================================================================
+Counts below are NUMBERS OF PARTICIPANTS (each Participant x Method x Code x Valence
+cell is coded at most once). No inferential tests are run on attribute cells: the
+counts describe and explain the ranking pattern, they are not outcomes in themselves.
+Attributes are not interchangeable and are never summed into a single score.
+Coded cells: 177 from the ranking explanation, 48 from answers to the secondary questions.
+Sections 3.1-3.2 and 3.5-3.6 use all cells; 3.3, 3.4 and 3.7 (reasons for the ranking) use
+ranking-explanation cells only.
+
+--- 3.1 Coverage: participants giving reasons for each interface ---
+
+  Method WithReasons AnyFavourable AnyUnfavourable BothDirections
+     ROF          34            19              18              3
+ Minimap          33            21              17              5
+    Path          35            24              21             10
+Participants with >= 1 coded reason: 36/36
+
+--- 3.2 Prevalence: participants citing each attribute FOR (+) / AGAINST (-) each interface ---
+
+               Family         Code      ROF  Minimap     Path ParticipantsAnyMethod
+   Perceived sickness     SICKNESS  +4 / -8  +9 / -2  +9 / -5                    23
+    Perceived realism      REALISM +13 / -2  +4 / -2 +11 / -3                    26
+ Interface experience    OCCLUSION  +7 / -7 +13 / -0  +4 / -6                    23
+ Interface experience ANTICIPATION  +0 / -0 +10 / -4 +17 / -0                    23
+ Interface experience  DISTRACTION  +6 / -5  +5 / -5  +5 / -8                    20
+ Interface experience VISUAL_NOISE  +1 / -9  +0 / -1  +1 / -0                    11
+ Interface experience   VISIBILITY  +0 / -0  +4 / -5  +1 / -0                    10
+ Interface experience       TIMING  +1 / -0  +1 / -3  +1 / -3                     7
+ Interface experience  FAMILIARITY  +0 / -2  +3 / -1  +1 / -1                     6
+ Interface experience  GLANCE_COST  +1 / -0  +1 / -2  +1 / -1                     4
+ Interface experience       AGENCY  +2 / -0  +0 / -2  +0 / -2                     2
+
+--- 3.3 Reasons given for the interface ranked FIRST (+) and the one ranked LAST (-) ---
+
+Ranked first: ROF n = 12, Minimap n = 11, Path n = 13; ranked last: ROF n = 16, Minimap n = 10, Path n = 10
+
+         Code               Family First_ROF First_Minimap First_Path First_All Last_ROF Last_Minimap
+     SICKNESS   Perceived sickness         2             1          4         7        5            1
+      REALISM    Perceived realism         4             1          4         9        2            2
+  DISTRACTION Interface experience         4             5          4        13        5            3
+    OCCLUSION Interface experience         5             6          3        14        7            0
+ ANTICIPATION Interface experience         0             5          7        12        0            4
+ VISUAL_NOISE Interface experience         1             0          1         2        9            1
+   VISIBILITY Interface experience         0             2          1         3        0            4
+  FAMILIARITY Interface experience         0             3          0         3        2            1
+       TIMING Interface experience         1             1          1         3        0            0
+       AGENCY Interface experience         2             0          0         2        0            2
+  GLANCE_COST Interface experience         0             1          0         1        0            0
+ Last_Path Last_All
+         4       10
+         2        6
+         3       11
+         2        9
+         0        4
+         0       10
+         0        4
+         0        3
+         2        2
+         0        2
+         0        0
+
+--- 3.4 What does 'balance' rest on? Construct families cited in favour of the #1 interface ---
+
+                           Pattern Participants   Pct
+          Cites perceived sickness            7 19.44
+           Cites perceived realism            9 25.00
+        Cites interface experience           31 86.11
+   Cites BOTH sickness and realism            2  5.56
+   Cites interface experience ONLY           22 61.11
+ No favourable reason coded for #1            0  0.00
+
+--- 3.5 Two-sided attributes (>= 3 participants for AND >= 3 against the same interface) ---
+
+  Method         Code Pos Neg
+     ROF     SICKNESS   4   8
+    Path     SICKNESS   9   5
+    Path      REALISM  11   3
+     ROF    OCCLUSION   7   7
+    Path    OCCLUSION   4   6
+     ROF  DISTRACTION   6   5
+ Minimap  DISTRACTION   5   5
+    Path  DISTRACTION   5   8
+ Minimap ANTICIPATION  10   4
+ Minimap   VISIBILITY   4   5
+
+--- 3.6 Mixed evaluations within one person (favourable AND unfavourable reasons, same interface) ---
+
+ Participant  Method Rank                                For                       Against
+           8 Minimap    3                           SICKNESS                       REALISM
+          31 Minimap    2                       ANTICIPATION                        TIMING
+          32 Minimap    2                OCCLUSION, SICKNESS                   GLANCE_COST
+          33 Minimap    2                       ANTICIPATION           GLANCE_COST, TIMING
+          34 Minimap    3                           SICKNESS                   DISTRACTION
+           1    Path    2                       ANTICIPATION                     OCCLUSION
+           2    Path    2             ANTICIPATION, SICKNESS                   DISTRACTION
+           3    Path    3                           SICKNESS                       REALISM
+          12    Path    2                       ANTICIPATION              AGENCY, SICKNESS
+          25    Path    2                       ANTICIPATION                   DISTRACTION
+          26    Path    2               DISTRACTION, REALISM                   GLANCE_COST
+          29    Path    2          ANTICIPATION, FAMILIARITY                   DISTRACTION
+          32    Path    1 ANTICIPATION, GLANCE_COST, REALISM                     OCCLUSION
+          35    Path    2                       ANTICIPATION        FAMILIARITY, OCCLUSION
+          36    Path    3                            REALISM DISTRACTION, SICKNESS, TIMING
+           2     ROF    3                        DISTRACTION                      SICKNESS
+          12     ROF    1                    AGENCY, REALISM                      SICKNESS
+          22     ROF    3                            REALISM       OCCLUSION, VISUAL_NOISE
+
+--- 3.7 Cases in tension with the ranking (flagged for close reading, not scored) ---
+
+None: every participant gave >= 1 favourable ranking reason for their #1 interface, and no
+last-ranked interface drew more favourable than unfavourable ranking reasons. Ties (equal
+for/against) appear among the mixed evaluations in 3.6.
+
+--- 3.8 Mixed-methods joint display (ranking | measured outcomes | perceived picks | reasons) ---
+
+ROF      rank: mean 2.11, 1st 12, last 16 | measured: dTSC 9.00, Presence 5.10 | perceived picks: sickness 8, realism 11
+         for:     REALISM (13), OCCLUSION (7), DISTRACTION (6)
+         against: VISUAL_NOISE (9), SICKNESS (8), OCCLUSION (7)
+Minimap  rank: mean 1.97, 1st 11, last 10 | measured: dTSC 9.07, Presence 5.12 | perceived picks: sickness 7, realism 7
+         for:     OCCLUSION (13), ANTICIPATION (10), SICKNESS (9)
+         against: DISTRACTION (5), VISIBILITY (5), ANTICIPATION (4)
+Path     rank: mean 1.92, 1st 13, last 10 | measured: dTSC 7.24, Presence 5.04 | perceived picks: sickness 6, realism 8
+         for:     ANTICIPATION (17), REALISM (11), SICKNESS (9)
+         against: DISTRACTION (8), OCCLUSION (6), SICKNESS (5)
+(Reason counts = participants; perceived picks from the subset who were asked.)
+
+Exemplar quotes per Method x Code x Valence: tables/t09_exemplar_quotes.csv
+
+--- 3.9 Inter-coder reliability ---
+
+Single coder. Add data/preference/study2_qual_coding_coder2.csv (same schema, coded
+independently) to report positive specific agreement, Cohen's kappa and a
+disagreement list for reconciliation.
+
+==========================================================================================
+4. SECONDARY — STATED PREFERENCE vs OWN MEASURED OUTCOMES (association only)
+==========================================================================================
+
+--- 4.1 Within-person Kendall tau between the balance ranking and own measured outcome ---
+
+tau > 0: the participant ranks higher the interface on which they measured better.
+Participants with identical values on all three interfaces cannot contribute (tau undefined).
+
+                                        Measure n_contributing n_excluded_ties MeanTau CI95_lo CI95_hi
+ Measured Delta TSC (smaller increase = better)             34               2  0.0990  -0.144   0.332
+            Measured Presence (higher = better)             33               3  0.0965  -0.135   0.333
+ Wilcoxon_p
+      0.365
+      0.425
+
+--- 4.2 Agreement between choices (chance = 1/3; exact binomial; n differs per row) ---
+
+                                            Comparison Match  n  Pct CI95_lo CI95_hi p_vs_chance
+  Balanced #1 == measured least-sick (unique min dTSC)    14 28 50.0    30.6    69.4   0.0713983
+              Balanced #1 == measured highest Presence    11 30 36.7    19.9    56.1   0.7012560
+        PERCEIVED best-sickness == MEASURED least-sick     9 17 52.9    27.8    77.0   0.1196260
+ PERCEIVED most-realistic == MEASURED highest Presence     8 20 40.0    19.1    63.9   0.6357424
+                Balanced #1 == perceived best-sickness    16 21 76.2    52.8    91.8   0.0000725
+               Balanced #1 == perceived most-realistic    16 26 61.5    40.6    79.8   0.0033360
+   Perceived best-sickness == perceived most-realistic    10 21 47.6    25.7    70.2   0.1709420
+
+--- 4.3 Secondary perceived picks (exploratory; asked of a subset) ---
+
+                          Question    Pick  n  N   Pct
+               Most balanced (all) Minimap 11 36 30.56
+               Most balanced (all)    Path 13 36 36.11
+               Most balanced (all)     ROF 12 36 33.33
+ Perceived best sickness reduction Minimap  7 22 31.82
+ Perceived best sickness reduction    None  1 22  4.55
+ Perceived best sickness reduction    Path  6 22 27.27
+ Perceived best sickness reduction     ROF  8 22 36.36
+          Perceived most realistic Minimap  7 26 26.92
+          Perceived most realistic    Path  8 26 30.77
+          Perceived most realistic     ROF 11 26 42.31
+
+--- 4.4 Rank-ordered (exploded) logit with own measured outcomes as predictors (exploratory) ---
+
+Stage 1: choose #1 of three; stage 2: #2 of the remaining two (72 choice sets, 4 parameters).
+Method constants = Plackett-Luce log-worths (ROF reference); dTSC per 10 points.
+
+                coef exp(coef) se(coef)      z Pr(>|z|)
+MethodMinimap  0.299     1.349    0.317  0.942    0.346
+MethodPath     0.293     1.340    0.322  0.909    0.363
+dTSC10        -0.297     0.743    0.241 -1.235    0.217
+Presence       0.162     1.175    0.325  0.498    0.619
+
+Odds ratios with 95% CI:
+              exp(coef) lower .95 upper .95
+MethodMinimap     1.349     0.724     2.512
+MethodPath        1.340     0.713     2.519
+dTSC10            0.743     0.464     1.190
+Presence          1.175     0.622     2.220
+
+LRT adding own dTSC + Presence: chi2(2) = 1.666, p = 0.435
+
+==========================================================================================
+5. EXPLORATORY — EQUIVALENCE BOUNDS AND HETEROGENEITY
+==========================================================================================
+
+--- 5.1 Equivalence bounds for the pairwise splits (no margin was pre-specified) ---
+
+No equivalence margin was fixed before the data were seen, so no binary 'equivalent'
+decision is made. Instead, for each pair we report the tightest symmetric margin around
+.50 that a TOST at alpha = .05 would accept (= the farther bound of the 90% CI from .50),
+and the same with Bonferroni adjustment over the 3 pairs (96.7% CI). Readers can judge
+whether a split of that size is practically negligible.
+
+       A       B A_preferred  n  Prop CI90_lo CI90_hi Margin Supported_split Margin_adj Supported_split_adj
+     ROF Minimap          17 36 0.472   0.328   0.620  0.172    within 67:33      0.208        within 71:29
+     ROF    Path          15 36 0.417   0.277   0.567  0.223    within 72:28      0.256        within 76:24
+ Minimap    Path          18 36 0.500   0.353   0.647  0.147    within 65:35      0.183        within 68:32
+
+--- 5.2 First / last split per interface (descriptive) ---
+
+Many 1st AND many last places = divisive; many last places only = consensually disliked.
+
+  Method First Last FirstPct LastPct
+     ROF    12   16     33.3    44.4
+ Minimap    11   10     30.6    27.8
+    Path    13   10     36.1    27.8
+
+--- 5.3 The six possible orderings (uniform expectation = 6 each) ---
+
+             Ordering n   Pct
+ Minimap > Path > ROF 8 22.22
+ Path > Minimap > ROF 8 22.22
+ ROF > Minimap > Path 7 19.44
+ ROF > Path > Minimap 5 13.89
+ Path > ROF > Minimap 5 13.89
+ Minimap > ROF > Path 3  8.33
+Monte-Carlo chi-square vs uniform: chi2 = 3.333, p = 0.687
+
+--- 5.4 By prior VR experience (descriptive + per-group Friedman) ---
+
+ VRExperience  Method  n MeanRank First Last
+           No     ROF 17     2.12     6    8
+           No Minimap 17     1.88     6    4
+           No    Path 17     2.00     5    5
+          Yes     ROF 19     2.11     6    8
+          Yes Minimap 19     2.05     5    6
+          Yes    Path 19     1.84     8    5
+  VRExperience = No  (n = 17): Friedman chi2(2) = 0.471, p = 0.790
+  VRExperience = Yes (n = 19): Friedman chi2(2) = 0.737, p = 0.692
+
+--- 5.5 Plackett-Luce tree (appendix; low power at n = 36) ---
+
+One Bonferroni-adjusted parameter-instability test per covariate (VRExperience,
+Susceptibility = participant mean measured dTSC, Presence = participant mean);
+minsize = 10, alpha = .05. A split would be hypothesis-generating only.
+
+Plackett-Luce tree
+
+Model formula:
+G ~ VRExperience + Susceptibility + Presence
+
+Fitted party:
+[1] root: n = 36
+          ROF   Minimap      Path 
+    0.0000000 0.2704826 0.3224977  
+
+Number of inner nodes:    0
+Number of terminal nodes: 1
+Number of parameters per node: 3
+Objective function (negative log-likelihood): 63.90449
+
+Root-node parameter-instability tests:
+          VRExperience Susceptibility Presence
+statistic       0.5170         2.3016   3.8981
+p.value         0.9882         0.9978   0.9250
+
+Terminal nodes: 1 (1 = no covariate splits the preference structure)
+
+==========================================================================================
+FIGURES
+==========================================================================================
+Saved: plots/pref1_rank_distribution.png, pref2_pairwise_preference.png,
+       pref3_plackett_luce.png, pref4_qual_reasons.png,
+       pref5_preference_vs_measured.png, pref6_choice_by_question.png
