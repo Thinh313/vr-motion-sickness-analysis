@@ -1,0 +1,5 @@
+part,result,decision
+"H1 measured sickness, non-inferior at +5 (Study 2)",upper bound 0.84 vs +5,supported
+H2 fewer recorded intrusiveness-related complaints,"mean D +0.083, exact one-sided p = 0.247",not supported (provisional: single coder)
+Joint claim (H1 AND H2),,only H1: comparable sickness; intrusiveness difference not shown
+Study 1 corroboration: non-inferior to Dynamic FOV at +5,upper bound 15.08 vs +5,not supported

@@ -57,6 +57,31 @@ favourable on one attribute and unfavourable on another, and that trade-off is t
 | | **FAMILIARITY** | familiar (Google Maps), easy to understand | confusing, unclear purpose, unfamiliar |
 | | **AGENCY** | sense of control / autonomy over the experience | feels guided / not in control |
 
+## Derived outcome: recorded intrusiveness-related complaint (defined 2026-10-17)
+
+Used by `scripts/study2_trajectory.R` for the research question *"are trajectory-based
+interfaces (Minimap, Path Overlay) as effective as ROF at reducing motion sickness while being
+less intrusive?"*.
+
+- **Grouping (design-level, a priori):** Minimap and Path Overlay are the two trajectory-based
+  interfaces developed for this study; ROF is the non-trajectory comparison technique.
+- **Outcome definition (fixed after the coding above, before any grouped analysis was run):**
+  `Complaint[participant, interface] = 1` if the coding records at least one `Valence = -1`
+  cell for that participant and interface on **OCCLUSION, DISTRACTION, GLANCE_COST or
+  VISUAL_NOISE**, from any `Source`; otherwise 0. The four codes describe ways an interface
+  takes over the viewer's visual or attentional resources. ROF's flicker (VISUAL_NOISE) is
+  included so that the same construct applies to every interface type.
+- **Not included:** REALISM− (artificiality is not intrusion; sensitivity only), favourable
+  mentions (reported on their own, never subtracted), and VISIBILITY− ("did not notice it",
+  which points the other way).
+- **Interpretation limit:** participants were never asked whether an interface was intrusive.
+  The outcome counts *unsolicited complaints*; a missing complaint is not evidence that an
+  interface was unobtrusive, and the measure is not a validated intrusiveness scale.
+- **Status:** single coder. The cells were coded before this research question was posed,
+  but the coder was not blind to the interfaces and chose this composite while knowing the
+  per-code counts. Until a second coder's file has been reconciled, results that depend on this
+  outcome are reported as provisional.
+
 ## Coder and reliability procedure
 
 - Coder 1: Claude (Oct 2026), deductive from the Study 1 interview themes (predictability,

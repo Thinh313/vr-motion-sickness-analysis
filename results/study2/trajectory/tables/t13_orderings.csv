@@ -1,0 +1,7 @@
+ordering,Freq
+Minimap > Path > ROF,8
+Path > Minimap > ROF,8
+ROF > Minimap > Path,7
+Path > ROF > Minimap,5
+ROF > Path > Minimap,5
+Minimap > ROF > Path,3

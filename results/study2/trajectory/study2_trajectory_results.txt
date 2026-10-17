@@ -1,0 +1,331 @@
+
+==========================================================================================
+STUDY 2 — TRAJECTORY-BASED (Minimap, Path Overlay) vs NON-TRAJECTORY (ROF) INTERFACES
+==========================================================================================
+Research question: are the trajectory-based interfaces as effective as ROF at limiting
+motion sickness, while being less intrusive?
+
+Grouping is design-level: Minimap and Path Overlay are the interfaces developed for
+Study 2; ROF is the comparison technique. The intrusiveness OUTCOME (H2) was defined
+on 2026-10-17, after the interview coding existed (see the codebook).
+
+Joint claim = H1 AND H2 (intersection-union, each at one-sided alpha = .05).
+ROF is the only non-trajectory interface in Study 2, so every Study 2 result is
+'trajectory vs ROF', not 'trajectory vs non-trajectory interfaces in general'.
+Study 2 has no Baseline: nothing here says any interface reduces sickness vs no aid.
+
+==========================================================================================
+A. DATA AUDIT
+==========================================================================================
+Study 2 trials: 324 (36 participants x 3 interfaces x 3 videos), complete.
+Interview coding: 225 rows; preference file: 36 participants.
+Study 1: 432 observations (36 x 4 methods x 3 videos), complete.
+
+--- A.1 Pre-trial TSC by group (is the Delta-score comparison on a level footing?) ---
+
+                      comparison  n   diff  lo95 hi95      t df     p
+ Pre-trial TSC: Trajectory - ROF 36 -0.537 -3.23 2.16 -0.404 35 0.689
+A Delta-score difference between groups estimates the same quantity as a post-trial
+difference only if pre-trial levels are similar; a near-zero difference here supports
+comparing Delta TSC with the Study 1 (post-trial) margin below.
+
+--- A.2 Interface means (participant-level, averaged over videos) ---
+
+  Method  n dTSC_mean dTSC_sd Presence_mean Presence_sd
+     ROF 36      9.00    9.56          5.10        1.04
+ Minimap 36      9.07   11.39          5.12        1.05
+    Path 36      7.24   12.60          5.04        1.06
+
+==========================================================================================
+B. H1 PRIMARY — MEASURED SICKNESS: NON-INFERIORITY ON DELTA TSC (margin +5)
+==========================================================================================
+
+--- B.1 Where the margin comes from (Study 1, post-trial TSC vs Baseline) ---
+
+                          comparison  n diff  lo95 hi95
+  Baseline - Dynamic FOV (reduction) 36 23.3 12.43 34.1
+      Baseline - Minimap (reduction) 36 16.1  6.54 25.6
+ Baseline - Overlay Path (reduction) 36 14.9  5.26 24.5
+
+Smallest Study 1 reduction vs Baseline = 14.86 TSC; one third = 4.95 -> margin = 5.
+Rationale: a trajectory interface may be at most 5 TSC points worse than ROF, i.e. it
+would still keep about two-thirds of the smallest benefit any assistance method showed
+over no assistance in Study 1. The margin was set in scripts/study2_analysis.R (4.F)
+before this research question was posed. Same units (TSC points) and direction
+(higher = sicker); Study 1 is post-trial TSC, Study 2 is the pre-to-post change.
+Constancy caveat: Study 2 has no Baseline, so it cannot show that ROF itself reduced
+sickness here; 'as effective as ROF' is not 'effective'.
+
+--- B.2 Primary test: d = mean(Delta TSC Minimap, Path) - Delta TSC ROF (positive = trajectory sicker) ---
+
+       comparison  n    diff     se   lo95  hi95 upper_1s95 margin         p_NI noninferior
+ Trajectory - ROF 36 -0.8484 0.9999 -2.878 1.182      0.841      5 0.0000006105        TRUE
+
+Non-inferiority ESTABLISHED: one-sided 95% upper bound 0.84 < +5 (p_NI = <.001).
+
+--- B.3 Same contrast from the Method x Video RM-ANOVA (emmeans, checks the coding order) ---
+
+Factor level order: ROF, Minimap, Path -> weights -1, 0.5, 0.5 
+ contrast           estimate        SE df  lower.CL  upper.CL t.ratio p.value
+ Trajectory - ROF -0.8484259 0.9999126 35 -2.537851 0.8409989  -0.849  0.4019
+
+Results are averaged over the levels of: Video 
+Confidence level used: 0.9 
+(two-sided 90% CI upper = one-sided 95% bound; identical to B.2.)
+
+==========================================================================================
+C. H1 SENSITIVITY / SECONDARY
+==========================================================================================
+
+--- C.1 Wider margin (+15 = the size of the Study 1 reductions) — sensitivity only ---
+
+       comparison  n    diff     se   lo95  hi95 upper_1s95 margin      p_NI noninferior
+ Trajectory - ROF 36 -0.8484 0.9999 -2.878 1.182      0.841     15 7.612e-18        TRUE
+
+--- C.2 Participant bootstrap (percentile, 10,000 resamples) of the same mean difference ---
+
+mean -0.85, 95% CI [-2.79, 1.09], one-sided 95% upper bound 0.76 -> non-inferior
+
+--- C.3 Trial-level mixed model: Delta TSC ~ Group * Video + (1|P) + (1|P:Method) ---
+
+Uses all 324 trials; the (1|P:Method) term keeps the two trajectory interfaces as
+separate repeated units instead of treating their 6 trials as one condition.
+
+ contrast           estimate       SE  df  lower.CL upper.CL t.ratio p.value       p_NI
+ Trajectory - ROF -0.8484259 1.975704 283 -4.108843 2.411991  -0.429  0.6679 0.00166748
+
+Results are averaged over the levels of: Video 
+Degrees-of-freedom method: satterthwaite 
+Confidence level used: 0.9 
+Singular fit: TRUE. Upper 90% limit 2.41 -> non-inferior at +5.
+
+--- C.4 Two-sided equivalence (TOST, +/-5) — a different question: is trajectory also not BETTER by > 5? ---
+
+p(lower) = <.001, p(upper) = <.001 -> TOST p = <.001 (equivalent within +/-5)
+
+--- C.5 Subscales (Delta, Trajectory - ROF): estimates only — no margin defined; Holm across N/O/D ---
+
+     comparison  n  diff  lo95 hi95      t df     p p_holm
+         Nausea 36 -1.06 -3.15 1.03 -1.030 35 0.310  0.828
+     Oculomotor 36  0.14 -2.31 2.59  0.116 35 0.908  0.908
+ Disorientation 36 -1.87 -5.30 1.56 -1.107 35 0.276  0.828
+
+--- C.6 Group x Video (exploratory): the trajectory - ROF contrast within each video ---
+
+ comparison  n  diff   lo95 hi95 upper_1s95
+    Cycling 36  3.17  -3.01 9.35       8.31
+    Walking 36 -4.21 -10.67 2.25       1.17
+    Driving 36 -1.51  -9.99 6.98       5.56
+
+Does the contrast differ by video? (RM-ANOVA on the contrast, GG-corrected)
+Anova Table (Type 3 tests)
+
+Response: traj
+  Effect          df    MSE    F  ges p.value
+1  Video 1.73, 60.71 702.80 0.82 .021    .429
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘+’ 0.1 ‘ ’ 1
+
+Sphericity correction method: GG 
+
+==========================================================================================
+D. H1 PER INTERFACE — is the group result carried by both trajectory interfaces?
+==========================================================================================
+    comparison  n    diff   se  lo95 hi95 upper_1s95 margin     p_NI noninferior p_NI_holm
+ Minimap - ROF 36  0.0693 1.56 -3.10 3.24      2.707      5 0.001631        TRUE  0.001631
+    Path - ROF 36 -1.7661 1.46 -4.72 1.19      0.693      5 0.000023        TRUE  0.000046
+
+Homogeneity of the group (Minimap vs Path; a difference here weakens pooling):
+     comparison  n diff  lo95 hi95     t df     p
+ Minimap - Path 36 1.84 -2.75 6.42 0.812 35 0.422
+
+==========================================================================================
+E. H2 PRIMARY* — RECORDED INTRUSIVENESS-RELATED COMPLAINTS
+==========================================================================================
+Outcome: Complaint[participant, interface] = 1 if the coding has at least one
+Valence = -1 cell on OCCLUSION, DISTRACTION, GLANCE_COST, VISUAL_NOISE
+for that participant and interface. Unsolicited comments only: a missing complaint
+is NOT evidence that the interface was unobtrusive. *Single coder — provisional.
+
+--- E.1 Participants with >= 1 recorded complaint, per interface (n = 36 each) ---
+
+  Method  n  pct  lo95 hi95
+     ROF 13 36.1 20.82 53.8
+ Minimap  7 19.4  8.19 36.0
+    Path 13 36.1 20.82 53.8
+
+--- E.2 Primary test: D_i = Complaint_ROF - mean(Complaint_Minimap, Complaint_Path); H1: E[D] > 0 ---
+
+                        variant ROF Minimap Path traj_mean_pct ROF_pct mean_D    lo95  hi95 p_exact_one
+ primary (4 codes, all sources)  13       7   13          27.8    36.1 0.0833 -0.0833 0.264       0.247
+ p_exact_two
+       0.495
+
+mean D = +0.083 (bootstrap 95% CI [-0.083, 0.264]); exact one-sided p = 0.247 -> no evidence of fewer recorded complaints for the trajectory interfaces.
+D distribution:
+D
+  -1 -0.5    0  0.5    1 
+   1    9   14    7    5 
+
+--- E.3 Per interface vs ROF: exact McNemar (Holm over the two vs-ROF tests) ---
+
+     comparison only_first only_second    p p_holm
+ ROF vs Minimap         10           4 0.18  0.359
+    ROF vs Path          7           7 1.00  1.000
+
+Homogeneity check:
+      comparison only_first only_second    p
+ Minimap vs Path          5          11 0.21
+
+==========================================================================================
+F. H2 SENSITIVITY / SECONDARY
+==========================================================================================
+
+--- F.1 Alternative scopes of the same outcome (exact one-sided p; H1: ROF more complaints) ---
+
+                        variant ROF Minimap Path traj_mean_pct ROF_pct  mean_D    lo95  hi95 p_exact_one
+ primary (4 codes, all sources)  13       7   13          27.8    36.1  0.0833 -0.0833 0.264      0.2473
+            ranking-source only  13       6   13          26.4    36.1  0.0972 -0.0694 0.264      0.2078
+                     + REALISM-  13       9   16          34.7    36.1  0.0139 -0.1667 0.195      0.5247
+              without OCCLUSION  12       7    9          22.2    33.3  0.1111 -0.0556 0.278      0.1573
+            without DISTRACTION  12       3    7          13.9    33.3  0.1944  0.0556 0.347      0.0115
+            without GLANCE_COST  13       5   12          23.6    36.1  0.1250 -0.0556 0.306      0.1342
+           without VISUAL_NOISE   9       7   13          27.8    25.0 -0.0278 -0.1944 0.153      0.6968
+ p_exact_two
+      0.4947
+      0.4156
+      1.0000
+      0.3146
+      0.0231
+      0.2683
+      0.9531
+
+Leave-one-code-out shows which complaint type the result depends on.
+
+--- F.2 Each complaint type separately (participants, n = 36 per interface) ---
+
+         Code complaints_ROF complaints_Minimap complaints_Path favourable_ROF favourable_Minimap
+    OCCLUSION              7                  0               6              7                 13
+  DISTRACTION              5                  5               8              6                  5
+  GLANCE_COST              0                  2               1              1                  1
+ VISUAL_NOISE              9                  1               0              1                  0
+ favourable_Path
+               4
+               5
+               1
+               1
+
+--- F.3 Favourable mentions on the same four codes (reported separately, never netted) ---
+
+              variant ROF Minimap Path traj_mean_pct ROF_pct mean_D   lo95  hi95 p_exact_two
+ favourable (4 codes)  11      14    7          29.2    30.6 0.0139 -0.208 0.236           1
+Here D > 0 means MORE favourable mentions for ROF (two-sided exact p shown).
+
+--- F.4 GLMM: Complaint ~ Group + (1 | Participant), 108 participant x interface rows ---
+
+OR (ROF vs Trajectory) = 1.49, Wald 95% CI [0.62, 3.57], one-sided p = 0.185; singular = FALSE
+
+--- F.5 Coding reliability for this outcome ---
+
+Single coder: no data/preference/study2_qual_coding_coder2.csv yet.
+H2 is therefore PROVISIONAL and the joint claim cannot be called established.
+
+==========================================================================================
+G. SECONDARY — PRESENCE, PERCEIVED PICKS, 'MOST BALANCED' RANKING
+==========================================================================================
+
+--- G.1 Presence (1-7, measured each trial): Trajectory - ROF. No equivalence margin is defined. ---
+
+       comparison  n    diff   lo95  hi95      t df     p
+ Trajectory - ROF 36 -0.0176 -0.226 0.190 -0.172 35 0.865
+    Minimap - ROF 36  0.0259 -0.188 0.240  0.246 35 0.807
+       Path - ROF 36 -0.0611 -0.337 0.215 -0.449 35 0.656
+Presence is immersion, not intrusiveness: it gives context for H2, it does not replace it.
+
+--- G.2 Secondary picks (descriptive; asked of a subset, after the ranking) ---
+
+       question  n ROF Minimap Path ROF_share ROF_lo95 ROF_hi95 p_vs_third
+  best_sickness 21   8       7    6     0.381    0.181    0.616      0.648
+ most_realistic 26  11       7    8     0.423    0.234    0.631      0.405
+Reference share for ROF if picks were uniform = 1/3 (trajectory = 2/3). Exploratory,
+two-sided; perceived picks are never read as measured sickness or intrusiveness.
+
+--- G.3 'Most balanced' ranking. With 3 items, mean trajectory rank = (6 - ROF rank)/2, ---
+
+so ROF's position carries all of the group information.
+
+ROF rank distribution (1 = most balanced):
+
+ 1  2  3 
+12  8 16 
+
+ROF ranked last : 16/36 = 0.44, 95% CI [0.28, 0.62]; one-sided binomial vs 1/3 p = 0.109
+ROF ranked first: 12/36 = 0.33, 95% CI [0.19, 0.51]
+
+All six orderings:
+ord
+Minimap > Path > ROF Path > Minimap > ROF ROF > Minimap > Path Path > ROF > Minimap ROF > Path > Minimap 
+                   8                    8                    7                    5                    5 
+Minimap > ROF > Path 
+                   3 
+
+--- G.4 Grouped Plackett-Luce (supplementary): log-worth ROF = 0; Minimap, Path free or tied ---
+
+                                              test  chisq df     p
+ Group effect (tied trajectory worth vs all equal) 1.1679  1 0.280
+      Grouping holds? (Minimap, Path free vs tied) 0.0298  1 0.863
+
+Worth ratio trajectory/ROF = 1.34, Wald 95% CI [0.78, 2.32]
+Implied P(ranked first): ROF 0.27, each trajectory interface 0.36 (equal-worth = .33)
+Full-model P(first) check: ROF 0.27, Minimap 0.36, Path 0.37
+
+==========================================================================================
+H. STUDY 1 CROSS-STUDY CORROBORATION (Dynamic FOV as the non-trajectory comparison)
+==========================================================================================
+Study 1 measured SSQ after each trial only, so the outcome is post-trial TSC (not a
+change score); it is a second, independent sample with a different non-trajectory
+interface and a Baseline. It corroborates the category contrast; it is not a direct
+replication of Study 2.
+
+--- H.1 Non-inferiority vs Dynamic FOV (post-trial TSC, margin +5; +15 sensitivity) ---
+
+                 comparison  n diff   se   lo95 hi95 upper_1s95 margin   p_NI noninferior p_NI_holm
+   Trajectory - Dynamic FOV 36 7.81 4.30 -0.922 16.5       15.1      5 0.7410       FALSE        NA
+      Minimap - Dynamic FOV 36 7.20 4.17 -1.264 15.7       14.2      5 0.6997       FALSE         1
+ Overlay Path - Dynamic FOV 36 8.42 5.03 -1.787 18.6       16.9      5 0.7494       FALSE         1
+   Trajectory - Dynamic FOV 36 7.81 4.30 -0.922 16.5       15.1     15 0.0517       FALSE        NA
+
+The +5 margin is 21% of Dynamic FOV's own reduction vs Baseline (23.27 TSC).
+
+--- H.2 Every method vs Baseline (reductions; Holm over the three methods) ---
+
+                          comparison  n diff  lo95 hi95    t df       p  p_holm
+  Baseline - Dynamic FOV (reduction) 36 23.3 12.43 34.1 4.36 35 0.00011 0.00033
+      Baseline - Minimap (reduction) 36 16.1  6.54 25.6 3.42 35 0.00159 0.00319
+ Baseline - Overlay Path (reduction) 36 14.9  5.26 24.5 3.14 35 0.00340 0.00340
+      Baseline - Trajectory (pooled) 36 15.5  6.53 24.4 3.51 35 0.00124      NA
+
+--- H.3 Presence: Trajectory - Dynamic FOV ---
+
+               comparison  n  diff  lo95  hi95    t df        p
+ Trajectory - Dynamic FOV 36 0.548 0.258 0.838 3.84 35 0.000494
+
+==========================================================================================
+I. JOINT DECISION
+==========================================================================================
+                                                     part                                   result
+       H1 measured sickness, non-inferior at +5 (Study 2)                   upper bound 0.84 vs +5
+       H2 fewer recorded intrusiveness-related complaints mean D +0.083, exact one-sided p = 0.247
+                                  Joint claim (H1 AND H2)                                         
+ Study 1 corroboration: non-inferior to Dynamic FOV at +5                  upper bound 15.08 vs +5
+                                                         decision
+                                                        supported
+                        not supported (provisional: single coder)
+ only H1: comparable sickness; intrusiveness difference not shown
+                                                    not supported
+
+==========================================================================================
+OUTPUT FILES
+==========================================================================================
+Tables: t01_interface_means.csv, t02_margin_source_study1.csv, t03_h1_noninferiority.csv, t04_h1_subscales.csv, t05_h1_by_video.csv, t06_h1_per_interface.csv, t07_h2_complaint_rates.csv, t08_h2_pairwise.csv, t09_h2_per_code.csv, t10_h2_sensitivity.csv, t11_presence.csv, t12_picks.csv, t13_orderings.csv, t14_grouped_plackett_luce.csv, t15_study1_noninferiority.csv, t16_joint_decision.csv 
+Plots : traj1_sickness_noninferiority.png, traj2_complaint_profile.png 

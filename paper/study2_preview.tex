@@ -1,0 +1,20 @@
+% Standalone preview of the Study 2 section (approximates the VGTC two-column
+% layout with installed packages). In the paper, just \input{study2}.
+\documentclass[9pt,twocolumn,letterpaper]{extarticle}
+\usepackage[margin=0.75in,columnsep=0.3in]{geometry}
+\usepackage{mathptmx}
+\usepackage[scaled=.92]{helvet}
+\usepackage{graphicx,booktabs,tabularx,amsmath}
+\usepackage{caption}
+\captionsetup{font={small,sf},labelsep=colon}
+\usepackage{titlesec}
+\titleformat{\section}{\normalfont\sffamily\bfseries\scshape}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\sffamily\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalfont\sffamily}{\thesubsubsection}{1em}{}
+\titleformat{\paragraph}[runin]{\normalfont\sffamily}{}{0pt}{}
+\setcounter{section}{4}
+\setcounter{table}{5}
+\setcounter{figure}{3}
+\begin{document}
+\input{study2}
+\end{document}

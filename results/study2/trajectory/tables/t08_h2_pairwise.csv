@@ -1,0 +1,4 @@
+comparison,only_first,only_second,p,p_holm
+ROF vs Minimap,10,4,0.17956542968750006,0.3591308593750001
+ROF vs Path,7,7,1,1
+Minimap vs Path,5,11,0.21011352539062514,NA
